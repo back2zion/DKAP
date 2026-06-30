@@ -1,0 +1,331 @@
+{
+  "n_systems_scored": 13,
+  "n_raters": 7,
+  "raters": [
+    "OpenAI",
+    "Anthropic",
+    "Google",
+    "Mistral",
+    "DeepSeek",
+    "Qwen",
+    "GLM"
+  ],
+  "rater_means": {
+    "OpenAI": 36.08,
+    "Anthropic": 29.54,
+    "Google": 33.46,
+    "Mistral": 28.31,
+    "DeepSeek": 27.62,
+    "Qwen": 22.23,
+    "GLM": 28.92
+  },
+  "mean_pairwise_cohen_kappa": 0.656,
+  "mean_pairwise_spearman": 0.782,
+  "pairwise": {
+    "OpenAI_vs_Anthropic": {
+      "cohen_kappa": 0.736,
+      "spearman_rho": 0.829
+    },
+    "OpenAI_vs_Google": {
+      "cohen_kappa": 0.916,
+      "spearman_rho": 0.886
+    },
+    "OpenAI_vs_Mistral": {
+      "cohen_kappa": 0.631,
+      "spearman_rho": 0.844
+    },
+    "OpenAI_vs_DeepSeek": {
+      "cohen_kappa": 0.659,
+      "spearman_rho": 0.76
+    },
+    "OpenAI_vs_Qwen": {
+      "cohen_kappa": 0.421,
+      "spearman_rho": 0.675
+    },
+    "OpenAI_vs_GLM": {
+      "cohen_kappa": 0.735,
+      "spearman_rho": 0.879
+    },
+    "Anthropic_vs_Google": {
+      "cohen_kappa": 0.803,
+      "spearman_rho": 0.768
+    },
+    "Anthropic_vs_Mistral": {
+      "cohen_kappa": 0.735,
+      "spearman_rho": 0.827
+    },
+    "Anthropic_vs_DeepSeek": {
+      "cohen_kappa": 0.703,
+      "spearman_rho": 0.776
+    },
+    "Anthropic_vs_Qwen": {
+      "cohen_kappa": 0.581,
+      "spearman_rho": 0.863
+    },
+    "Anthropic_vs_GLM": {
+      "cohen_kappa": 0.823,
+      "spearman_rho": 0.887
+    },
+    "Google_vs_Mistral": {
+      "cohen_kappa": 0.526,
+      "spearman_rho": 0.744
+    },
+    "Google_vs_DeepSeek": {
+      "cohen_kappa": 0.674,
+      "spearman_rho": 0.741
+    },
+    "Google_vs_Qwen": {
+      "cohen_kappa": 0.316,
+      "spearman_rho": 0.577
+    },
+    "Google_vs_GLM": {
+      "cohen_kappa": 0.798,
+      "spearman_rho": 0.913
+    },
+    "Mistral_vs_DeepSeek": {
+      "cohen_kappa": 0.752,
+      "spearman_rho": 0.711
+    },
+    "Mistral_vs_Qwen": {
+      "cohen_kappa": 0.464,
+      "spearman_rho": 0.613
+    },
+    "Mistral_vs_GLM": {
+      "cohen_kappa": 0.598,
+      "spearman_rho": 0.817
+    },
+    "DeepSeek_vs_Qwen": {
+      "cohen_kappa": 0.636,
+      "spearman_rho": 0.698
+    },
+    "DeepSeek_vs_GLM": {
+      "cohen_kappa": 0.707,
+      "spearman_rho": 0.887
+    },
+    "Qwen_vs_GLM": {
+      "cohen_kappa": 0.571,
+      "spearman_rho": 0.736
+    }
+  },
+  "fleiss_kappa_4bin": 0.367,
+  "krippendorff_alpha_interval": 0.718,
+  "author_vs_ensemble": {
+    "n": 13,
+    "spearman_rho": 0.786,
+    "spearman_p": 0.0015,
+    "pearson_r": 0.851,
+    "pearson_p": 0.0002,
+    "systems": [
+      "MedRAG",
+      "CrewAI",
+      "LlamaIndex",
+      "BIRD-SQL",
+      "Wheatley",
+      "FinSQL",
+      "SpeechBrain",
+      "AudioCraft",
+      "EmotiVoice",
+      "GraphRAG",
+      "MetaGPT",
+      "DeepTutor",
+      "PulseAI"
+    ]
+  },
+  "per_system": {
+    "MedRAG": {
+      "ensemble_mean_total": 8.0,
+      "min": 8.0,
+      "max": 8.0,
+      "std": 0.0,
+      "by_family": {
+        "OpenAI": 8.0,
+        "Anthropic": 8.0,
+        "Google": 8.0,
+        "Mistral": 8.0,
+        "DeepSeek": 8.0,
+        "Qwen": 8.0,
+        "GLM": 8.0
+      }
+    },
+    "CrewAI": {
+      "ensemble_mean_total": 17.1,
+      "min": 2.0,
+      "max": 31.0,
+      "std": 8.3,
+      "by_family": {
+        "OpenAI": 23.0,
+        "Anthropic": 17.0,
+        "Google": 31.0,
+        "Mistral": 12.0,
+        "DeepSeek": 16.0,
+        "Qwen": 2.0,
+        "GLM": 19.0
+      }
+    },
+    "LlamaIndex": {
+      "ensemble_mean_total": 25.6,
+      "min": 17.0,
+      "max": 36.0,
+      "std": 5.6,
+      "by_family": {
+        "OpenAI": 28.0,
+        "Anthropic": 21.0,
+        "Google": 28.0,
+        "Mistral": 17.0,
+        "DeepSeek": 36.0,
+        "Qwen": 26.0,
+        "GLM": 23.0
+      }
+    },
+    "BIRD-SQL": {
+      "ensemble_mean_total": 17.9,
+      "min": 13.0,
+      "max": 22.0,
+      "std": 3.5,
+      "by_family": {
+        "OpenAI": 21.0,
+        "Anthropic": 17.0,
+        "Google": 18.0,
+        "Mistral": 22.0,
+        "DeepSeek": 21.0,
+        "Qwen": 13.0,
+        "GLM": 13.0
+      }
+    },
+    "Wheatley": {
+      "ensemble_mean_total": 29.4,
+      "min": 19.0,
+      "max": 37.0,
+      "std": 6.2,
+      "by_family": {
+        "OpenAI": 37.0,
+        "Anthropic": 30.0,
+        "Google": 37.0,
+        "Mistral": 24.0,
+        "DeepSeek": 19.0,
+        "Qwen": 27.0,
+        "GLM": 32.0
+      }
+    },
+    "FinSQL": {
+      "ensemble_mean_total": 39.4,
+      "min": 32.0,
+      "max": 65.0,
+      "std": 10.6,
+      "by_family": {
+        "OpenAI": 65.0,
+        "Anthropic": 36.0,
+        "Google": 37.0,
+        "Mistral": 32.0,
+        "DeepSeek": 35.0,
+        "Qwen": 33.0,
+        "GLM": 38.0
+      }
+    },
+    "SpeechBrain": {
+      "ensemble_mean_total": 39.4,
+      "min": 10.0,
+      "max": 53.0,
+      "std": 13.7,
+      "by_family": {
+        "OpenAI": 51.0,
+        "Anthropic": 32.0,
+        "Google": 53.0,
+        "Mistral": 41.0,
+        "DeepSeek": 41.0,
+        "Qwen": 10.0,
+        "GLM": 48.0
+      }
+    },
+    "AudioCraft": {
+      "ensemble_mean_total": 20.4,
+      "min": 10.0,
+      "max": 32.0,
+      "std": 8.7,
+      "by_family": {
+        "OpenAI": 31.0,
+        "Anthropic": 19.0,
+        "Google": 26.0,
+        "Mistral": 32.0,
+        "DeepSeek": 15.0,
+        "Qwen": 10.0,
+        "GLM": 10.0
+      }
+    },
+    "EmotiVoice": {
+      "ensemble_mean_total": 45.0,
+      "min": 36.0,
+      "max": 56.0,
+      "std": 6.5,
+      "by_family": {
+        "OpenAI": 50.0,
+        "Anthropic": 56.0,
+        "Google": 50.0,
+        "Mistral": 36.0,
+        "DeepSeek": 41.0,
+        "Qwen": 41.0,
+        "GLM": 41.0
+      }
+    },
+    "GraphRAG": {
+      "ensemble_mean_total": 54.3,
+      "min": 43.0,
+      "max": 60.0,
+      "std": 5.3,
+      "by_family": {
+        "OpenAI": 58.0,
+        "Anthropic": 52.0,
+        "Google": 60.0,
+        "Mistral": 58.0,
+        "DeepSeek": 54.0,
+        "Qwen": 43.0,
+        "GLM": 55.0
+      }
+    },
+    "MetaGPT": {
+      "ensemble_mean_total": 33.4,
+      "min": 28.0,
+      "max": 39.0,
+      "std": 4.3,
+      "by_family": {
+        "OpenAI": 39.0,
+        "Anthropic": 37.0,
+        "Google": 30.0,
+        "Mistral": 36.0,
+        "DeepSeek": 28.0,
+        "Qwen": 28.0,
+        "GLM": 36.0
+      }
+    },
+    "DeepTutor": {
+      "ensemble_mean_total": 31.7,
+      "min": 26.0,
+      "max": 40.0,
+      "std": 5.0,
+      "by_family": {
+        "OpenAI": 40.0,
+        "Anthropic": 36.0,
+        "Google": 35.0,
+        "Mistral": 28.0,
+        "DeepSeek": 26.0,
+        "Qwen": 26.0,
+        "GLM": 31.0
+      }
+    },
+    "PulseAI": {
+      "ensemble_mean_total": 21.1,
+      "min": 18.0,
+      "max": 23.0,
+      "std": 1.7,
+      "by_family": {
+        "OpenAI": 18.0,
+        "Anthropic": 23.0,
+        "Google": 22.0,
+        "Mistral": 22.0,
+        "DeepSeek": 19.0,
+        "Qwen": 22.0,
+        "GLM": 22.0
+      }
+    }
+  }
+}

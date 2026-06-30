@@ -1,0 +1,116 @@
+{
+  "B1": {
+    "n": 120,
+    "EX_total": 3,
+    "EX_pct": 2.5,
+    "EM_total": 3,
+    "EM_pct": 2.5,
+    "EXEC_total": 3,
+    "EXEC_pct": 2.5,
+    "avg_latency_ms": 415.3,
+    "by_difficulty": {
+      "E": {
+        "n": 36,
+        "EX": 3,
+        "EX_pct": 8.3,
+        "EM": 3,
+        "EM_pct": 8.3
+      },
+      "M": {
+        "n": 42,
+        "EX": 0,
+        "EX_pct": 0.0,
+        "EM": 0,
+        "EM_pct": 0.0
+      },
+      "H": {
+        "n": 42,
+        "EX": 0,
+        "EX_pct": 0.0,
+        "EM": 0,
+        "EM_pct": 0.0
+      }
+    },
+    "by_run": {
+      "run_1": 2.5,
+      "run_2": 2.5,
+      "run_3": 2.5
+    }
+  },
+  "B2": {
+    "n": 120,
+    "EX_total": 69,
+    "EX_pct": 57.5,
+    "EM_total": 15,
+    "EM_pct": 12.5,
+    "EXEC_total": 105,
+    "EXEC_pct": 87.5,
+    "avg_latency_ms": 1150.7,
+    "by_difficulty": {
+      "E": {
+        "n": 36,
+        "EX": 27,
+        "EX_pct": 75.0,
+        "EM": 9,
+        "EM_pct": 25.0
+      },
+      "M": {
+        "n": 42,
+        "EX": 27,
+        "EX_pct": 64.3,
+        "EM": 6,
+        "EM_pct": 14.3
+      },
+      "H": {
+        "n": 42,
+        "EX": 15,
+        "EX_pct": 35.7,
+        "EM": 0,
+        "EM_pct": 0.0
+      }
+    },
+    "by_run": {
+      "run_1": 57.5,
+      "run_2": 57.5,
+      "run_3": 57.5
+    }
+  },
+  "DKAP": {
+    "n": 120,
+    "EX_total": 84,
+    "EX_pct": 70.0,
+    "EM_total": 9,
+    "EM_pct": 7.5,
+    "EXEC_total": 120,
+    "EXEC_pct": 100.0,
+    "avg_latency_ms": 739.3,
+    "by_difficulty": {
+      "E": {
+        "n": 36,
+        "EX": 36,
+        "EX_pct": 100.0,
+        "EM": 3,
+        "EM_pct": 8.3
+      },
+      "M": {
+        "n": 42,
+        "EX": 33,
+        "EX_pct": 78.6,
+        "EM": 6,
+        "EM_pct": 14.3
+      },
+      "H": {
+        "n": 42,
+        "EX": 15,
+        "EX_pct": 35.7,
+        "EM": 0,
+        "EM_pct": 0.0
+      }
+    },
+    "by_run": {
+      "run_1": 70.0,
+      "run_2": 70.0,
+      "run_3": 70.0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "dkap-svg2pdf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Convert DKAP paper figure SVGs to vector PDF (svg-to-pdfkit + PDFKit, DejaVu-embedded).",
+  "scripts": {
+    "figures": "node svg2pdf.js"
+  },
+  "dependencies": {
+    "pdfkit": "^0.15.0",
+    "svg-to-pdfkit": "^0.1.8"
+  }
+}

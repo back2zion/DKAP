@@ -1,0 +1,120 @@
+{
+  "n_models": 6,
+  "n_seeds": 10,
+  "temperature": 0.3,
+  "models_analyzed": [
+    "OpenAI",
+    "Anthropic",
+    "Google",
+    "DeepSeek",
+    "Qwen",
+    "Mistral"
+  ],
+  "models_excluded_incomplete": {},
+  "per_model": {
+    "OpenAI": {
+      "model": null,
+      "B2": 65.4,
+      "B2_PRIME": 83.4,
+      "DKAP": 81.0,
+      "completeness_gain_B2prime_minus_B2": 18.0,
+      "structuring_gain_DKAP_minus_B2prime": {
+        "overall": -2.4,
+        "Easy": 0.0,
+        "Medium": -1.6,
+        "Hard": -5.0,
+        "EasyMedium": -0.9
+      }
+    },
+    "Anthropic": {
+      "model": null,
+      "B2": 64.6,
+      "B2_PRIME": 83.4,
+      "DKAP": 84.6,
+      "completeness_gain_B2prime_minus_B2": 18.8,
+      "structuring_gain_DKAP_minus_B2prime": {
+        "overall": 1.2,
+        "Easy": 0.0,
+        "Medium": 2.1,
+        "Hard": 1.1,
+        "EasyMedium": 1.2
+      }
+    },
+    "Google": {
+      "model": null,
+      "B2": 60.4,
+      "B2_PRIME": 70.2,
+      "DKAP": 73.2,
+      "completeness_gain_B2prime_minus_B2": 9.8,
+      "structuring_gain_DKAP_minus_B2prime": {
+        "overall": 3.0,
+        "Easy": -0.8,
+        "Medium": 7.9,
+        "Hard": 0.6,
+        "EasyMedium": 4.4
+      }
+    },
+    "DeepSeek": {
+      "model": null,
+      "B2": 53.8,
+      "B2_PRIME": 75.6,
+      "DKAP": 77.4,
+      "completeness_gain_B2prime_minus_B2": 21.8,
+      "structuring_gain_DKAP_minus_B2prime": {
+        "overall": 1.8,
+        "Easy": 0.0,
+        "Medium": 0.5,
+        "Hard": 4.4,
+        "EasyMedium": 0.3
+      }
+    },
+    "Qwen": {
+      "model": null,
+      "B2": 60.0,
+      "B2_PRIME": 74.6,
+      "DKAP": 77.0,
+      "completeness_gain_B2prime_minus_B2": 14.6,
+      "structuring_gain_DKAP_minus_B2prime": {
+        "overall": 2.4,
+        "Easy": 2.3,
+        "Medium": 1.6,
+        "Hard": 3.3,
+        "EasyMedium": 1.9
+      }
+    },
+    "Mistral": {
+      "model": null,
+      "B2": 57.2,
+      "B2_PRIME": 79.4,
+      "DKAP": 78.2,
+      "completeness_gain_B2prime_minus_B2": 22.2,
+      "structuring_gain_DKAP_minus_B2prime": {
+        "overall": -1.2,
+        "Easy": 0.0,
+        "Medium": -4.2,
+        "Hard": 1.1,
+        "EasyMedium": -2.5
+      }
+    }
+  },
+  "structuring_gain_EasyMedium": {
+    "per_model_pp": [
+      -0.9,
+      1.2,
+      4.4,
+      0.3,
+      1.9,
+      -2.5
+    ],
+    "mean_pp": 0.73,
+    "min_pp": -2.5,
+    "max_pp": 4.4,
+    "models_positive": "4/6",
+    "pooled_mean_pp": 0.73,
+    "pooled_bootstrap_95CI_pp": [
+      -1.0,
+      3.0
+    ]
+  },
+  "completeness_gain_B2prime_minus_B2_mean_pp": 17.53
+}

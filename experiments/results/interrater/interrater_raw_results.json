@@ -1,0 +1,3902 @@
+[
+  {
+    "system": "MedRAG",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of medical terms is present. Medical knowledge is embedded in pre-trained models (e.g., MedCPT) rather than in structured, curated domain lexicons."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No ontology or semantic graph is defined. The system uses flat document collections (e.g., PubMed, StatPearls) without encoding domain relationships (e.g., is-a, part-of)."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings between medical coding systems (e.g., ICD-10, SNOMED) are implemented. The system does not handle multiple classification systems or representation formats."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "No structured data schema is defined. The system relies on document-based retrieval without SQL DDL, JSON Schema, or typed dataclasses for domain entities."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 4 corpus types with distinct chunking strategies, which can be considered as domain-specific configuration profiles. This is fewer than 10, so the score is 3."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No domain-specific rule patterns (e.g., regex, validation logic) are implemented. The system relies on pre-trained models and retrieval without explicit rule-based processing."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only and does not provide any multilingual term mappings or code-to-natural language mappings for medical terms."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system. The system does not implement HIPAA, GDPR, or other domain-specific legal constraints in code."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is implemented. The system does not perform query routing or decomposition based on intent."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "The system uses a vector search + reranking pipeline (BM25 + Contriever/SPECTER/MedCPT + RRF fusion) with FAISS HNSW indexing, which qualifies for the highest score in this category."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented. The system does not enforce role-based or document-level access restrictions."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "The system fuses results from 4 retrievers (BM25, Contriever, SPECTER, MedCPT) using RRF, which qualifies for triple+ index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No adaptive routing is implemented. The pipeline is fixed and does not use rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 3,
+    "rss_total": 5,
+    "total": 8,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "LLaVA",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of domain-specific terms is present. Visual concepts are embedded implicitly in CLIP pre-trained weights, not explicitly declared."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No semantic graph or ontology is defined. The system uses CLIP for image encoding, but this is a computational model, not a domain knowledge graph."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings are defined. The system does not map between different classification systems or coding standards."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "No structured data schema is defined. The system lacks SQL DDL, JSON Schema, or dataclass definitions for domain entities."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 13 conversation templates in `conversation.py`, which encode behavioral variations for different model variants, but these are not domain-specific profiles."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No explicit domain business rules are encoded in the system. The pipeline is end-to-end neural generation with no rule-based validation or constraint logic."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system supports only English and has no explicit multi-language term mapping or code-to-natural-language translation."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are encoded in the system. There is no explicit handling of legal or sector-specific rules beyond data licensing."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is performed. The system does not route queries based on intent or decompose multi-stage intents."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "No vector-based retrieval is used. The system relies on end-to-end neural generation, not embedding-based search or reranking."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented. The system has no role-based or document-level filtering logic."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "No multi-index fusion is used. The system uses a single neural model for both image and text processing."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No adaptive routing is implemented. The pipeline is fixed and does not dynamically route based on rules or ML/LLM decisions."
+      }
+    },
+    "dks_total": 3,
+    "rss_total": 0,
+    "total": 3,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "CrewAI",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of domain-specific terms is present in the codebase. The system is domain-agnostic and does not define a formalized vocabulary for a specific domain."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No explicit semantic graph or ontology is constructed. The system does not encode domain relationships (e.g., is-a, part-of) in a structured knowledge graph or taxonomy."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings between different domain coding systems or representation formats are implemented. The system is general-purpose and does not handle domain-specific classification systems."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "The system defines a small number of entity types (e.g., Agent, Task, Memory) with typed fields, but no SQL schema or complex relational structure is present. The data model is minimal and lacks extensive validation or constraints."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "A small number of agent configuration profiles exist (e.g., role, goal, backstory), but these are not extensive or formalized as distinct domain-specific templates or presets."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A limited number of rule patterns exist, such as guardrails for output validation and memory scoring logic (recency + relevance + importance). These are not extensive or formalized as a rule engine."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "No explicit support for multi-language domain terms or systematic code-to-natural-language mappings is present. The system is English-centric and domain-agnostic."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No explicit encoding of legal or regulatory requirements is present in the codebase. The system does not enforce compliance rules beyond basic output validation."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "Keyword-based routing is used for agent task assignment and memory retrieval, but no multi-stage intent decomposition is implemented."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "EmbedChain is used for document ingestion and vector search, but no reranking or metadata filtering is explicitly implemented in the codebase."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system. All agents have equal access to memory and tools."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "Only a single vector index is used via EmbedChain. No explicit fusion of multiple indices or retrievers is implemented."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "Routing is rule-based and static (e.g., task assignment to agents), with no dynamic or ML/LLM-based routing logic implemented."
+      }
+    },
+    "dks_total": 11,
+    "rss_total": 2,
+    "total": 13,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "LlamaIndex",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "LlamaIndex has a curated list of domain terms in DEFAULT_ENTITY_MAP (9 entity types via multinerd NER), and prompt templates encode domain-specific terminology. However, these are limited to ~20-30 terms in a typical deployment, not exceeding 200 curated terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The PropertyGraphIndex constructs a semantic graph with entity/relationship triplets, but this is not part of a typical deployment. A standard RAG app would not use this, so D2 reflects a flat or non-semantic graph usage."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings between classification systems or representation formats in a typical deployment."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "VectorStoreIndex and SQLStructStoreIndex define structured data models with typed fields and relationships. A typical deployment would use these schema constructs, but not exceed 15 entity types or 100+ fields."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "There are 50+ prompt templates in the framework, but a typical deployment uses only 3-5 templates, which falls within the 10-50 profile range."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "PresidioPostprocessor implements PII detection/masking as a domain rule, and QueryFusionRetriever has 3 fusion modes. However, these are not extensive rule patterns in a typical deployment."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "No evidence of multi-language term mapping or code-to-natural-language mapping in a typical deployment."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "PresidioPostprocessor implements basic PII handling (masking/anonymization), but no sector-specific or multi-regulation compliance is encoded in a typical deployment."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "RouterQueryEngine + LLMSingleSelector implements ML-based query routing, but it's not a multi-stage decomposition system."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "VectorStoreIndex supports embedding-based retrieval with reranking (QueryFusionRetriever), meeting the vector search + reranking pipeline criteria."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No evidence of permission-based filtering in a typical deployment."
+      },
+      "R4": {
+        "score": 1,
+        "justification": "VectorStoreIndex + QueryFusionRetriever implies dual index/retriever fusion in some configurations, but not standard in a typical deployment."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "RouterQueryEngine implements ML/LLM-based dynamic routing for query execution paths."
+      }
+    },
+    "dks_total": 39,
+    "rss_total": 8,
+    "total": 47,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "BIRD-SQL",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of domain-specific terms is present. Column names are treated as schema metadata, not as part of a curated domain lexicon."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The database schema (tables, columns, PK/FK) serves as a flat ontology, but it lacks hierarchical relationships or semantic edges (e.g., is-a, part-of). No explicit semantic graph is defined."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings between classification systems or coding standards are implemented or documented in the system."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system includes 95 databases spanning 37 domains, with typed schema definitions (tables, columns, types, PK/FK). This implies a rich relational structure with multiple entity types and relationships."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are fewer than 10 distinct configuration profiles or templates (e.g., schema serialization formats like peteshaw, verbose, natural language)."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A small number of SQL normalization rules are implemented (lowercase, comma fixing, whitespace normalization), but these are syntactic rather than semantic domain rules."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only with no explicit support for domain terms in multiple languages or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No legal, regulatory, or compliance requirements are explicitly encoded in the system beyond data handling (e.g., no HIPAA, GDPR, or financial compliance logic)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No explicit intent classification is implemented in the system. Query routing is not a focus of the system design."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "No embedding-based vector search is used. The system uses string-based value matching (e.g., bridge_content_encoder) for schema matching, not vector similarity."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "Only a single index/retrieval mechanism is used (schema-based value matching), with no fusion of multiple indices."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The pipeline is fixed (ICL or fine-tuning), with no dynamic or ML/LLM-based routing logic implemented."
+      }
+    },
+    "dks_total": 21,
+    "rss_total": 0,
+    "total": 21,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "Wheatley",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system has 800+ lines of domain parameters in args.py, including 7 edge types and 16-28 node features. These are curated domain-specific terms, but not exceeding 200 explicitly listed terms in a single file."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a heterograph with 7 edge types (prec/rprec/rc/rp/rrp/pool/self), but these represent computational scheduling constraints, not semantic domain relationships. This is a flat, non-semantic graph."
+      },
+      "D3": {
+        "score": 5,
+        "justification": "The system supports Taillard/SM/Patterson format conversions, which are cross-format mappings, but these are not cross-ontology mappings between classification systems."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system has a rich feature schema with 16-28 features per node, and 7 edge types in the heterograph. These represent multiple entity types with typed relationships, but no SQL-level constraints or >100 typed fields."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "The system has 13 distinct profiles (5 reward models, 3 transition models, 5 dispatching heuristics), which falls in the 10–50 range for domain-specific behavioral variations."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system implements ~15-20 rule patterns for action masking, precedence enforcement, and resource capacity constraints, which is in the 10–30 range for domain rule patterns."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English/Python only with no explicit support for domain terms in multiple natural languages or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "The system includes feasibility constraints as operational rules (e.g., precedence enforcement, resource capacity), but these are not formal regulatory encodings like HIPAA or GDPR."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "The system does not implement any intent classification or decomposition for query routing."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based similarity for retrieval; it uses GNN-based action selection instead."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement any access control or permission-based filtering mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (GNN-based action selection) and does not implement multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline with no rule-based or ML/LLM-based dynamic routing mechanisms."
+      }
+    },
+    "dks_total": 47,
+    "rss_total": 0,
+    "total": 47,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "FinSQL",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system has 1,170 column names in its financial tables encoding domain-specific terminology (e.g., mainoperincome, grossprofit, fundreturn). These are explicitly declared in the schema and represent curated financial terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a flat schema with 31 tables and 434 columns in the ccks_stock database, but there is no explicit semantic graph or ontology encoding domain relationships (e.g., is-a, part-of). The relationships are foreign key-based, not semantic."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of cross-standard mappings between financial classification systems (e.g., ICD-10, SNOMED, etc.). The system uses its own curated financial terminology without mapping to external standards."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system defines 31 tables with 434 columns and 614 foreign key relationships in the ccks_stock database. This represents a relational schema with typed fields and relationships, but no SQL-level constraints or triggers are mentioned."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "The system has 3 data augmentation profiles (COT/Synonymous/Skeleton) that encode domain-specific variations in training data, but this is fewer than 10 profiles."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "There are no explicit domain rule patterns encoded in the system. Fuzzy matching is used via fuzzywuzzy, but this is not considered a domain rule pattern under the rubric."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system has a bilingual CN/EN parallel corpus with 3,966 identical question pairs, indicating explicit support for domain terms in two languages."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance encoding in the system. The system does not implement financial reporting rules or other domain-specific legal requirements in code."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "The system uses a learned RoBERTa-large Cross-Encoder with BiLSTM and 8-head Cross-Attention for schema ranking, which suggests an ML-based classifier for query routing, but not multi-stage intent decomposition."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "The system uses a flat vector search via the RoBERTa Cross-Encoder to rank schema elements (tables/columns), but there is no evidence of metadata filtering or reranking pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no evidence of access control or permission-based filtering in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (RoBERTa Cross-Encoder) for schema ranking and does not combine multiple indices."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system uses a learned Cross-Encoder to dynamically select top-k tables/columns, but this is not described as ML/LLM-based dynamic routing in the pipeline."
+      }
+    },
+    "dks_total": 33,
+    "rss_total": 3,
+    "total": 36,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "SpeechBrain",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "SpeechBrain includes BPE tokenizers with 1000/5000 vocab, G2P conversion, and MFCC/Fbank/spectrogram feature parameters explicitly configured. These represent curated domain-specific terms in speech processing, totaling ~50–200 curated terms."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "SpeechBrain does not include an explicit semantic graph or ontology of speech concepts. It is a computational toolkit focused on signal processing and model training, not semantic modeling."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "SpeechBrain does not include cross-standard mappings between speech coding systems (e.g., phoneme sets, language codes)."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "SpeechBrain has 43 datasets and 110+ YAML configs with typed parameters. It includes PyTorch-based dataclasses and structured YAML schemas for model training and evaluation, indicating a complex schema with multiple entity types and relationships."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "SpeechBrain includes 43 datasets × 110+ YAML configs, representing over 50 distinct configuration profiles for different speech tasks and models."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "SpeechBrain includes beam search rules (e.g., beam=80, coverage penalty, attention shift), CTC prefix scoring, and attention mechanisms in seq2seq.py. These represent ~10–30 domain-specific rule patterns for speech decoding."
+      },
+      "D7": {
+        "score": 10,
+        "justification": "SpeechBrain supports 107 languages via the VoxLingua107 dataset and includes systematic code-to-natural-language mappings for speech processing."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "SpeechBrain does not encode regulatory or compliance requirements in code beyond standard licensing (e.g., MIT license)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "SpeechBrain does not perform intent classification or query routing; it is a speech processing toolkit, not a retrieval or NLP system."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "SpeechBrain does not perform vector-based retrieval. It uses neural models for inference (e.g., ASR, TTS), but not for embedding-based retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "SpeechBrain does not implement permission-based filtering or access control."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "SpeechBrain does not use multiple indexes or retrievers for fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "SpeechBrain does not implement adaptive routing or dynamic pipeline selection."
+      }
+    },
+    "dks_total": 46,
+    "rss_total": 0,
+    "total": 46,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "Logic-LLM",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 5,
+        "justification": "The system uses ~30-40 logic-specific terms (e.g., universal/existential quantifiers, predicates, implications), but these are embedded in grammar rules rather than a curated glossary file. This falls within the 1–50 curated terms range."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The FOL grammar is a computational structure used for parsing and inference, not a semantic ontology. There is no explicit semantic graph or concept hierarchy with domain relationships, so it scores at the lowest level for a flat taxonomy."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There are no cross-standard mappings between different coding or classification systems for the domain of formal logic."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "The system has a few logic program classes (e.g., logic_program.py) with typed fields, but no formal database schema or complex dataclass relationships. This aligns with the 1–5 entity types or <20 typed fields category."
+      },
+      "D5": {
+        "score": 0,
+        "justification": "There are no distinct configuration profiles or templates for domain-specific variations in logic reasoning."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "The system has a few rule patterns for solver dispatch and logic translation, but fewer than 10 explicit domain rule patterns in total."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is entirely in English with no support for domain terms in multiple languages or systematic code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no explicit encoding of legal, regulatory, or compliance requirements in the codebase beyond academic research scope."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "The system uses keyword-based routing to select solvers based on problem type, but no ML-based or multi-stage intent decomposition is used."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector-based or embedding-based retrieval. All logic processing is symbolic and rule-based."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no access control or permission-based filtering implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (FOL parser) and does not perform multi-index fusion."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "The system uses rule-based routing to select solvers based on problem type, but no ML/LLM-based dynamic routing is implemented."
+      }
+    },
+    "dks_total": 18,
+    "rss_total": 2,
+    "total": 20,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "AudioCraft",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "AudioCraft includes domain-specific terms like 'chroma', 'beat', 'melody', and 'tempo' in metadata and conditioning modules, with 68 YAML config files encoding model-specific parameters. These are curated and structured, but not exceeding 200 terms in a single glossary."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a flat taxonomy of conditioning types (text, melody, chroma, beat) but does not encode these as a semantic graph with relationships. These are computational features, not domain ontologies."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings between audio/music classification systems (e.g., MIDI, RIFF, etc.) or language mappings for domain terms."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "AudioCraft defines multiple typed data models (e.g., PyTorch modules, EnCodec, JASCO) with structured YAML configs and conditioning modules. These encode 6–15 entity types with typed fields and relationships (e.g., text-to-music conditioning)."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "There are 68 YAML configuration files for different model variants and training recipes, representing 10–50 domain-specific profiles for model behavior and training."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "AudioCraft includes a few domain-specific rules (e.g., beat tracking, chroma extraction), but these are implemented as model features rather than explicit rule patterns or validation logic."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "All text conditioning is in English (via T5), with no evidence of multilingual term support or code-to-natural-language mappings for domain terms."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are encoded in the system. It is a research audio generation model with no legal constraints implemented in code."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model, not a retrieval system. There is no intent classification or routing logic for query types."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "AudioCraft does not perform vector search or embedding-based retrieval. It uses neural encoders (e.g., T5) for conditioning, but this is for model inference, not retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "AudioCraft uses a single generative model pipeline and does not combine multiple indexes or retrievers."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline for audio generation and does not implement rule-based or ML-based dynamic routing."
+      }
+    },
+    "dks_total": 34,
+    "rss_total": 0,
+    "total": 34,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "EmotiVoice",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system includes 502 phoneme tokens in the lexicon, 84 ARPAbet symbols, and 7 emotion categories explicitly encoded in style tokens. These are curated domain-specific terms, but not exceeding 200 curated terms in a single list."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "There is no explicit semantic graph or ontology encoding domain relationships. The system uses a pipeline-based architecture, not a semantic knowledge graph."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings are present. The system uses a bilingual setup (Chinese-English), but there is no explicit mapping between classification systems or coding standards."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "The system has a few entity types (e.g., speaker profiles with emotion/pitch/energy/speed labels), but no formal schema or dataclass definitions with typed fields are explicitly documented in the provided evidence."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "The system includes 2,013 speaker profiles with emotion/pitch/energy/speed labels, which represent distinct behavioral presets for domain-specific use cases."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes rule-based numeral conversion (cn2an), G2P pipelines, and tone markers. These represent ~10–30 domain rule patterns for text normalization and phoneme generation."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system supports bilingual Chinese-English TTS with separate frontends and phoneme lexicons, indicating a bilingual domain term mapping."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance encoding in the system. The system does not handle PII or encode legal requirements in code."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "There is no intent classification or routing mechanism in the system. The pipeline is fixed and does not involve query routing or decomposition."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based retrieval. It relies on rule-based and model-based generation, not retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no access control or permission-based filtering implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index or retriever (none, in this case), and no fusion of multiple indices is present."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline with no rule-based or ML/LLM-based dynamic routing mechanisms."
+      }
+    },
+    "dks_total": 36,
+    "rss_total": 0,
+    "total": 36,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "GraphRAG",
+    "rater": "SW_Architect",
+    "dks": {
+      "D1": {
+        "score": 15,
+        "justification": "The system has 7 data model classes (Entity, Relationship, Community, etc.) with 50+ typed field constants (e.g., id, title, type, description, rank, weight) that define domain entity attributes. These field constants count toward D1 per rubric clarification, and the total exceeds 200 curated terms."
+      },
+      "D2": {
+        "score": 15,
+        "justification": "GraphRAG constructs a semantic knowledge graph as its core purpose, with nodes representing domain concepts and edges representing relationships (e.g., entity extraction → community detection → hierarchical summarization). The system has ≥200 nodes and ≥0.5×nodes edges, encoding domain semantics."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no explicit evidence of cross-ontology or cross-standard mappings between different coding systems or representation formats for the domain."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system has 7 data model classes (Entity, Relationship, Community, CommunityReport, Document, TextUnit, Covariate) with typed fields and relational structure (e.g., relationships between entities and communities). However, there are no SQL-level constraints or triggers, so it does not reach the 15-point threshold."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "The system has <10 domain profiles, such as the 4 search modes (local, global, drift, basic) and configurable entity types in prompts, but no more than 10 distinct configuration profiles."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system has ~10–15 domain rule patterns encoded as LLM-orchestrated procedural rules, such as iterative entity extraction loops, budget-based context truncation, and graph pruning rules."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system supports multi-language entity extraction via configurable {language} template parameters in prompts, indicating bilingual or language-agnostic support, but not trilingual or comprehensive code→natural language mapping."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no explicit encoding of legal, regulatory, or compliance requirements in code (e.g., HIPAA, GDPR, etc.)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 3,
+        "justification": "The system uses multi-stage intent decomposition, including query routing, local search, global search, and response synthesis, indicating a sophisticated intent classification strategy."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "The system uses vector search (LanceDB) with reranking (e.g., local and global search modes), indicating a vector search + reranking pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no evidence of permission-based filtering or document-level access control in the system."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "The system fuses multiple indices (e.g., LanceDB for vector search and NetworkX/Neo4j for graph search), indicating triple+ index/retriever fusion."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "The system uses ML/LLM-based dynamic routing for query processing (e.g., routing to local vs. global search based on query intent)."
+      }
+    },
+    "dks_total": 54,
+    "rss_total": 10,
+    "total": 64,
+    "persona_id": "SW_Architect",
+    "persona_name": "Software Architect"
+  },
+  {
+    "system": "MedRAG",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or term list is provided. Medical knowledge is embedded in pre-trained models (e.g., MedCPT) rather than curated in a structured vocabulary."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No ontology or semantic graph is present. The system uses flat document collections (e.g., PubMed, StatPearls) without encoding domain relationships or hierarchical structures."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings are implemented. The system does not align medical terms across different classification systems (e.g., ICD-10, SNOMED)."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "No structured data schema is defined. The system relies on document-based retrieval without typed entity definitions or relational modeling."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 4 corpus types with distinct chunking strategies, which can be interpreted as domain-specific configuration profiles, but fewer than 10 total."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No domain-specific rule patterns are encoded. The system does not use regex, validation logic, or procedural rules for domain modeling."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only and does not provide any code-to-natural-language mappings or multilingual term support."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system. The focus is on retrieval and LLM inference, not legal or audit constraints."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is performed. The system does not decompose or classify user query intent."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "The system uses RRF fusion across 4 retrievers (BM25, Contriever, SPECTER, MedCPT) with FAISS HNSW indexing, indicating a vector search + reranking pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "The system fuses 4 distinct retrievers (BM25, Contriever, SPECTER, MedCPT), indicating triple+ index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No adaptive routing is implemented. The pipeline is fixed."
+      }
+    },
+    "dks_total": 3,
+    "rss_total": 5,
+    "total": 8,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "LLaVA",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of domain-specific terms is present. Visual concepts are embedded in CLIP pre-trained weights, not explicitly declared."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No semantic graph or ontology is defined. The system does not encode domain relationships in a structured knowledge graph."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings between different coding systems or classification formats are implemented."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "There are 13 conversation templates in `conversation.py`, which encode behavioral variations for different model variants, but no structured schema or typed dataclasses for domain entities."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 13 conversation templates, which count as domain-specific behavioral profiles, but fewer than 10."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No explicit business rules are encoded in the system. The pipeline is end-to-end neural generation with no rule-based validation or constraint checks."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system supports only English and does not provide explicit multi-language term mappings or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No legal, regulatory, or compliance requirements are explicitly encoded in the system codebase."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is performed. The system does not route queries based on intent or decompose multi-stage tasks."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "No explicit vector search is performed. The system uses CLIP for image encoding but does not perform embedding-based retrieval from a database."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "No multi-index fusion is performed. The system uses a single modality (image + text) but no multiple retrievers or indices."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No dynamic routing is implemented. The pipeline is fixed and does not adapt based on input or model decisions."
+      }
+    },
+    "dks_total": 8,
+    "rss_total": 0,
+    "total": 8,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "CrewAI",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of domain-specific terms is present in the codebase. The system is domain-agnostic and does not define a dedicated vocabulary file or enum."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No explicit semantic graph or ontology is constructed. The system does not encode domain relationships (e.g., is-a, part-of) in a structured knowledge graph or taxonomy."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings between different domain coding systems or representation formats are implemented. The system is general-purpose and does not handle domain-specific classification systems."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "The system defines a few entity types (e.g., Agent, Task, Memory) with typed fields, but no SQL schema or complex relational structure is implemented. The data model is minimal and does not include constraints or triggers."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "A small number of agent configuration profiles exist (e.g., role-based agent definitions with goals and tools), but the number of distinct profiles is less than 10."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A limited number of domain rules are encoded, such as output validation in the guardrail system. However, the number of explicit rule patterns is less than 10."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "No explicit support for domain terms in multiple natural languages is present. The system is implemented in English and does not include multilingual mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No explicit encoding of legal or regulatory requirements is present in the codebase. The system does not implement compliance checks beyond basic output validation."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "Keyword-based routing is used for agent task assignment, but no multi-stage intent decomposition is implemented. The system uses agent roles and goals for routing, but it is not ML-based."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "The system uses EmbedChain for document ingestion and vector search, but it is limited to flat vector search without reranking or metadata filtering. The integration is minimal and not deeply customized."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented. The system does not enforce document-level or role-based access restrictions."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "Only a single index/retriever (EmbedChain) is used. There is no evidence of multi-index fusion or dual retriever systems in the codebase."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "Rule-based routing is used for agent execution (e.g., sequential, hierarchical, consensual process types), but no ML/LLM-based dynamic routing is implemented."
+      }
+    },
+    "dks_total": 11,
+    "rss_total": 3,
+    "total": 14,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "LlamaIndex",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system includes a curated list of domain-specific entity types via DEFAULT_ENTITY_MAP (9 entity types) and prompt templates (50+), but a typical deployment uses only 3-5 templates. This suggests a mid-range domain lexicon size."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The PropertyGraphIndex constructs a semantic graph with entities and relations, but it is not a core part of a typical deployment. A standard deployment uses VectorStoreIndex, which is not a semantic graph, so D2 is low."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings between different domain coding systems or representation formats is present in a typical deployment."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "The system includes SQLStructStoreIndex and data modeling for entity/relationship graphs, but a typical deployment uses only basic schema constructs (e.g., VectorStoreIndex) with minimal typed fields and no SQL-level constraints."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "The system includes 50+ prompt templates, but a typical deployment uses only 3-5. This suggests a moderate number of domain-specific configuration profiles."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "The system includes some rule-based components like EntityExtractor and PresidioPostprocessor, but these are not typically activated in a standard deployment. Only a few rule patterns are used in practice."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "No evidence of multi-language term mapping is present in a typical deployment."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "The system includes PresidioPostprocessor for PII detection/masking, which is a basic form of regulatory compliance. No more advanced compliance rules are typically used in a standard deployment."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "The system includes RouterQueryEngine and LLMSingleSelector for dynamic query routing, which suggests an ML-based classifier for intent classification."
+      },
+      "R2": {
+        "score": 2,
+        "justification": "The system includes VectorStoreIndex with 40+ embedding integrations and QueryFusionRetriever with 3 fusion modes (RRF, relative score, distance-based), indicating filtered vector search and reranking."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No evidence of permission-based filtering or document-level access control is present in a typical deployment."
+      },
+      "R4": {
+        "score": 1,
+        "justification": "The system includes QueryFusionRetriever with dual index fusion (e.g., vector + keyword), but triple+ index fusion is not typically used in a standard deployment."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "The system includes RouterQueryEngine with LLM-based dynamic routing, indicating adaptive routing based on query content."
+      }
+    },
+    "dks_total": 34,
+    "rss_total": 7,
+    "total": 41,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "BIRD-SQL",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated term list is provided. Column names are treated as schema metadata, not as a curated vocabulary."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The database schema (tables, columns, PK/FK) serves as a flat ontology, but it lacks hierarchical relationships or semantic edges (e.g., is-a, part-of)."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings between different domain coding systems or classification formats is found."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system includes 95 databases spanning 37 domains, with schema definitions including typed fields and relationships (e.g., PK/FK). This suggests a moderate level of schema complexity."
+      },
+      "D5": {
+        "score": 0,
+        "justification": "No domain-specific configuration profiles or templates are explicitly defined in the system."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A few SQL normalization rules (lowercase, comma fixing, whitespace normalization) are implemented, but these are general language patterns, not domain-specific business rules."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only, with no evidence of multilingual term support or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system code or documentation."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No explicit intent classification mechanism is implemented in the system."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "The system uses a flat vector search via the bridge_content_encoder for string-based value matching, but this is not a full embedding-based similarity search."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "Only a single index/retriever is used for value sampling and schema matching."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The pipeline is fixed and does not include dynamic or ML/LLM-based routing mechanisms."
+      }
+    },
+    "dks_total": 18,
+    "rss_total": 1,
+    "total": 19,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "Wheatley",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system has 800+ lines of domain parameters in `args.py`, which includes a large number of explicitly declared domain-specific terms related to job-shop scheduling (e.g., TCT, is_affected, selectable, machine_id, MWKR). This suggests a curated list of domain terms, likely in the range of 51–200."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a heterograph with 7 edge types (prec/rprec/rc/rp/rrp/pool/self), but these are computational scheduling constraints rather than semantic relationships. Therefore, it qualifies for a flat taxonomy with <50 concept nodes or a non-semantic graph used for domain modeling."
+      },
+      "D3": {
+        "score": 5,
+        "justification": "The system includes format conversions between Taillard/SM/Patterson formats, which are different coding standards for job-shop scheduling. This is a single cross-format mapping, not a cross-ontology mapping between classification systems."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system has a rich data model with 16–28 features per node, and the pipeline includes structured representations such as state initialization, feature extraction, and graph construction. These suggest multiple entity types with typed fields and relationships, but no SQL-level constraints or >100 typed fields with validation are explicitly mentioned."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "The system includes 5 reward models, 3 transition models, and 5 dispatching heuristics, totaling 13 configuration profiles. This falls in the 10–50 profile range, indicating domain-specific behavioral variations."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes ~15–20 rule patterns for action masking, precedence enforcement, and resource capacity constraints. These are domain-specific business rules encoded in the system, falling in the 10–30 rule pattern range."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English/Python only, with no evidence of multi-language term mapping or systematic code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "The system includes minimal regulatory encoding, such as feasibility constraints as operational rules. These are not sector-specific regulations like HIPAA or GDPR, but rather domain-specific operational constraints."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "The system does not perform intent classification. It is a fixed pipeline for job-shop scheduling with no evidence of intent decomposition or routing."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based similarity retrieval. It uses GNN-based action selection, which is part of model inference, not retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement any access control or permission-based filtering mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (GNN-based action selection), with no evidence of multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline with no evidence of rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 47,
+    "rss_total": 0,
+    "total": 47,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "FinSQL",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system includes 1,170 column names in its financial tables encoding domain-specific financial terminology (e.g., mainoperincome, grossprofit). These are explicitly defined in the schema and represent a curated list of domain terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system defines 614 foreign key relationships across 31 tables in the ccks_stock database, but these are relational constraints rather than semantic relationships. There is no explicit semantic graph or ontology encoding domain relationships (e.g., is-a, part-of)."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of cross-standard mappings between different financial classification systems (e.g., ICD-10, SNOMED, etc.). The system does not map between different financial coding standards."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system defines 31 tables with 434 columns and 614 foreign key relationships in the ccks_stock database. This represents a complex relational schema with typed fields and relational constraints, but no SQL-level constraints or triggers are explicitly mentioned."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "The system includes 3 augmentation profiles (COT/Synonymous/Skeleton) for data augmentation, which encode domain-specific variations in training data. This is a small number of domain-specific configuration profiles."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "The system does not include explicit domain rule patterns such as regex, validation logic, or constraint checks. Fuzzy matching is used via fuzzywuzzy, but this is not considered a domain rule pattern under the rubric."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system includes a bilingual CN/EN parallel corpus with 3,966 identical question pairs, indicating explicit support for domain terms in two languages. This is a bilingual mapping, not trilingual or comprehensive code→natural language mapping."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance requirements encoded in the system. The system does not implement financial regulations like SOX or GDPR, nor does it encode audit requirements in code."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "The system uses a learned RoBERTa-large Cross-Encoder with BiLSTM and 8-head Cross-Attention for schema ranking, which suggests an ML-based classifier for query routing. However, it does not perform multi-stage intent decomposition."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "The system uses a learned Cross-Encoder for schema ranking, which is a form of vector-based retrieval. However, it does not include reranking or metadata filtering, so it scores at the flat vector search level."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no evidence of access control or permission-based filtering in the system. The system does not implement role-based or document-level filtering."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (Cross-Encoder) for schema ranking and does not combine multiple indices or retrievers for fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system uses a learned Cross-Encoder for schema ranking, but this is not considered dynamic routing in the sense of ML/LLM-based routing between different retrieval pipelines. The pipeline is fixed."
+      }
+    },
+    "dks_total": 33,
+    "rss_total": 3,
+    "total": 36,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "SpeechBrain",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "SpeechBrain includes BPE tokenizers with 1000/5000 vocab, G2P conversion, and MFCC/Fbank/spectrogram feature parameters explicitly configured. These represent curated domain-specific terms in speech processing, totaling ~50–200 terms in configuration and code."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "SpeechBrain does not include an explicit semantic graph or ontology of speech concepts. While it handles speech entities (e.g., utterances, speakers), these are not encoded in a semantic graph with domain relationships."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "SpeechBrain does not include cross-standard mappings between speech coding systems (e.g., phoneme sets, language codes)."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "SpeechBrain defines multiple PyTorch-based dataclasses and YAML schemas for speech processing pipelines, including feature extraction, decoding, and model configuration. These encode 6–15 entity types with typed fields and relationships."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "SpeechBrain includes 43 datasets × 110+ YAML configs, representing over 50 distinct configuration profiles for different speech tasks and models."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "SpeechBrain includes beam search rules (e.g., beam=80, coverage penalty, attention shift), CTC prefix scoring, and decoding logic. These represent ~10–30 domain-specific rule patterns in speech decoding."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "SpeechBrain supports 107 languages via the VoxLingua107 dataset, indicating bilingual and multilingual term support in speech processing."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "SpeechBrain does not encode regulatory or compliance requirements in code beyond standard licensing (e.g., MIT)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "SpeechBrain does not perform intent classification or query routing; it is a speech processing toolkit, not a retrieval system."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "SpeechBrain does not perform vector-based retrieval. It uses neural models for speech processing, not for embedding-based information retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "SpeechBrain does not implement permission-based filtering or access control mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "SpeechBrain does not use multiple indexes or retrievers for fusion; it is not a retrieval system."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "SpeechBrain does not implement adaptive routing or dynamic pipeline selection based on input or model behavior."
+      }
+    },
+    "dks_total": 46,
+    "rss_total": 0,
+    "total": 46,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "Logic-LLM",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 5,
+        "justification": "The system includes ~30-40 logic-specific terms (e.g., universal/existential quantifiers, predicates, implications) embedded in the FOL grammar, but these are not curated in a dedicated glossary file — they are part of the grammar rules instead."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The FOL grammar defines a flat structure of logical syntax, but it is not a semantic graph encoding domain relationships (e.g., is-a, part-of). It is a computational structure for parsing, not a semantic ontology."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There are no cross-standard mappings between different logical formalisms or representation formats in the system."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "There is no explicit structured data schema (e.g., SQL DDL, JSON Schema, dataclasses) defining domain entities with typed fields. The system is focused on logic parsing and translation, not structured data modeling."
+      },
+      "D5": {
+        "score": 0,
+        "justification": "The system does not include any domain-specific configuration profiles or templates for behavioral variations."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "The system includes a small number of rule-based logic patterns for solver dispatch and translation, but these are not extensive domain business rules (e.g., <10 rule patterns)."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is entirely in English and does not include any multi-language term mappings or code-to-natural-language translations."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no explicit encoding of legal, regulatory, or compliance requirements in the system codebase."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "The system uses keyword-based routing to select solvers (e.g., Prover9, PyKE, CSP, SAT) based on problem type, but it does not use ML-based intent classification or multi-stage decomposition."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector-based or embedding-based retrieval. It relies on rule-based parsing and translation between logical representations."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no access control or permission-based filtering implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (the FOL parser) and does not perform multi-index fusion."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "The system uses rule-based routing to select solvers based on problem type, but it does not use ML or LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 13,
+    "rss_total": 2,
+    "total": 15,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "AudioCraft",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "AudioCraft includes curated domain-specific terms in metadata (e.g., genre, tempo, instrument) and conditioning mechanisms (e.g., chroma, melody, beat). These are defined in code and configuration files, with ~50–100 explicitly used terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses computational graph-like structures (e.g., cross-attention in T5 → MusicGen) but these are not semantic graphs encoding domain relationships. No explicit ontology or semantic graph is present."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings between different audio/music classification systems (e.g., MIDI, RIFF, etc.) or representation formats."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "AudioCraft defines multiple data models (e.g., EnCodec, MusicGen, JASCO) with typed fields and metadata (e.g., genre, tempo). These are implemented via PyTorch modules and YAML configs, with 6–15 distinct entity-like types and relationships."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "There are 68 YAML configuration files for different model variants and training recipes, encoding domain-specific behavioral variations (e.g., conditioning types, model sizes)."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A few domain-specific rules are encoded (e.g., beat tracking, chroma extraction), but these are limited in number and scope. No explicit rule engine or >10 rule patterns are present."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "All text conditioning is in English (via T5). No evidence of multilingual domain term support or systematic code→natural language mapping."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the codebase. The system is focused on audio generation, not legal or compliance domains."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model, not a retrieval system. There is no intent classification or routing mechanism present."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model, not a retrieval system. There is no vector search or embedding-based retrieval mechanism present."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model, not a retrieval system. There is no access control or permission-based filtering mechanism present."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model, not a retrieval system. There is no multi-index fusion or multiple retrievers present."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model, not a retrieval system. There is no adaptive routing mechanism present."
+      }
+    },
+    "dks_total": 34,
+    "rss_total": 0,
+    "total": 34,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "EmotiVoice",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system includes 502 phoneme tokens in the lexicon and 84 ARPAbet symbols, along with 206K Chinese pronunciation entries. These are explicitly curated and represent domain-specific linguistic knowledge, totaling over 200 curated terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a flat taxonomy of phonemes and ARPAbet symbols but does not construct a semantic graph or ontology of domain concepts and relationships. The G2P pipeline is computational, not semantic."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of cross-standard mappings between different linguistic coding systems or representation formats in the domain."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system defines multiple entity types (e.g., phonemes, text units, speaker profiles) with typed fields and relationships. The G2P pipeline and numeral conversion system suggest a structured data model with relational structure, though no SQL-level constraints are present."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "The system includes 2,013 speaker profiles with emotion/pitch/energy/speed labels, representing a large number of domain-specific behavioral presets."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes extensive rule-based numeral conversion (cn2an) and G2P processing with tone markers. These represent domain-specific processing rules, totaling between 10–30 patterns."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system supports bilingual Chinese-English TTS with separate frontends and phoneme lexicons, indicating explicit support for domain terms in two languages."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance requirements encoded in the system beyond standard TTS processing."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "The system does not perform intent classification or query routing; it is a fixed TTS pipeline with no dynamic intent decomposition."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not perform vector-based retrieval. The SimBERT-based style encoder is used for embedding generation, not for retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement any form of access control or permission-based filtering."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index or retriever (style encoder) and does not perform multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline with no rule-based or ML/LLM-based dynamic routing mechanisms."
+      }
+    },
+    "dks_total": 46,
+    "rss_total": 0,
+    "total": 46,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "GraphRAG",
+    "rater": "ML_Researcher",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system has 7 data model classes (Entity, Relationship, Community, etc.) with 50+ typed field constants (e.g., id, title, type, description, rank, weight) that define domain entity attributes. These field constants count toward D1 per rubric clarification, placing it in the 51–200 curated terms range."
+      },
+      "D2": {
+        "score": 15,
+        "justification": "GraphRAG constructs a semantic knowledge graph as its core purpose, with LLM-based entity/relationship extraction and hierarchical Leiden community detection. The system encodes domain semantics in a rich graph with ≥200 nodes and ≥0.5×nodes edges, fulfilling the D2=15 criteria."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of explicit cross-standard mappings between different coding systems or classification standards in the system."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system defines 7 data model classes (Entity, Relationship, Community, etc.) with typed fields and relational structure (e.g., relationships between entities and communities). This satisfies the 6–15 entity types with relationships criterion, but no SQL-level constraints or triggers are present."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "The system has <10 configuration profiles or templates, such as the 4 search modes (local, global, drift, basic) and entity extraction prompt variations, but no more than a small number of domain-specific behavioral presets."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes ~10–15 domain rule patterns, such as iterative entity extraction loops, budget-based context truncation, and graph pruning rules. These are LLM-orchestrated procedural rules and qualify as code-level domain rules."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system supports configurable multi-language entity extraction prompts via a {language} template parameter, indicating bilingual or language-agnostic support, but not trilingual or comprehensive code→natural language mapping."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance encoding in the codebase. The system is English-focused and does not encode legal or sector-specific rules in code."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 3,
+        "justification": "The system uses multi-stage intent decomposition, including query routing, local search, global search, and response synthesis, indicating a sophisticated intent classification mechanism."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "GraphRAG uses a vector search + reranking pipeline, with LanceDB for vector indexing and hierarchical community-based reranking, fulfilling the R2=3 criteria."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no evidence of permission-based filtering or access control mechanisms in the system."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "The system fuses multiple indices (e.g., vector index and graph index) and uses multiple retrievers (e.g., local and global search), satisfying the triple+ index fusion criterion."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "The system uses ML/LLM-based dynamic routing for query processing, including adaptive routing between local and global search modes, fulfilling the R5=2 criterion."
+      }
+    },
+    "dks_total": 49,
+    "rss_total": 10,
+    "total": 59,
+    "persona_id": "ML_Researcher",
+    "persona_name": "ML Researcher"
+  },
+  {
+    "system": "MedRAG",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of medical terms is present. Medical knowledge is embedded in pre-trained models (e.g., MedCPT) rather than in a structured lexicon."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No ontology or semantic graph is defined. The system uses flat document collections without encoding domain relationships between concepts."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings between medical coding systems (e.g., ICD-10, SNOMED) are implemented or referenced in the system."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "No structured data schema is defined. The system relies on document-based retrieval without SQL DDL, JSON Schema, or typed dataclasses."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 4 corpus types with distinct chunking strategies, which can be considered as domain-specific configuration profiles, but fewer than 10 total."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No domain-specific rule patterns (e.g., regex, validation logic) are implemented in the system."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only with no evidence of multilingual term support or code-to-natural language mapping."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system code or documentation."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is implemented. Query routing is not explicitly modeled or decomposed."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "The system uses RRF fusion across 4 retrievers (BM25, Contriever, SPECTER, MedCPT) with FAISS HNSW indexing, indicating a vector search + reranking pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "The system fuses results from 4 distinct retrievers (BM25, Contriever, SPECTER, MedCPT), indicating triple+ index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No adaptive or dynamic routing is implemented; the pipeline is fixed."
+      }
+    },
+    "dks_total": 3,
+    "rss_total": 5,
+    "total": 8,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "LLaVA",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "LLaVA has no explicit domain glossary or curated list of domain-specific terms. Visual concepts are embedded in pre-trained CLIP weights, and variable names do not constitute a curated domain lexicon."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "LLaVA has no explicit semantic graph or ontology. It is a vision-language model with no structured domain knowledge encoded in a graph or taxonomy."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "LLaVA has no cross-ontology or cross-standard mappings. It does not map between different classification systems or representation formats."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "LLaVA has no structured data schema, SQL DDL, or dataclass definitions that encode domain entities with typed attributes. It is primarily a neural model with no formal schema."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "LLaVA has 13 conversation templates in `conversation.py`, which encode domain-specific behavioral variations for different model variants. This counts as a small number of domain profiles."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "LLaVA has no explicit business rules encoded as regex patterns, validation logic, or constraint checks. It is an end-to-end neural model with no rule-based components."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "LLaVA supports only English and has no explicit multi-language term mapping or code-to-natural-language mapping. It is monolingual in practice."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "LLaVA has no explicit encoding of legal, regulatory, or compliance requirements in code. It is a research model with no compliance logic implemented."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "LLaVA has no intent classification mechanism. It is an end-to-end model with no explicit routing or decomposition of user intent."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "LLaVA has no vector search or embedding-based retrieval pipeline. It uses CLIP for image encoding, but this is for model inference, not retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "LLaVA has no access control or permission-based filtering. It is an open-source model with no document-level or role-based filtering logic."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "LLaVA has no multi-index fusion. It uses a single neural model for both image and text processing, with no explicit fusion of multiple indices or retrievers."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "LLaVA has no adaptive routing mechanism. It uses a fixed pipeline for image and text processing with no dynamic routing based on rules or ML/LLM."
+      }
+    },
+    "dks_total": 3,
+    "rss_total": 0,
+    "total": 3,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "CrewAI",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of domain-specific terms is present. The system is domain-agnostic and does not define a formalized domain lexicon in code or configuration."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No explicit semantic graph or ontology is constructed. The system does not encode domain relationships (e.g., is-a, part-of) in a structured knowledge graph or taxonomy."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-ontology or cross-standard mappings are implemented. The system does not map between different domain classification systems or representation formats."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "The system defines a few entity types (e.g., Agent, Task, Memory) with typed fields, but no SQL schema, DDL, or complex relational structure is present. The data model is minimal and lacks constraints or relationships."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are fewer than 10 configuration profiles or agent role definitions (e.g., role-based agent configurations with goals, backstory, and tools). These are not formalized as distinct domain profiles but rather as agent definitions."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A small number of domain rule patterns exist, such as guardrails for output validation and memory scoring logic (recency + relevance + importance). These are not extensive or formalized as a rule engine."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is implemented in a single language (English) and does not provide explicit support for domain terms in multiple natural languages or systematic code-to-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No explicit encoding of legal or regulatory requirements is present in the codebase. The system does not enforce compliance rules such as HIPAA, GDPR, or financial reporting standards."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "Intent classification is keyword-based or rule-based in task routing (e.g., agent roles and task definitions). There is no multi-stage intent decomposition or ML-based classification."
+      },
+      "R2": {
+        "score": 2,
+        "justification": "The system supports vector search with metadata filtering via EmbedChain integration. It allows for embedding-based retrieval with metadata (e.g., document metadata) but does not implement reranking pipelines."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No role-based or document-level access control is implemented. The system does not enforce permission-based filtering for retrieval or execution."
+      },
+      "R4": {
+        "score": 1,
+        "justification": "The system supports dual index/retriever fusion (e.g., multiple embedding providers), but no explicit fusion of three or more indices is implemented."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "Routing is rule-based (e.g., agent roles and task dependencies), not ML/LLM-based dynamic routing. The system does not adaptively route queries based on learned patterns."
+      }
+    },
+    "dks_total": 11,
+    "rss_total": 5,
+    "total": 16,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "LlamaIndex",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "LlamaIndex includes a curated list of 9 entity types in DEFAULT_ENTITY_MAP (e.g., PERSON, LOCATION, etc.), and 50+ prompt templates in default_prompts.py that encode domain-specific language patterns. These represent a curated domain lexicon of ~60+ terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The PropertyGraphIndex uses LLM-based triplet extraction to build a semantic graph of entities and relationships, but this is not a core feature of a typical deployment. A typical deployment would not use this graph, so it counts as a flat taxonomy with <50 concept nodes."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of cross-standard mappings between different classification systems or coding standards in a typical deployment of LlamaIndex."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "LlamaIndex includes a few entity types (e.g., VectorStoreIndex, SQLStructStoreIndex) with typed fields, but a typical deployment would not use more than 5 entity types with relationships, so it scores at the lower end of this category."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "LlamaIndex includes 50+ prompt templates, but a typical deployment would only use 3-5 of them as domain-specific configuration profiles, so it scores at the lower end of this category."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "LlamaIndex includes a few domain rule patterns (e.g., PII detection/masking via PresidioPostprocessor), but these are not part of a typical deployment unless explicitly configured, so it scores at the lower end of this category."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "LlamaIndex does not include explicit support for domain terms in multiple natural languages or systematic code-to-natural-language mappings in a typical deployment."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "LlamaIndex includes PII detection/masking via PresidioPostprocessor, which is a basic form of regulatory compliance. However, this is not part of a typical deployment unless explicitly configured, so it scores at the lower end of this category."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "LlamaIndex includes a RouterQueryEngine with LLMSingleSelector for dynamic query routing, which represents an ML classifier for query routing."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "LlamaIndex includes VectorStoreIndex with 40+ embedding integrations and QueryFusionRetriever with 3 fusion modes (RRF, relative score, distance-based), which represents a vector search + reranking pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "LlamaIndex does not include permission-based filtering in a typical deployment."
+      },
+      "R4": {
+        "score": 1,
+        "justification": "LlamaIndex includes QueryFusionRetriever with 3 fusion modes, which represents dual index/retriever fusion in a typical deployment."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "LlamaIndex includes RouterQueryEngine with LLMSingleSelector for dynamic routing, which represents ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 31,
+    "rss_total": 8,
+    "total": 39,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "BIRD-SQL",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated term list is present. Column names are schema metadata and not part of a curated domain lexicon."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The database schema (tables, columns, PK/FK) serves as a flat ontology, but it lacks hierarchical relationships or semantic edges (e.g., is-a, part-of)."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings between classification systems or coding standards are implemented or documented."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system includes 95 databases spanning 37 domains, with schema definitions including typed fields and relationships (e.g., PK/FK). However, no SQL-level constraints or validation are explicitly encoded."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are three schema serialization formats (peteshaw, verbose, natural language), but these are not distinct domain profiles or behavioral presets."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A few SQL normalization rules are implemented (lowercase, comma fixing, whitespace normalization), but these are general language patterns, not domain-specific business rules."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only with no evidence of multilingual term support or code-to-natural language mapping."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system code or documentation."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification or routing logic is implemented in the system."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "No vector-based or embedding-based retrieval is used. The bridge_content_encoder is for string-based value matching, not vector search."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "Only a single index/retrieval method is used (schema-based value sampling)."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The pipeline is fixed with no rule-based or ML/LLM-based dynamic routing logic."
+      }
+    },
+    "dks_total": 21,
+    "rss_total": 0,
+    "total": 21,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "Wheatley",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system has 800+ lines of domain parameters in args.py, including 16-28 explicitly defined features per node (e.g., TCT, is_affected, selectable, machine_id, MWKR). These are curated domain-specific terms used in scheduling and are part of a structured configuration, not just variable names in code."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a heterograph with 7 edge types (prec/rprec/rc/rp/rrp/pool/self), but these represent computational scheduling constraints rather than semantic domain relationships. There is no explicit semantic graph encoding domain concepts and relationships."
+      },
+      "D3": {
+        "score": 5,
+        "justification": "The system supports Taillard/SM/Patterson format conversions, which are cross-format mappings for scheduling problem representations. However, these are not cross-ontology mappings between different classification systems."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system defines multiple entity types (e.g., jobs, machines, operations) with typed features and relationships. The state representation includes 16-28 features per node, and the system uses a heterograph with 7 edge types, indicating a relational structure."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "The system has 13 distinct configuration profiles (5 reward models, 3 transition models, 5 dispatching heuristics), which encode domain-specific behavioral variations in scheduling."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes ~15-20 rule patterns for action masking, precedence enforcement, and resource capacity constraints. These are explicit domain business rules encoded in the system."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is entirely in English/Python with no explicit support for domain terms in multiple natural languages or systematic code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "The system includes feasibility constraints as operational rules (e.g., precedence enforcement, resource capacity constraints), which are basic forms of regulatory encoding ensuring valid scheduling solutions."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "The system does not perform intent classification or query routing. It is focused on job-shop scheduling with no evidence of intent decomposition or routing logic."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based similarity for retrieval. It uses GNN-based action selection, which is part of model inference, not retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement any form of access control or permission-based filtering."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (GNN-based action selection) and does not perform multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline for scheduling and does not implement rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 47,
+    "rss_total": 0,
+    "total": 47,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "FinSQL",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "FinSQL has 1,170 column names encoding financial terminology (e.g., mainoperincome, grossprofit, fundreturn), which constitute a curated domain lexicon. These are part of the schema and not just variable names in code, so they count toward D1. This falls in the 51–200 curated terms range, so D1=10."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "FinSQL does not have an explicit semantic graph or ontology encoding domain relationships (e.g., is-a, part-of). The system uses schema prediction and FK relationships, but these are not semantic graphs. D2=0."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "FinSQL does not show evidence of cross-ontology or cross-standard mappings (e.g., ICD-10 ↔ SNOMED). There is no indication of mapping between different financial classification systems. D3=0."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "FinSQL has 31 tables in the ccks_stock database alone, with 434 columns and 614 FK relationships. This indicates a complex relational schema with typed fields and relationships. However, there is no evidence of SQL-level constraints or triggers, so D4=10 (not 15)."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "FinSQL has 3 augmentation profiles (COT/Synonymous/Skeleton) that encode domain-specific variations in data augmentation. This is a small number of profiles, so D5=3."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "FinSQL uses fuzzy matching via fuzzywuzzy for fuzzy matching, but no explicit domain rule patterns (e.g., regex, validation logic) are encoded in the system. The fuzzy matching is not domain-specific rule logic, so D6=3."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "FinSQL has a bilingual CN/EN parallel corpus with 3,966 identical question pairs. This indicates systematic code-to-natural-language mapping in two languages, so D7=5."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "FinSQL does not encode any regulatory or compliance requirements in code. There is no evidence of PII handling, HIPAA, GDPR, or financial reporting rules. D8=0."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "FinSQL uses a learned Cross-Encoder (RoBERTa-large + BiLSTM + 8-head Cross-Attention) to dynamically select top-k tables/columns per query. This is an ML-based classifier for schema ranking, so R1=2."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "FinSQL uses a learned Cross-Encoder for schema ranking, which is a form of vector-based similarity search. However, there is no evidence of reranking or metadata filtering, so R2=1."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "FinSQL does not implement any access control or permission-based filtering. R3=0."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "FinSQL uses a single index/retriever (Cross-Encoder) for schema ranking. There is no evidence of multi-index fusion. R4=0."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "FinSQL uses an ML-based Cross-Encoder to dynamically select top-k tables/columns per query, which is a form of ML/LLM-based dynamic routing. R5=2."
+      }
+    },
+    "dks_total": 31,
+    "rss_total": 5,
+    "total": 36,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "SpeechBrain",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "SpeechBrain includes BPE tokenizers with 1000/5000 vocab, G2P conversion, and MFCC/Fbank/spectrogram feature parameters. These are curated domain-specific terms in speech processing, totaling over 100 curated terms in configuration and code."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "SpeechBrain does not include an explicit semantic graph or ontology of speech concepts. It is a toolkit for speech processing, not knowledge modeling."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings (e.g., phoneme sets, language codes) being explicitly mapped between different classification systems or coding standards."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "SpeechBrain has 43 datasets and 110+ YAML configs with typed parameters. It includes PyTorch-based dataclasses and structured YAML schemas for speech processing pipelines, indicating a complex schema with multiple entity types and relationships."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "SpeechBrain has 43 datasets × 110+ YAML configs, representing over 50 distinct configuration profiles for different speech tasks and models."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "SpeechBrain includes beam search rules (beam=80, coverage penalty, attention shift), CTC prefix scoring, and attention mechanisms in seq2seq.py. These are domain-specific rule patterns, totaling between 10–30."
+      },
+      "D7": {
+        "score": 10,
+        "justification": "SpeechBrain supports 107 languages via the VoxLingua107 dataset and includes multi-language speech processing capabilities, indicating strong multilingual term support."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "SpeechBrain does not encode any regulatory or compliance requirements in code beyond standard licensing. No domain-specific legal or compliance logic is present."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "SpeechBrain is a speech processing toolkit and does not perform intent classification or query routing. It is not designed for information retrieval or NLP-based intent analysis."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "SpeechBrain does not perform vector-based retrieval. It is focused on speech signal processing, not information retrieval using embeddings or similarity search."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "SpeechBrain does not implement permission-based filtering or access control mechanisms. It is not designed for secure or restricted data access."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "SpeechBrain does not use multiple indexes or retrievers for fusion. It is not an information retrieval system."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "SpeechBrain does not implement adaptive routing or dynamic pipeline selection. It is a static speech processing toolkit."
+      }
+    },
+    "dks_total": 46,
+    "rss_total": 0,
+    "total": 46,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "Logic-LLM",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 5,
+        "justification": "The system includes ~30-40 logic-specific terms (e.g., universal/existential quantifiers, predicates, implications) embedded in the FOL grammar, but these are not curated in a glossary file or explicit domain term list — they are part of the grammar rules instead."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "The FOL grammar is a computational structure for parsing and inference, not a semantic ontology or knowledge graph with domain relationships. There is no explicit semantic graph or taxonomy of domain concepts."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There are no cross-standard mappings between different logic formalisms or representation formats. The system focuses on a single formal logic framework (FOL) and solver DSLs."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "The system has a few logic program and solver-related data structures, but no formal SQL DDL, JSON Schema, or dataclass-based schema with typed fields. The logic_program.py and code_translator.py files define logic constructs but not in a structured schema format."
+      },
+      "D5": {
+        "score": 0,
+        "justification": "There are no distinct configuration profiles or templates for different logic domains or problem types. The system uses a single logic pipeline for all problems."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "The system includes a few rule-based logic patterns for solver dispatch and translation (e.g., routing to Prover9, PyKE, CSP, SAT), but these are limited in number and complexity — likely fewer than 10 domain rule patterns."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is entirely in English and does not include any multi-language term mappings or code-to-natural-language translations. There is no support for non-English logic terms or expressions."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "The system does not encode any legal, regulatory, or compliance requirements in code. It is focused on logic reasoning and does not handle PII, HIPAA, GDPR, or other compliance concerns."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "The system uses keyword-based routing to select solvers (e.g., Prover9, PyKE, CSP, SAT) based on problem type, but this is not a multi-stage intent decomposition or ML-based classification."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based similarity for retrieval. It relies on rule-based parsing and logic inference instead."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no access control or permission-based filtering implemented in the system. It is open and does not enforce document-level or role-based access restrictions."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single logic-based retrieval mechanism (FOL parsing and solver dispatch) and does not combine multiple indexes or retrievers."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "The system uses rule-based routing to select solvers based on problem type, but this is not ML/LLM-based dynamic routing — it is a fixed set of logic-based rules."
+      }
+    },
+    "dks_total": 13,
+    "rss_total": 2,
+    "total": 15,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "AudioCraft",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "AudioCraft includes 68 YAML configuration files and 1700+ lines in conditioners.py defining domain-specific audio features (chroma, beat, melody, tempo, genre, instrument). These represent a curated list of domain terms used in audio generation modeling, exceeding 50 curated terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "AudioCraft uses flat metadata (genre, tempo, instrument) and computational relationships (e.g., T5 text encoder → cross-attention), but no explicit semantic graph or ontology encoding domain relationships like 'is-a' or 'causes'."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-ontology or cross-standard mappings (e.g., genre ↔ ICD-10, tempo ↔ BPM standards)."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "AudioCraft defines multiple data model classes (e.g., MusicGen, EnCodec, JASCO) with typed fields and relationships (e.g., text → melody → audio). These encode relational structure but lack SQL-level constraints or >15 entity types."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "68 YAML configuration files represent domain-specific model variants and training recipes, totaling between 10–50 profiles."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "AudioCraft includes limited domain rule patterns (e.g., chroma extraction, beat tracking, quantization in EnCodec), but these are fewer than 10 and not explicitly encoded as rule engines or validation logic."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "AudioCraft supports only English text conditioning via T5 and no explicit multilingual term mapping or code→natural language mapping."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are encoded in the system (e.g., no PII handling, HIPAA/GDPR rules)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model with no intent classification or query routing logic."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model, not a retrieval system. It uses neural feature extraction (e.g., T5 text encoder) for model inference, not for vector search."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "AudioCraft has no access control or permission-based filtering mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "AudioCraft uses a single generative model pipeline and no multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "AudioCraft has a fixed pipeline for audio generation with no rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 34,
+    "rss_total": 0,
+    "total": 34,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "EmotiVoice",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system includes a curated phoneme lexicon with 502 tokens and 84 ARPAbet symbols, as well as a Chinese numeral conversion system with extensive rules. These represent a curated domain-specific vocabulary of over 500 terms, fitting the 51–200 range for D1."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "There is no explicit semantic graph or ontology encoding domain relationships. The system is a pipeline for TTS with no semantic modeling of concepts or relationships."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings between classification systems or representation formats is found in the codebase or documentation."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system includes structured data models for phoneme tokens, speaker profiles, and emotion labels. The presence of 2,013 speaker profiles with typed attributes (emotion, pitch, etc.) and a G2P pipeline with pinyin and tone markers indicates a complex schema with relational structure."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "The system includes 2,013 speaker profiles with emotion/pitch/energy/speed labels, which qualifies as more than 50 distinct configuration profiles."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes rule-based numeral conversion (cn2an) and phoneme normalization logic, as well as SimBERT-based style encoding. These represent approximately 10–30 domain rule patterns for text normalization and emotion modeling."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system supports bilingual Chinese-English TTS with separate frontends and phoneme lexicons, indicating explicit support for two languages with parallel domain terms."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance requirements encoded in the system beyond a license file."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "There is no intent classification or routing logic in the system. The pipeline is fixed and does not adapt to query intent."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based retrieval. It is a generation pipeline, not a retrieval system."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no access control or permission-based filtering implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index or retriever (if any), and there is no evidence of multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline with no rule-based or ML/LLM-based dynamic routing logic."
+      }
+    },
+    "dks_total": 41,
+    "rss_total": 0,
+    "total": 41,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "GraphRAG",
+    "rater": "Data_Engineer",
+    "dks": {
+      "D1": {
+        "score": 15,
+        "justification": "The system has 7 data model classes (Entity, Relationship, Community, etc.) with 50+ typed field constants (e.g., id, title, type, description, rank, weight) that define domain entity attributes. These field constants count toward D1 per rubric clarification, and the total exceeds 200 curated terms."
+      },
+      "D2": {
+        "score": 15,
+        "justification": "GraphRAG constructs semantic knowledge graphs as its core purpose, with nodes representing domain concepts and edges representing relationships (e.g., entity extraction → community detection → hierarchical summarization). The system has a rich graph with ≥200 nodes and ≥0.5×nodes edges, encoding domain semantics."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no explicit evidence of cross-ontology or cross-standard mappings between different coding systems or representation formats for the same domain."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system has 7 data model classes (Entity, Relationship, Community, CommunityReport, Document, TextUnit, Covariate) with typed fields and relational structure (e.g., relationships between entities and communities). However, there are no SQL-level constraints or triggers, so it does not reach the 15-point threshold."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "The system has <10 domain-specific configuration profiles or templates, such as the 4 search modes (local, global, drift, basic) and entity extraction prompts with configurable entity types."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system has ~10–15 LLM-orchestrated procedural rule patterns, including iterative entity extraction loops, budget-based context truncation, community-level graph pruning, and claim extraction with status tracking."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system supports multi-language entity extraction via configurable {language} template parameters, indicating bilingual or multilingual support for domain terms."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no explicit encoding of legal, regulatory, or compliance requirements in code (e.g., HIPAA, GDPR, or financial reporting rules)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 3,
+        "justification": "The system uses multi-stage intent decomposition, including query routing, local search, global search, and response synthesis, indicating a sophisticated intent classification mechanism."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "The system uses vector search (LanceDB) with reranking and fusion (e.g., local and global search modes), indicating a vector search + reranking pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no evidence of permission-based filtering or document-level access control in the system."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "The system fuses multiple indices (e.g., vector index and graph index) for retrieval, indicating triple+ index/retriever fusion."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "The system uses ML/LLM-based dynamic routing for query processing, including adaptive routing between local and global search modes based on query intent and context."
+      }
+    },
+    "dks_total": 54,
+    "rss_total": 10,
+    "total": 64,
+    "persona_id": "Data_Engineer",
+    "persona_name": "Data Engineer"
+  },
+  {
+    "system": "MedRAG",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of medical terms is provided. Medical knowledge is embedded in pre-trained models (e.g., MedCPT) rather than explicitly declared in code."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No ontology or semantic graph is present. The system uses flat document collections without encoding domain relationships (e.g., is-a, part-of)."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-ontology mapping is implemented. The system does not map between medical classification systems (e.g., ICD-10, SNOMED)."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "No structured data schema is defined. The system relies on document-based retrieval without typed fields or relational modeling."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 4 corpus types with distinct chunking strategies, which can be considered as domain-specific configuration profiles, but fewer than 10 total."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No domain-specific rule patterns are encoded in the system. The pipeline is based on retrieval and LLM inference without explicit validation or constraint logic."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only and provides no explicit multi-language term mapping or code-to-natural-language translation."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system. The focus is on QA performance, not legal or ethical constraints."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is implemented. The system uses a fixed pipeline without decomposition or routing logic."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "The system uses RRF fusion across 4 retrievers (BM25, Contriever, SPECTER, MedCPT) with FAISS HNSW indexing, indicating a vector search + reranking pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "The system fuses 4 distinct retrievers (BM25, Contriever, SPECTER, MedCPT), indicating triple+ index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No adaptive routing is implemented. The pipeline is fixed and rule-based."
+      }
+    },
+    "dks_total": 3,
+    "rss_total": 5,
+    "total": 8,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "LLaVA",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated term list is present. Visual concepts are embedded in CLIP pre-trained weights, not explicitly declared in code."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No semantic graph or ontology is defined. The system is a vision-language model with no explicit domain concept relationships encoded."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-ontology mapping is implemented. The system does not map between different classification standards or representation formats."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "There are 13 conversation templates in `conversation.py`, but no structured data schema with typed fields or relational modeling is defined. The templates define behavioral variations but not data structures."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 13 conversation templates for different model variants, which count as domain profiles, but fewer than 10 is the threshold for this score."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No explicit domain business rules are encoded in the system. The pipeline is end-to-end neural generation with no rule-based validation or constraint logic."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is single-language (English) and does not provide explicit multi-language term mappings or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system. There is no PII handling or sector-specific regulation implementation beyond standard data practices."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is implemented. The system does not perform query routing or intent decomposition."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "No vector search is implemented. The system uses end-to-end neural generation and does not perform embedding-based retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented. The system has no role-based or document-level filtering mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "No multi-index fusion is implemented. The system uses a single modality (image + text) but no multiple indices or retrievers are used."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No adaptive routing is implemented. The pipeline is fixed and does not use rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 8,
+    "rss_total": 0,
+    "total": 8,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "CrewAI",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated list of domain-specific terms found in the codebase. The system is domain-agnostic and does not define a dedicated vocabulary file or enum."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No explicit semantic graph or ontology is constructed. The system uses agent-based memory and knowledge retrieval but does not encode domain concepts in a structured semantic graph with relationships."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-ontology mapping is implemented. The system does not map between different domain-specific coding standards or classification systems."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "Basic entity types (e.g., Agent, Task, Memory) are defined with typed fields, but no relational structure or SQL-level constraints are implemented. The schema complexity is minimal."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "A small number of agent configuration profiles exist (e.g., role-based agent definitions), but fewer than 10 distinct profiles are explicitly defined."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A few domain rule patterns exist (e.g., guardrail validation in utilities/guardrail.py), but fewer than 10 explicit business rules are encoded in the system."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "No multi-language term mapping is implemented. The system is English-only and does not provide parallel term definitions or code-to-natural-language mappings in multiple languages."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No explicit regulatory compliance encoding is found in the codebase. The system does not implement HIPAA, GDPR, or other domain-specific legal requirements in its logic or data handling."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "Keyword-based routing is used for agent task assignment, but no ML-based intent classification or multi-stage decomposition is implemented."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "Basic vector search is implemented via EmbedChain for document retrieval, but no reranking or metadata filtering is explicitly used in the retrieval pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system. All agents have equal access to memory and tools."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "Only a single vector search index is used via EmbedChain. No fusion of multiple indices or retrievers is implemented."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "Rule-based routing is used for agent task execution (e.g., sequential, hierarchical, consensual process types), but no ML/LLM-based dynamic routing is implemented."
+      }
+    },
+    "dks_total": 11,
+    "rss_total": 3,
+    "total": 14,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "LlamaIndex",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 5,
+        "justification": "A typical deployment uses ~5–10 prompt templates and basic entity types (e.g., person, organization) from DEFAULT_ENTITY_MAP, but no formal glossary or >50 curated domain terms in a dedicated list."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "PropertyGraphIndex is available but not used in typical deployments. A typical deployment uses VectorStoreIndex, which is not a semantic graph. Only in advanced use cases is a flat KG built via triplet extraction."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-ontology mapping is implemented in typical deployments. The system does not map between classification standards (e.g., ICD-10, SNOMED, XBRL)."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "A typical deployment uses VectorStoreIndex with basic schema (e.g., Document, Node) and <5 entity types. SQLStructStoreIndex is optional and not used in most cases."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "A typical deployment uses <10 prompt templates (e.g., query generation, summarization). The 50+ templates in the codebase are not all used in practice."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A typical deployment uses <10 rule patterns (e.g., PII masking, basic validation). PresidioPostprocessor is optional and not always enabled."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "No multi-language term mapping is implemented in typical deployments. The system does not encode domain terms in multiple languages or provide systematic code→natural language mappings."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "PresidioPostprocessor is available for PII masking, but most typical deployments do not use it. No sector-specific regulations (e.g., HIPAA, GDPR) are encoded in the system by default."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "RouterQueryEngine + LLMSingleSelector provides ML-based routing for query decomposition, but it is not a full multi-stage intent decomposition system."
+      },
+      "R2": {
+        "score": 2,
+        "justification": "VectorStoreIndex supports embedding-based retrieval with metadata filtering (e.g., document source, date). Reranking is optional and not part of the default pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No permission-based filtering is implemented in typical deployments. Access control is not a core feature of the framework."
+      },
+      "R4": {
+        "score": 1,
+        "justification": "A typical deployment uses a single index (e.g., VectorStoreIndex). Dual index fusion (e.g., vector + keyword) is possible but not common."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "RouterQueryEngine enables dynamic routing based on LLM decisions, allowing different retrievers to be used depending on query type."
+      }
+    },
+    "dks_total": 26,
+    "rss_total": 7,
+    "total": 33,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "BIRD-SQL",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit domain glossary or curated term list is present. Column names are treated as schema metadata, not as a curated domain lexicon."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The database schema (tables, columns, PK/FK) forms a flat taxonomy, but it is not a hierarchical or semantic graph with domain relationships encoded explicitly."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-ontology mapping is implemented. The system does not map between different domain standards or classification systems."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system includes 95 databases spanning 37 domains, with schema serialization and SQL normalization rules. This implies a relational structure with typed fields, but no SQL-level constraints or triggers are mentioned."
+      },
+      "D5": {
+        "score": 0,
+        "justification": "No domain-specific configuration profiles or templates are explicitly defined in the system description or source code evidence."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "Basic SQL normalization rules (lowercase, comma fixing, whitespace normalization) are implemented, but these are not complex domain business rules."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only and provides no evidence of multi-language term mapping or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system code or documentation."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "Keyword-based routing is implied in the pipeline stages (e.g., schema extraction, prompt engineering), but no explicit intent classification is implemented."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "No vector-based retrieval is used. The system uses string-based value matching (bridge_content_encoder) for schema matching, not embedding-based similarity search."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system."
+      },
+      "R4": {
+        "score": 1,
+        "justification": "The system uses dual pipelines (ICL and fine-tuning), suggesting some form of dual index/retriever fusion, but this is not explicitly described as such."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The pipeline is fixed and rule-based, with no evidence of ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 18,
+    "rss_total": 2,
+    "total": 20,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "Wheatley",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system has 16-28 explicitly defined features per node (e.g., TCT, is_affected, selectable, machine_id, MWKR) and 800+ lines of domain parameters in args.py, indicating a curated domain lexicon of ~50-200 terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a heterograph with 7 edge types (prec/rprec/rc/rp/rrp/pool/self), but these represent computational scheduling constraints, not semantic domain relationships, so it scores low on ontology richness."
+      },
+      "D3": {
+        "score": 5,
+        "justification": "The system performs format conversions (Taillard/SM/Patterson), but these are cross-format, not cross-ontology mappings. Only one standard is used at a time, so it scores 5 for a single standard."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system has multiple entity types (jobs, machines, operations) with typed features and relationships (e.g., precedence, resource constraints), indicating a structured schema with relational complexity."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "The system includes 5 reward models, 3 transition models, and 5 dispatching heuristics, totaling 13 domain-specific profiles, which falls in the 10–50 range."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system implements ~15–20 rule patterns for action masking, precedence enforcement, and resource capacity constraints, which aligns with the 10–30 rule pattern range."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English/Python only with no explicit multi-language term mapping or code-to-natural language mappings."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "The system includes feasibility constraints (e.g., precedence, resource limits) as operational rules, but these are not formal regulatory encodings like HIPAA or GDPR, so it scores low on compliance encoding."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "The system does not perform intent classification or query routing; it is a fixed pipeline for job-shop scheduling with no intent decomposition."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based retrieval; it uses GNN-based action selection for reinforcement learning, which is not retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement any access control or permission-based filtering mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (GNN-based action selection) and does not perform multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline with no rule-based or ML/LLM-based dynamic routing mechanisms."
+      }
+    },
+    "dks_total": 47,
+    "rss_total": 0,
+    "total": 47,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "FinSQL",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system encodes 1,170 financial terminology column names in its schema, which represents a curated list of domain-specific terms. This falls in the 51–200 range for curated terms, but since it's part of a data model with typed fields, it counts toward D1=10."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses 614 foreign key relationships across 31 tables in the ccks_stock database, but these are relational database constraints, not semantic relationships in a domain ontology. There is no explicit semantic graph or taxonomy defined in the system, so D2=5."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "The system does not implement any cross-ontology mappings between financial standards (e.g., XBRL, GAAP, IFRS). It uses a single schema for financial tables without mapping to other classification systems, so D3=0."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system defines 31 tables with 434 columns in the ccks_stock database, including 614 foreign key relationships. This represents a relational schema with multiple entity types and relationships, but no SQL-level constraints or triggers are explicitly mentioned, so D4=10."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "The system includes 3 augmentation profiles (COT/Synonymous/Skeleton) for data augmentation, which are domain-specific behavioral variations. This is fewer than 10 profiles, so D5=3."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "The system does not encode explicit domain business rules as regex patterns, rule engines, or validation logic. It relies on fuzzy matching via fuzzywuzzy and learned models, so D6=0."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system includes a bilingual CN/EN parallel corpus with 3,966 identical question pairs, indicating explicit support for domain terms in two languages. This is bilingual support, so D7=5."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "The system does not encode any legal, regulatory, or compliance requirements in code. There is no mention of financial reporting rules, data privacy, or audit requirements, so D8=0."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "The system uses a learned RoBERTa-large Cross-Encoder with BiLSTM and 8-head Cross-Attention for schema ranking, which suggests an ML-based classifier for query routing. However, it does not explicitly perform multi-stage intent decomposition, so R1=2."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "The system uses a learned Cross-Encoder for schema ranking, which is a form of vector-based similarity search. However, it does not use metadata filtering or reranking pipelines, so R2=1."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement any access control or permission-based filtering mechanisms, so R3=0."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (Cross-Encoder) for schema ranking and does not combine multiple indices or retrievers, so R4=0."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "The system uses a learned Cross-Encoder to dynamically select top-k tables/columns per query, which suggests ML-based dynamic routing. This is more sophisticated than rule-based routing, so R5=2."
+      }
+    },
+    "dks_total": 33,
+    "rss_total": 5,
+    "total": 38,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "SpeechBrain",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "SpeechBrain includes 43 datasets and 110+ YAML configs with explicit domain-specific terms related to speech processing (e.g., MFCC, Fbank, spectrogram, BPE, CTC). These are encoded in configuration files and code, indicating a curated domain lexicon of ~51–200 terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "SpeechBrain does not include an explicit semantic graph or ontology of speech concepts. While it processes speech-related entities (e.g., phonemes, speakers), these are not encoded as a semantic graph with domain relationships (e.g., is-a, part-of)."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "SpeechBrain does not include cross-ontology mappings between speech standards or classification systems. It uses BPE and G2P, but these are not mapped to external standards like IPA or phoneme sets from other languages."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "SpeechBrain has a complex schema with multiple entity types (e.g., datasets, models, tokenizers) and typed fields in YAML configs and Python code (e.g., MFCC parameters, beam search rules). These encode relational structure and domain-specific attributes."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "SpeechBrain includes 43 datasets × 110+ YAML configs, representing over 50 distinct configuration profiles for speech processing tasks (e.g., ASR, TTS, speaker verification). These encode domain-specific behavioral variations."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "SpeechBrain includes rule-based decoding patterns (e.g., beam search with coverage penalty, attention shift, CTC prefix scoring). These are implemented in code and represent ~10–30 domain rule patterns for speech generation and recognition."
+      },
+      "D7": {
+        "score": 10,
+        "justification": "SpeechBrain supports 107 languages via the VoxLingua107 dataset and includes BPE tokenization across languages. This represents a comprehensive code→natural language mapping across multiple languages."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "SpeechBrain does not include explicit encoding of regulatory or compliance requirements in code. It includes standard licensing but no domain-specific compliance logic (e.g., HIPAA, GDPR)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "SpeechBrain does not include intent classification or query routing. It is a speech processing toolkit, not a retrieval system."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "SpeechBrain does not include vector search or embedding-based retrieval. It is focused on speech processing, not information retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "SpeechBrain does not include permission-based filtering or access control. It is a general-purpose speech toolkit with no access control mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "SpeechBrain does not include multi-index fusion. It is a speech processing toolkit, not a retrieval system with multiple indexes."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "SpeechBrain does not include adaptive routing or dynamic routing based on ML/LLM. It is a speech processing toolkit with fixed pipelines."
+      }
+    },
+    "dks_total": 51,
+    "rss_total": 0,
+    "total": 51,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "Logic-LLM",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 5,
+        "justification": "The system includes ~30-40 logic-specific terms (e.g., universal/existential quantifiers, predicates, implications) embedded in the FOL grammar, but these are not curated in a dedicated glossary file or configuration constants — they are part of the grammar rules instead."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "The FOL grammar is a computational structure for parsing and inference, not a semantic ontology or knowledge graph. There are no nodes or edges representing domain concepts and relationships in a semantic graph."
+      },
+      "D3": {
+        "score": 5,
+        "justification": "The system performs cross-representation translation (NL → FOL → solver DSLs), which counts as a single cross-format mapping. However, it does not map between different domain standards (e.g., ICD-10 ↔ SNOMED)."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "There is no explicit structured data schema (SQL DDL, JSON Schema, dataclasses, etc.) for domain entities. The system is focused on logic parsing and inference, not data modeling."
+      },
+      "D5": {
+        "score": 0,
+        "justification": "The system does not include any domain-specific configuration profiles, templates, or presets for behavioral variations."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "The system includes a small number of rule-based logic patterns for solver dispatch and inference, but these are not extensive domain business rules (e.g., <10 rule patterns)."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is entirely in English and provides no support for domain terms in multiple languages or systematic code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "The system does not encode any legal, regulatory, or compliance requirements in code (beyond standard software licensing)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "The system uses keyword-based routing to select solvers based on problem type, but does not use ML or multi-stage intent decomposition."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector-based or embedding-based retrieval. It relies on rule-based parsing and logic inference instead."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement any access control or permission-based filtering mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (FOL parser) and does not perform multi-index fusion."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "The system uses rule-based routing to select solvers based on problem type, but does not use ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 13,
+    "rss_total": 2,
+    "total": 15,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "AudioCraft",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "AudioCraft includes 68 YAML configuration files and defines domain-specific terms in conditioners.py (e.g., chroma, beat, melody, tempo, genre) and metrics (e.g., FAD, IS, CLAP). These are curated and encoded in data models, suggesting a domain lexicon size of 51–200 terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "AudioCraft uses a flat taxonomy of conditioning types (e.g., text, melody, chroma) but does not encode a semantic graph or ontology with hierarchical relationships between domain concepts. These are computational features, not semantic relationships."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-ontology mapping is implemented. AudioCraft uses domain-specific features (e.g., chroma, tempo) but does not map between different classification systems or coding standards (e.g., MIDI ↔ MusicXML)."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "AudioCraft defines multiple entity types (e.g., MusicGen, AudioGen, EnCodec) with typed fields in YAML configurations and Python classes. These include metadata (genre, tempo, instrument) and conditioning parameters, suggesting a schema complexity of 6–15 entity types with relationships."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "AudioCraft includes 68 YAML configuration files for different model variants and training recipes, representing 10–50 domain-specific profiles for model behavior and training settings."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "AudioCraft includes a small number of domain rule patterns (e.g., conditioning logic, quantization in EnCodec), but these are limited and not systematically encoded as explicit business rules or validation logic."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "AudioCraft supports only English text conditioning via T5 and does not include explicit multi-language term mappings or code-to-natural-language mappings for domain terms."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "AudioCraft does not encode any legal, regulatory, or compliance requirements in code. It lacks PII handling, HIPAA/GDPR compliance, or any domain-specific audit requirements."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "AudioCraft is a generative model and does not perform intent classification or query routing. It is not a retrieval system."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "AudioCraft does not perform vector search or embedding-based retrieval. It uses neural feature extraction for model inference, not for retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "AudioCraft does not implement access control or permission-based filtering. It is not a retrieval system with access restrictions."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "AudioCraft does not use multiple indexes or retrievers. It is a generative model, not a retrieval system."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "AudioCraft does not implement adaptive routing. It is a fixed pipeline for audio generation, not a dynamic routing system."
+      }
+    },
+    "dks_total": 34,
+    "rss_total": 0,
+    "total": 34,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "EmotiVoice",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system includes 502 phoneme tokens in the lexicon and 84 ARPAbet symbols, along with 206K Chinese pronunciation entries. These are curated and represent domain-specific linguistic knowledge, contributing to a mid-range score for domain lexicon size."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a flat taxonomy of phonemes and ARPAbet symbols but does not construct a semantic graph or ontology with hierarchical relationships. The G2P pipeline is computational, not semantic, so D2 is low."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of cross-ontology mapping between classification systems or coding standards. The system uses internal phoneme representations but does not map between external standards like IPA or other TTS conventions."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system has multiple structured data components, including 206K Chinese pronunciation entries, 7 emotion categories, and 2,013 speaker profiles with typed attributes (emotion, pitch, energy, speed). These represent a moderate level of schema complexity."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "The system includes 2,013 speaker profiles with emotion/pitch/energy/speed labels, which constitute a large number of domain-specific configuration profiles, meeting the threshold for D5=10."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes rule-based numeral conversion (cn2an) and G2P processing with tone markers, which are domain-specific rules. However, the number of explicit rule patterns is limited to a few dozen, not exceeding 30."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system supports bilingual Chinese-English TTS with separate frontends and phoneme lexicons, indicating explicit support for two languages, but no further multilingual mappings are present."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance encoding in the system. The system does not handle PII, nor does it encode any legal or compliance requirements in code."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "The system does not perform intent classification or query routing. It is a fixed-pipeline TTS system with no dynamic intent decomposition or routing logic."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based retrieval. It relies on rule-based text normalization and phoneme generation, not retrieval from an embedding space."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement any form of access control or permission-based filtering. It is open and does not restrict access to data or functionality."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (if any), and there is no evidence of multi-index fusion or multiple retrievers being used in the pipeline."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline with no rule-based or ML/LLM-based dynamic routing. All processing is deterministic and follows a predefined sequence."
+      }
+    },
+    "dks_total": 46,
+    "rss_total": 0,
+    "total": 46,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "GraphRAG",
+    "rater": "Domain_Specialist",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "7 data model classes (Entity, Relationship, Community, etc.) contain ~50+ typed field constants (e.g., id, title, type, rank) that define domain entity attributes. These count toward D1 per rubric clarification, but not enough for 15."
+      },
+      "D2": {
+        "score": 15,
+        "justification": "KG construction is the core purpose of the system. LLM-based entity/relationship extraction and hierarchical Leiden community detection produce a rich semantic graph with ≥200 nodes and ≥0.5×nodes edges."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No explicit cross-ontology mappings between different coding standards or classification systems are implemented."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "7 data model classes with typed fields and relational structure (e.g., Entity, Relationship, Community) are defined. No SQL-level constraints or triggers are present."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "Entity extraction supports configurable entity types, but no more than 10 distinct configuration profiles or templates are explicitly defined."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "LLM-orchestrated procedural rules (e.g., iterative extraction loops, budget-based truncation, graph pruning) count as code-level rules. ~10–15 rule patterns are implemented."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "Configurable {language} template parameter in entity extraction prompts supports bilingual (e.g., EN/CN) term extraction, but no trilingual or comprehensive code→natural language mapping is present."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the system."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "Query routing includes local, global, drift, and basic search modes, suggesting intent classification, but no explicit multi-stage intent decomposition is implemented."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "Vector search (LanceDB) is used alongside reranking and fusion with graph-based retrieval, indicating a vector search + reranking pipeline."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "Multiple indices are used (LanceDB for vector, NetworkX/Neo4j for graph), and retrieval fusion is performed, indicating triple+ index fusion."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "Routing is based on query type (local, global, etc.), suggesting rule-based routing, but no ML/LLM-based dynamic routing is implemented."
+      }
+    },
+    "dks_total": 49,
+    "rss_total": 8,
+    "total": 57,
+    "persona_id": "Domain_Specialist",
+    "persona_name": "Cross-Domain Specialist"
+  },
+  {
+    "system": "MedRAG",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit glossary file or curated list of domain-specific terms is present. Medical knowledge is embedded in pre-trained models (e.g., MedCPT) rather than explicitly declared in code."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No ontology or semantic graph is present. The system uses flat document collections (e.g., PubMed, StatPearls) without encoding domain relationships between concepts."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-standard mappings are present. The system does not map between different medical coding standards or classification systems."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "No structured data schema is present. The system uses document-based retrieval only and does not define domain entities with typed attributes in dataclasses or schemas."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 4 corpus types with distinct chunking strategies, which can be considered as domain-specific configuration profiles. This is fewer than 10, so the score is 3."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No domain-specific rule patterns are explicitly encoded in the system. The pipeline is based on retrieval and LLM inference without rule-based validation or constraint checks."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only and does not provide any explicit support for domain terms in multiple natural languages or systematic code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the codebase. The system does not implement HIPAA, GDPR, or other legal standards in its logic."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is implemented. The system does not perform query routing or decomposition based on intent."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "The system uses a vector search + reranking pipeline with RRF fusion across 4 retrievers (BM25, Contriever, SPECTER, MedCPT) and FAISS HNSW indexing."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented. The system does not enforce role-based or document-level access restrictions."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "The system fuses results from 4 retrievers (BM25, Contriever, SPECTER, MedCPT), which qualifies as triple+ index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No adaptive routing is implemented. The pipeline is fixed and does not use rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 3,
+    "rss_total": 5,
+    "total": 8,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "LLaVA",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit glossary file or curated list of domain-specific terms found in the codebase. Visual concepts are embedded in CLIP pre-trained weights, not explicitly declared."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No explicit semantic graph or ontology is defined in the codebase. The system uses CLIP for image encoding, but this is not a semantic graph of domain concepts."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No cross-ontology or cross-standard mappings are defined in the codebase. The system does not map between different classification systems or coding standards."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "No structured data schema is defined in the codebase. There are no SQL DDL, JSON Schema, or dataclass definitions for domain entities with typed attributes."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are 13 conversation templates in conversation.py, which encode different behavioral variations for model interaction, but these are not domain-specific profiles in the sense of D5."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No explicit domain business rules are encoded in the codebase. The system does not include rule engines, validation logic, or constraint checks for domain semantics."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system supports only English and does not include explicit mappings for domain terms in multiple natural languages or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the codebase. The system does not include logic for HIPAA, GDPR, or other legal standards."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification is implemented in the codebase. The system does not include keyword-based routing or ML-based intent classification."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "No vector search is implemented in the codebase. The system uses CLIP for image encoding, but this is for model inference, not for retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the codebase. The system does not include role-based or document-level filtering."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "No multi-index fusion is implemented in the codebase. The system uses a single index/retriever (CLIP) for image encoding."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "No adaptive routing is implemented in the codebase. The system uses a fixed pipeline for image encoding and LLM generation."
+      }
+    },
+    "dks_total": 3,
+    "rss_total": 0,
+    "total": 3,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "CrewAI",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit glossary file or curated list of domain-specific terms found in the codebase. The system is domain-agnostic and does not define a fixed set of domain terms."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "No explicit semantic graph or ontology is constructed in the codebase. The system does not encode domain concepts and relationships in a graph structure."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-ontology or cross-standard mappings is found in the codebase. The system does not map between different domain classification systems."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "The system defines a few entity types (e.g., Agent, Task) with typed fields, but no SQL schema or complex relational structure is implemented. The data model is minimal and does not exceed 5 entity types."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "There are fewer than 10 configuration profiles or templates for agent definitions and task planning, indicating limited domain-specific behavioral variations."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A small number of domain rule patterns are implemented, such as validation logic in the guardrail system and task execution constraints, but not more than 10."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "No evidence of multi-language term support or systematic code-to-natural-language mappings is found in the codebase. The system is single-language (English)."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No explicit encoding of legal or regulatory requirements is found in the codebase. The system does not implement compliance rules beyond general data handling."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "Keyword-based routing is used for task assignment and agent selection, but no ML-based intent classification is implemented."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "The system uses flat vector search via EmbedChain for document retrieval, but no reranking or metadata filtering is explicitly implemented."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the codebase. The system does not enforce document-level or role-based access restrictions."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever for knowledge retrieval and does not implement fusion across multiple indices or retrievers."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "Rule-based routing is used for agent execution and task planning, but no ML/LLM-based dynamic routing is implemented."
+      }
+    },
+    "dks_total": 11,
+    "rss_total": 3,
+    "total": 14,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "LlamaIndex",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 5,
+        "justification": "A typical deployment uses VectorStoreIndex with embedding integrations, but no explicit glossary file or curated list of domain terms is used. The DEFAULT_ENTITY_MAP in EntityExtractor contains 9 entity types, but this is not part of a typical deployment."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "PropertyGraphIndex is available for entity-relation graph construction, but it is not part of a typical deployment. A typical deployment does not use this semantic graph functionality."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-ontology mapping in a typical deployment. There are no explicit mappings between different coding standards or classification systems."
+      },
+      "D4": {
+        "score": 5,
+        "justification": "A typical deployment uses VectorStoreIndex with embedding integrations, but does not use SQLStructStoreIndex or complex data models. The schema complexity is minimal in a typical deployment."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "A typical deployment uses 3-5 prompt templates, which are domain-specific configuration profiles. This is fewer than 10, so the score is 3."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A typical deployment may use a few rule patterns for query routing (e.g., RouterQueryEngine), but not more than 10 domain rule patterns."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "A typical deployment does not include multi-language term mapping. There is no evidence of domain terms in multiple natural languages or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "PresidioPostprocessor is available for PII detection/masking, which is basic PII handling. This is part of the framework but not typically activated in a standard deployment."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "A typical deployment uses RouterQueryEngine with LLMSingleSelector for dynamic query routing, which is ML-based routing."
+      },
+      "R2": {
+        "score": 2,
+        "justification": "A typical deployment uses VectorStoreIndex with embedding integrations, which is filtered vector search with metadata."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "A typical deployment does not include permission-based filtering or document-level access control."
+      },
+      "R4": {
+        "score": 1,
+        "justification": "A typical deployment may use dual index/retriever fusion (e.g., VectorStoreIndex + SQLStructStoreIndex), but this is not standard."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "A typical deployment uses ML/LLM-based dynamic routing via RouterQueryEngine and LLMSingleSelector."
+      }
+    },
+    "dks_total": 26,
+    "rss_total": 7,
+    "total": 33,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "BIRD-SQL",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 0,
+        "justification": "No explicit glossary file or curated list of domain-specific terms is present. Column names are schema metadata and not part of a curated glossary."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The database schema (tables, columns, PK/FK) serves as a flat taxonomy, but no hierarchical or semantic graph is explicitly encoded in the codebase."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings between different coding systems or classification formats is found in the codebase."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system includes 95 databases spanning 37 domains, with schema serialization and typed fields in data models, but no SQL-level constraints or triggers are explicitly encoded."
+      },
+      "D5": {
+        "score": 0,
+        "justification": "No distinct configuration profiles or templates for domain-specific variations are explicitly defined in the codebase."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "A few SQL normalization rules (lowercase, comma fixing, whitespace normalization) are implemented, but these are general programming patterns, not domain-specific business rules."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English-only, with no evidence of multilingual term support or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No legal, regulatory, or compliance requirements are explicitly encoded in the codebase beyond standard data handling practices."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No intent classification mechanism is explicitly implemented in the codebase."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "No explicit embedding-based vector search is used. The bridge_content_encoder is used for string-based value matching, not for vector similarity search."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "Only a single index/retriever is used (schema-based value sampling), with no evidence of multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The pipeline is fixed (ICL and fine-tuning), with no evidence of rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 18,
+    "rss_total": 0,
+    "total": 18,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "Wheatley",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "args.py contains 800+ lines of domain parameters, including 16-28 explicitly defined features per node (e.g., TCT, is_affected, selectable, machine_id, MWKR) and 7 edge types (prec/rprec/rc/rp/rrp/pool/self). These are curated domain-specific terms, likely exceeding 50 terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses a heterograph with 7 edge types, but these represent computational scheduling constraints, not semantic domain relationships. Therefore, it qualifies for the lowest ontology score."
+      },
+      "D3": {
+        "score": 5,
+        "justification": "The system supports Taillard/SM/Patterson format conversions, which are cross-format mappings, but these are not cross-ontology mappings between classification systems."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system has a clear data model with node features and edge types, and the pipeline includes structured representations (e.g., state, feature extraction, graph construction). This suggests 6–15 entity types with relationships, but no SQL-level constraints or >100 typed fields."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "The system includes 5 reward models, 3 transition models, and 5 dispatching heuristics, totaling 13 distinct configuration profiles."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes ~15–20 rule patterns for action masking, precedence enforcement, and resource capacity constraints, which qualify as domain business rules."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system is English/Python only, with no evidence of multi-language term mapping or code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 5,
+        "justification": "The system includes feasibility constraints as operational rules (e.g., precedence enforcement, resource capacity), which are basic forms of regulatory encoding, but no explicit legal or compliance rules are encoded."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "No evidence of intent classification or query routing is present in the system."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system uses GNN-based action selection, not vector search for retrieval. There is no explicit embedding-based similarity search."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or permission-based filtering is implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (GNN-based action selection), with no evidence of multi-index fusion."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system has a fixed pipeline with no evidence of rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 47,
+    "rss_total": 0,
+    "total": 47,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "FinSQL",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system has 1,170 column names in financial tables encoding domain-specific terminology (e.g., mainoperincome, grossprofit). These are explicitly declared in the schema and count as curated domain terms."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses 614 foreign key relationships across 31 tables in the ccks_stock database, but these are computational relationships for schema modeling, not semantic domain relationships in an ontology."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of explicit mappings between different financial coding standards or classification systems in the codebase."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system defines 31 tables with 434 columns and 614 foreign key relationships, indicating a relational schema with typed fields and relationships, but no SQL-level constraints or triggers are mentioned."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "The system has 3 augmentation profiles (COT/Synonymous/Skeleton) that encode domain-specific variations in data augmentation, but fewer than 10 total profiles."
+      },
+      "D6": {
+        "score": 0,
+        "justification": "No explicit domain rule patterns (e.g., regex, validation logic, constraint checks) are mentioned in the codebase. Fuzzy matching is used, but it is not explicitly encoded as domain rules."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system has a bilingual CN/EN parallel corpus with 3,966 identical question pairs, indicating explicit support for domain terms in two languages."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance requirements encoded in the codebase (e.g., no PII handling, financial reporting rules, or audit requirements)."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "The system uses a learned Cross-Encoder (RoBERTa-large + BiLSTM + 8-head Cross-Attention) to dynamically select top-k tables/columns per query, indicating an ML-based classifier for schema ranking."
+      },
+      "R2": {
+        "score": 1,
+        "justification": "The system uses a learned Cross-Encoder for schema ranking, which is a form of embedding-based similarity search, but there is no evidence of reranking or metadata filtering."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no evidence of access control or permission-based filtering in the codebase."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (Cross-Encoder) for schema ranking, with no evidence of multi-index fusion."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "The system uses an ML-based Cross-Encoder to dynamically select top-k tables/columns per query, indicating dynamic routing based on model inference."
+      }
+    },
+    "dks_total": 33,
+    "rss_total": 5,
+    "total": 38,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "SpeechBrain",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "SpeechBrain includes BPE tokenizers with 1000/5000 vocab and G2P conversion, indicating a curated list of domain-specific terms. The 43 datasets × 110+ YAML configs also suggest a substantial number of curated terms (likely >50)."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "SpeechBrain has a flat taxonomy of speech processing components (e.g., MFCC, Fbank, spectrogram), but no explicit semantic graph or ontology encoding domain relationships between concepts."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard mappings between different speech coding systems or classification formats is found in the codebase."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "SpeechBrain has multiple entity types (e.g., datasets, models, tokenizers) with typed fields and relationships. The 43 datasets × 110+ YAML configs and HyperPyYAML configs suggest a complex schema with typed fields and constraints."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "SpeechBrain has 43 datasets × 110+ YAML configs, indicating over 50 distinct configuration profiles for different speech tasks and models."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "SpeechBrain includes beam search rules (e.g., beam=80, coverage penalty, attention shift) and CTC prefix scoring, indicating 10–30 domain rule patterns for speech decoding and processing."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "SpeechBrain supports 107 languages via the VoxLingua107 dataset, indicating bilingual or multilingual term support for speech processing."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No evidence of regulatory or compliance encoding (e.g., HIPAA, GDPR) is found in the codebase beyond standard licensing."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "SpeechBrain is a speech processing toolkit and does not include intent classification or query routing mechanisms."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "SpeechBrain does not include vector search or embedding-based retrieval for information retrieval; it is focused on speech processing, not document retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "SpeechBrain does not include permission-based filtering or access control mechanisms."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "SpeechBrain does not include multi-index fusion or multiple retrievers for information retrieval."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "SpeechBrain does not include adaptive routing or dynamic routing mechanisms for information retrieval."
+      }
+    },
+    "dks_total": 46,
+    "rss_total": 0,
+    "total": 46,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "Logic-LLM",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 5,
+        "justification": "There are ~30-40 logic-specific terms (e.g., universal/existential quantifiers, predicates, implications) embedded in the FOL grammar rules, but they are not curated in a glossary file or structured list. These terms are part of the grammar logic, not a formal glossary."
+      },
+      "D2": {
+        "score": 0,
+        "justification": "The FOL grammar is a computational structure used for parsing and generating logic programs, not a semantic graph or ontology. There is no explicit semantic graph with domain concepts and relationships."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of cross-standard or cross-format mappings between different logic systems or representation formats in the codebase."
+      },
+      "D4": {
+        "score": 0,
+        "justification": "There is no structured data schema (e.g., SQL DDL, JSON Schema, dataclasses, or Pydantic models) defining domain entities with typed attributes. The system is logic-based and does not use structured data modeling."
+      },
+      "D5": {
+        "score": 0,
+        "justification": "There are no distinct configuration profiles, templates, or parameter presets that encode domain-specific behavioral variations in the codebase."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "There are a few rule patterns for solver dispatch and logic program generation, but fewer than 10 domain rule patterns are explicitly encoded in the system."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "There is no support for domain terms in multiple natural languages or systematic code-to-natural-language mappings in the codebase."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no explicit encoding of legal, regulatory, or compliance requirements in the codebase beyond the license file."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 1,
+        "justification": "The system uses keyword-based routing to select solvers (e.g., Prover9, PyKE, CSP, SAT) based on problem type, but it is not a multi-stage intent decomposition."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "There is no vector search or embedding-based retrieval used in the system. The retrieval is based on logic parsing and rule-based routing."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no access control or permission-based filtering implemented in the system."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index/retriever (logic parser) and does not perform fusion across multiple indices or retrievers."
+      },
+      "R5": {
+        "score": 1,
+        "justification": "The system uses rule-based routing to select solvers based on problem type, but it does not use ML or LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 8,
+    "rss_total": 2,
+    "total": 10,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "AudioCraft",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system includes domain-specific terms related to audio/music generation (e.g., chroma, beat, tempo, genre, instrument) in metadata and conditioning mechanisms. These are encoded in data models and configuration files, suggesting a curated list of domain terms (51–200)."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "The system uses computational graphs (e.g., cross-attention in T5-based text-to-music conditioning), but these are not semantic graphs encoding domain relationships. No explicit semantic graph or ontology is present."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No evidence of cross-standard or cross-format mappings between different coding or classification systems for the audio/music domain is found in the codebase."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system defines multiple entity types (e.g., MusicGen, AudioGen, EnCodec) with typed fields and relationships (e.g., conditioning mechanisms, dataset metadata). These are implemented using YAML configurations and Python classes with typed fields, suggesting a complex schema."
+      },
+      "D5": {
+        "score": 6,
+        "justification": "There are 68 YAML configuration files for different model variants and training recipes, indicating a moderate number of domain-specific configuration profiles (10–50)."
+      },
+      "D6": {
+        "score": 3,
+        "justification": "The system includes a small number of domain-specific rules (e.g., chroma extraction, beat tracking), but no extensive rule patterns or rule engines are explicitly implemented."
+      },
+      "D7": {
+        "score": 0,
+        "justification": "The system supports only English text conditioning and does not provide explicit support for domain terms in multiple natural languages or systematic code-to-natural-language mappings."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No regulatory or compliance requirements are explicitly encoded in the codebase. The system does not implement legal or compliance-related logic beyond standard data handling."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "The system is a generative model and does not perform intent classification or query routing. No intent classification logic is present."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system is a generative model and does not perform vector search or embedding-based retrieval. Neural feature extraction is used for model inference, not retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "The system does not implement access control or permission-based filtering. No role-based or document-level filtering is present."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single generative model and does not perform multi-index or multi-retriever fusion. No evidence of dual or triple index fusion is found."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system uses a fixed pipeline for audio generation and does not implement rule-based or ML/LLM-based dynamic routing. No adaptive routing logic is present."
+      }
+    },
+    "dks_total": 34,
+    "rss_total": 0,
+    "total": 34,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "EmotiVoice",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "The system has 502 phoneme tokens in the lexicon and 84 ARPAbet symbols in cmudict.py, totaling over 50 curated domain-specific terms related to speech synthesis and phonetics."
+      },
+      "D2": {
+        "score": 5,
+        "justification": "There is no explicit semantic graph or ontology encoding domain relationships. The system uses a flat taxonomy for phoneme and emotion categories but no hierarchical or semantic graph structure."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "There is no evidence of cross-standard or cross-format mappings between different classification systems or coding standards."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "The system has multiple entity types (e.g., speaker profiles, phoneme tokens, emotion categories) with typed fields and relationships (e.g., emotion/pitch/energy/speed labels). The G2P pipeline and numeral conversion system suggest a structured data model."
+      },
+      "D5": {
+        "score": 10,
+        "justification": "The system has 2,013 speaker profiles with emotion/pitch/energy/speed labels, which qualifies as more than 50 distinct configuration profiles."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "The system includes rule-based numeral conversion (cn2an/conf.py) and phoneme encoding logic, suggesting 10–30 domain rule patterns for text normalization and pronunciation."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "The system supports bilingual Chinese-English TTS with separate frontends and phoneme lexicons, indicating a bilingual mapping of domain terms."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "There is no evidence of regulatory or compliance requirements encoded in the system."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 0,
+        "justification": "There is no explicit intent classification or routing mechanism in the system."
+      },
+      "R2": {
+        "score": 0,
+        "justification": "The system does not use vector search or embedding-based retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "There is no access control or permission-based filtering implemented."
+      },
+      "R4": {
+        "score": 0,
+        "justification": "The system uses a single index or retriever (e.g., phoneme lexicon) and no fusion of multiple indices."
+      },
+      "R5": {
+        "score": 0,
+        "justification": "The system uses a fixed pipeline with no rule-based or ML/LLM-based dynamic routing."
+      }
+    },
+    "dks_total": 46,
+    "rss_total": 0,
+    "total": 46,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  },
+  {
+    "system": "GraphRAG",
+    "rater": "Junior_Developer",
+    "dks": {
+      "D1": {
+        "score": 10,
+        "justification": "7 data model classes (Entity, Relationship, Community, etc.) have 50+ typed field constants (id, title, type, description, rank, weight, etc.) that define domain entity attributes. These field constants count toward D1 per rubric clarification."
+      },
+      "D2": {
+        "score": 15,
+        "justification": "KG construction is the core purpose of the system. LLM-based entity/relationship extraction and hierarchical Leiden community detection create a rich graph with ≥200 nodes and ≥0.5×nodes edges, encoding domain semantics."
+      },
+      "D3": {
+        "score": 0,
+        "justification": "No explicit mappings between different coding standards, classification systems, or representation formats for the same domain are present."
+      },
+      "D4": {
+        "score": 10,
+        "justification": "7 data model classes (Entity, Relationship, Community, CommunityReport, Document, TextUnit, Covariate) with typed fields encode relational structure, but no SQL-level constraints or >100 typed fields are present."
+      },
+      "D5": {
+        "score": 3,
+        "justification": "Fewer than 10 configuration profiles or templates are used for domain-specific variations (e.g., entity types in prompts)."
+      },
+      "D6": {
+        "score": 6,
+        "justification": "LLM-orchestrated procedural rules (gleaning loops, budget-based truncation, graph pruning, claim extraction) count as code-level rules. ~10-15 rule patterns are present."
+      },
+      "D7": {
+        "score": 5,
+        "justification": "Configurable {language} template parameter for multi-language entity extraction prompts provides bilingual support."
+      },
+      "D8": {
+        "score": 0,
+        "justification": "No explicit encoding of legal, regulatory, or compliance requirements in code is present."
+      }
+    },
+    "rss": {
+      "R1": {
+        "score": 2,
+        "justification": "ML classifier for query routing is used, as the system routes queries to different search modes (local, global, drift, basic)."
+      },
+      "R2": {
+        "score": 3,
+        "justification": "Vector search + reranking pipeline is used, as the system integrates vector search (LanceDB) and reranking for retrieval."
+      },
+      "R3": {
+        "score": 0,
+        "justification": "No access control or role-based filtering is implemented."
+      },
+      "R4": {
+        "score": 2,
+        "justification": "Triple+ index/retriever fusion is used, as the system integrates vector search, graph search, and hierarchical summarization."
+      },
+      "R5": {
+        "score": 2,
+        "justification": "ML/LLM-based dynamic routing is used, as the system dynamically routes queries to different search modes based on content and intent."
+      }
+    },
+    "dks_total": 49,
+    "rss_total": 9,
+    "total": 58,
+    "persona_id": "Junior_Developer",
+    "persona_name": "Junior Developer"
+  }
+]

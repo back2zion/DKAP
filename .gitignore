@@ -1,0 +1,59 @@
+# Secrets / API keys
+.env
+.env.*
+!.env.example
+
+# Large zip files
+*.zip
+
+# Virtual environments
+.venv/
+__pycache__/
+*.pyc
+
+# External system clones (large, reproducible via git clone)
+external-systems/
+external_systems/
+tools/cloned_repos/
+
+# Temporary clones at root
+DAMO-ConvAI/
+FinSQL/
+
+# Confidential project
+internal-confidential/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+texput.log
+
+# LaTeX font/map files (IEEE Access template)
+paper/t1-*.pfb
+paper/t1-*.tfm
+paper/t1-*.t
+paper/t1*.fd
+paper/t1*.map
+
+# Personal documents
+paper/20260324_*.pdf
+
+# Node (figure conversion toolchain)
+node_modules/
+tools/node_modules/
+
+# OS files
+.DS_Store
+# Third-party paper PDFs: kept locally only — repo goes public at publication (Data Availability)
+paper/references/pdfs/
+experiments/results/ablation_openrouter/generations.jsonl
+
+# Large RL checkpoints (not distributed)
+*.pkl

@@ -1,0 +1,1125 @@
+[
+  {
+    "run": 1,
+    "id": "Q01",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'",
+    "latency_ms": 21848,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(10,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q02",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 고객명 FROM ods_card_member WHERE 기준년월 = '202501'   AND VIP등급코드 = '01'",
+    "latency_ms": 5727,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('김철수',)",
+      "('송중기',)",
+      "('정민호',)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q03",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) AS 전체거래건수 FROM ods_card_transaction WHERE 기준년월 = '202501'",
+    "latency_ms": 4347,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(15,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q04",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 신용등급 <= 3",
+    "latency_ms": 5197,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(6,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q05",
+    "difficulty": "E",
+    "generated_sql": "SELECT * FROM ods_card_transaction WHERE 기준년월 = '202501' ORDER BY 이용금액 DESC LIMIT 1",
+    "latency_ms": 5981,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(8, '202501', 'M005', 'A011', '하나투어', '여행', 4200000, '20250115', 6)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q06",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 발급회원번호 FROM ods_card_credit WHERE 기준년월 = '202501'   AND 연체일수 > 0",
+    "latency_ms": 5516,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M004',)",
+      "('M007',)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q07",
+    "difficulty": "E",
+    "generated_sql": "SELECT SUM(가입건수) FROM ods_fin_product WHERE 상품유형 = '카드'",
+    "latency_ms": 3240,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(60200,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q08",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 남녀구분코드 = 'F'",
+    "latency_ms": 5182,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(5,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q09",
+    "difficulty": "E",
+    "generated_sql": "SELECT 청구금액 FROM ods_card_billing WHERE 기준년월 = '202501'   AND 납부상태코드 = '02'",
+    "latency_ms": 5200,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(25500,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q10",
+    "difficulty": "E",
+    "generated_sql": "SELECT 상품명, 기준금리 FROM ods_fin_product WHERE 기준금리 > 0",
+    "latency_ms": 3188,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('스마트 신용대출', 4.5)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q11",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 연령대코드 = '30'",
+    "latency_ms": 5160,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(3,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q12",
+    "difficulty": "E",
+    "generated_sql": "SELECT     COUNT(*) AS 거래건수,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501'     AND 할부개월수 > 0",
+    "latency_ms": 9154,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(6, 11370000)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q13",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 발급회원번호 FROM ods_card_credit WHERE 기준년월 = '202501'   AND 한도소진율 >= 0.5",
+    "latency_ms": 6068,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M003',)",
+      "('M008',)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q14",
+    "difficulty": "M",
+    "generated_sql": "SELECT     발급회원번호,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501' GROUP BY     발급회원번호 ORDER BY     총이용금액 DESC",
+    "latency_ms": 8069,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M001', 1895500)",
+      "('M002', 45000)",
+      "('M003', 2535000)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q15",
+    "difficulty": "M",
+    "generated_sql": "SELECT SUM(t.이용금액) FROM ods_card_transaction t JOIN ods_card_member m ON t.발급회원번호 = m.발급회원번호 WHERE m.VIP등급코드 = '01'   AND t.기준년월 = '202501'",
+    "latency_ms": 8815,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(14101000,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q16",
+    "difficulty": "M",
+    "generated_sql": "SELECT     업종코드,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501' GROUP BY     업종코드",
+    "latency_ms": 8976,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('구독', 17000)",
+      "('도서', 52000)",
+      "('백화점', 2450000)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q17",
+    "difficulty": "M",
+    "generated_sql": "SELECT     c.카드이용한도금액 FROM     ods_card_member m JOIN     ods_card_credit c ON m.발급회원번호 = c.발급회원번호 WHERE     m.신용등급 = 1     AND m.기준년월 = '202501'     AND c.기준년월 = '202501'",
+    "latency_ms": 12948,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(70000000,)",
+      "(80000000,)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q18",
+    "difficulty": "M",
+    "generated_sql": "SELECT DISTINCT t1.발급회원번호 FROM ods_card_transaction t1 JOIN ods_card_transaction t2 ON t1.발급회원번호 = t2.발급회원번호 WHERE t1.기준년월 = '202501'   AND t2.기준년월 = '202502'",
+    "latency_ms": 12309,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M001',)",
+      "('M002',)",
+      "('M003',)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q19",
+    "difficulty": "M",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  },
+  {
+    "run": 1,
+    "id": "Q20",
+    "difficulty": "M",
+    "generated_sql": "SELECT 업종코드 FROM ods_card_transaction WHERE 기준년월 = '202501' GROUP BY 업종코드 HAVING AVG(이용금액) >= 100000",
+    "latency_ms": 11874,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('백화점',)",
+      "('숙박',)",
+      "('여행',)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q21",
+    "difficulty": "M",
+    "generated_sql": "SELECT DISTINCT     m.고객명,     m.신용등급 FROM ods_card_member m JOIN ods_card_credit c ON m.발급회원번호 = c.발급회원번호 WHERE c.기준년월 = '202501'     AND c.연체잔액 > 0",
+    "latency_ms": 18461,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('강동원', 5)",
+      "('최수연', 6)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q22",
+    "difficulty": "M",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  },
+  {
+    "run": 1,
+    "id": "Q33",
+    "difficulty": "H",
+    "generated_sql": "SELECT      t.업종코드,     SUM(t.이용금액) AS 업종금액,     CAST(SUM(t.이용금액) AS REAL) / SUM(SUM(t.이용금액)) OVER() AS 비중 FROM      ods_card_member m JOIN      ods_card_transaction t ON m.발급회원번호 = t.발급회원번호 WHERE      m.기준년월 = '202501'     AND m.VIP등급코드 = 'VVIP'     AND t.기준년월 = '202501' GROUP BY      t.업종코드 ORDER BY      비중 DESC",
+    "latency_ms": 30072,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": []
+  },
+  {
+    "run": 1,
+    "id": "Q34",
+    "difficulty": "H",
+    "generated_sql": "SELECT      c.한도소진율,     c.연체일수 FROM      ods_card_credit c WHERE      c.기준년월 = '202501'",
+    "latency_ms": 8157,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(0.2143, 0)",
+      "(0.22, 0)",
+      "(0.25, 0)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q35",
+    "difficulty": "H",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  },
+  {
+    "run": 1,
+    "id": "Q36",
+    "difficulty": "H",
+    "generated_sql": "SELECT     m.신용등급,     AVG(c.한도소진율) AS 평균_한도소진율 FROM     ods_card_member m JOIN     ods_card_credit c ON m.발급회원번호 = c.발급회원번호 AND m.기준년월 = c.기준년월 WHERE     m.기준년월 = '202501'     AND m.신용등급 IS NOT NULL GROUP BY     m.신용등급 ORDER BY     m.신용등급 ASC",
+    "latency_ms": 20149,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(1, 0.38839999999999997)",
+      "(2, 0.26665)",
+      "(3, 0.335)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q37",
+    "difficulty": "H",
+    "generated_sql": "SELECT      SUM(b.청구금액) AS 총청구금액,     SUM(c.연체잔액) AS 총연체잔액 FROM ods_card_billing b JOIN ods_card_credit c      ON b.발급회원번호 = c.발급회원번호      AND b.기준년월 = c.기준년월 WHERE b.기준년월 = '202501'   AND b.납부상태코드 = '미납'",
+    "latency_ms": 18695,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(None, None)"
+    ]
+  },
+  {
+    "run": 1,
+    "id": "Q38",
+    "difficulty": "H",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  },
+  {
+    "run": 2,
+    "id": "Q01",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'",
+    "latency_ms": 3713,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(10,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q02",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 고객명 FROM ods_card_member WHERE 기준년월 = '202501'   AND VIP등급코드 = '01'",
+    "latency_ms": 7033,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('김철수',)",
+      "('송중기',)",
+      "('정민호',)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q03",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) AS 전체거래건수 FROM ods_card_transaction WHERE 기준년월 = '202501'",
+    "latency_ms": 6172,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(15,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q04",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 신용등급 <= 3",
+    "latency_ms": 5920,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(6,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q05",
+    "difficulty": "E",
+    "generated_sql": "SELECT * FROM ods_card_transaction WHERE 기준년월 = '202501' ORDER BY 이용금액 DESC LIMIT 1",
+    "latency_ms": 5998,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(8, '202501', 'M005', 'A011', '하나투어', '여행', 4200000, '20250115', 6)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q06",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 발급회원번호 FROM ods_card_credit WHERE 기준년월 = '202501'   AND 연체일수 > 0",
+    "latency_ms": 6685,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M004',)",
+      "('M007',)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q07",
+    "difficulty": "E",
+    "generated_sql": "SELECT SUM(가입건수) FROM ods_fin_product WHERE 상품유형 = '카드'",
+    "latency_ms": 4403,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(60200,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q08",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 남녀구분코드 = 'F'",
+    "latency_ms": 7314,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(5,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q09",
+    "difficulty": "E",
+    "generated_sql": "SELECT 청구금액 FROM ods_card_billing WHERE 기준년월 = '202501'   AND 납부상태코드 = '02'",
+    "latency_ms": 6773,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(25500,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q10",
+    "difficulty": "E",
+    "generated_sql": "SELECT 상품명, 기준금리 FROM ods_fin_product WHERE 기준금리 > 0",
+    "latency_ms": 3979,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('스마트 신용대출', 4.5)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q11",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 연령대코드 = '30'",
+    "latency_ms": 6573,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(3,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q12",
+    "difficulty": "E",
+    "generated_sql": "SELECT     COUNT(*) AS 거래건수,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501'     AND 할부개월수 > 0",
+    "latency_ms": 14383,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(6, 11370000)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q13",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 발급회원번호 FROM ods_card_credit WHERE 기준년월 = '202501'   AND 한도소진율 >= 0.5",
+    "latency_ms": 7144,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M003',)",
+      "('M008',)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q14",
+    "difficulty": "M",
+    "generated_sql": "SELECT     발급회원번호,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501' GROUP BY     발급회원번호 ORDER BY     총이용금액 DESC",
+    "latency_ms": 10600,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M001', 1895500)",
+      "('M002', 45000)",
+      "('M003', 2535000)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q15",
+    "difficulty": "M",
+    "generated_sql": "SELECT SUM(t.이용금액) FROM ods_card_transaction t JOIN ods_card_member m ON t.발급회원번호 = m.발급회원번호 WHERE m.VIP등급코드 = '01'   AND t.기준년월 = '202501'",
+    "latency_ms": 12296,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(14101000,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q16",
+    "difficulty": "M",
+    "generated_sql": "SELECT     업종코드,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501' GROUP BY     업종코드",
+    "latency_ms": 8188,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('구독', 17000)",
+      "('도서', 52000)",
+      "('백화점', 2450000)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q17",
+    "difficulty": "M",
+    "generated_sql": "SELECT     c.카드이용한도금액 FROM     ods_card_member m JOIN     ods_card_credit c ON m.발급회원번호 = c.발급회원번호 WHERE     m.신용등급 = 1     AND m.기준년월 = '202501'     AND c.기준년월 = '202501'",
+    "latency_ms": 17817,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(70000000,)",
+      "(80000000,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q18",
+    "difficulty": "M",
+    "generated_sql": "SELECT DISTINCT t1.발급회원번호 FROM ods_card_transaction t1 JOIN ods_card_transaction t2 ON t1.발급회원번호 = t2.발급회원번호 WHERE t1.기준년월 = '202501'   AND t2.기준년월 = '202502'",
+    "latency_ms": 14831,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M001',)",
+      "('M002',)",
+      "('M003',)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q19",
+    "difficulty": "M",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  },
+  {
+    "run": 2,
+    "id": "Q20",
+    "difficulty": "M",
+    "generated_sql": "SELECT 업종코드 FROM ods_card_transaction WHERE 기준년월 = '202501' GROUP BY 업종코드 HAVING AVG(이용금액) >= 100000",
+    "latency_ms": 8678,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('백화점',)",
+      "('숙박',)",
+      "('여행',)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q21",
+    "difficulty": "M",
+    "generated_sql": "SELECT DISTINCT     m.고객명,     m.신용등급 FROM ods_card_member m JOIN ods_card_credit c ON m.발급회원번호 = c.발급회원번호 WHERE c.기준년월 = '202501'     AND c.연체잔액 > 0",
+    "latency_ms": 16380,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('강동원', 5)",
+      "('최수연', 6)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q22",
+    "difficulty": "M",
+    "generated_sql": "SELECT      SUM(CASE WHEN 상품유형 = '카드' THEN 가입건수 ELSE 0 END) -      SUM(CASE WHEN 상품유형 = '대출' THEN 가입건수 ELSE 0 END) AS 가입건수차이 FROM ods_fin_product WHERE 상품유형 IN ('카드', '대출')",
+    "latency_ms": 15199,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(51300,)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q33",
+    "difficulty": "H",
+    "generated_sql": "SELECT      t.업종코드,     SUM(t.이용금액) AS 업종금액,     CAST(SUM(t.이용금액) AS REAL) / SUM(SUM(t.이용금액)) OVER() AS 비중 FROM      ods_card_member m JOIN      ods_card_transaction t ON m.발급회원번호 = t.발급회원번호 WHERE      m.기준년월 = '202501'     AND m.VIP등급코드 = 'VVIP'     AND t.기준년월 = '202501' GROUP BY      t.업종코드 ORDER BY      비중 DESC",
+    "latency_ms": 25014,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": []
+  },
+  {
+    "run": 2,
+    "id": "Q34",
+    "difficulty": "H",
+    "generated_sql": "SELECT      c.한도소진율,     c.연체일수 FROM      ods_card_credit c WHERE      c.기준년월 = '202501'",
+    "latency_ms": 7838,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(0.2143, 0)",
+      "(0.22, 0)",
+      "(0.25, 0)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q35",
+    "difficulty": "H",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  },
+  {
+    "run": 2,
+    "id": "Q36",
+    "difficulty": "H",
+    "generated_sql": "SELECT     m.신용등급,     AVG(c.한도소진율) AS 평균_한도소진율 FROM     ods_card_member m JOIN     ods_card_credit c ON m.발급회원번호 = c.발급회원번호 AND m.기준년월 = c.기준년월 WHERE     m.기준년월 = '202501'     AND m.신용등급 IS NOT NULL GROUP BY     m.신용등급 ORDER BY     m.신용등급 ASC",
+    "latency_ms": 20479,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(1, 0.38839999999999997)",
+      "(2, 0.26665)",
+      "(3, 0.335)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q37",
+    "difficulty": "H",
+    "generated_sql": "SELECT      SUM(b.청구금액) AS 총청구금액,     SUM(c.연체잔액) AS 총연체잔액 FROM ods_card_billing b JOIN ods_card_credit c      ON b.발급회원번호 = c.발급회원번호      AND b.기준년월 = c.기준년월 WHERE b.기준년월 = '202501'   AND b.납부상태코드 = '미납'",
+    "latency_ms": 19417,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(None, None)"
+    ]
+  },
+  {
+    "run": 2,
+    "id": "Q38",
+    "difficulty": "H",
+    "generated_sql": "SELECT     m.발급회원번호,     m.고객명,     m.신용등급,     SUM(t.이용금액) AS 총이용금액 FROM     ods_card_member m JOIN     ods_card_transaction t ON m.발급회원번호 = t.발급회원번호 WHERE     m.기준년월 = '202501'     AND m.연령대코드 = '30'     AND m.신용등급 <= 3     AND t.기준년월 = '202501' GROUP BY     m.발급회원번호,     m.고객명,     m.신용등급 ORDER BY     총이용금액 DESC LIMIT 3",
+    "latency_ms": 25949,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M006', '한소희', 2, 89000)",
+      "('M009', '송중기', 1, 1210000)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q01",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'",
+    "latency_ms": 5286,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(10,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q02",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 고객명 FROM ods_card_member WHERE 기준년월 = '202501'   AND VIP등급코드 = '01'",
+    "latency_ms": 5769,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('김철수',)",
+      "('송중기',)",
+      "('정민호',)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q03",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) AS 전체거래건수 FROM ods_card_transaction WHERE 기준년월 = '202501'",
+    "latency_ms": 5008,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(15,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q04",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 신용등급 <= 3",
+    "latency_ms": 5325,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(6,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q05",
+    "difficulty": "E",
+    "generated_sql": "SELECT * FROM ods_card_transaction WHERE 기준년월 = '202501' ORDER BY 이용금액 DESC LIMIT 1",
+    "latency_ms": 5690,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(8, '202501', 'M005', 'A011', '하나투어', '여행', 4200000, '20250115', 6)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q06",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 발급회원번호 FROM ods_card_credit WHERE 기준년월 = '202501'   AND 연체일수 > 0",
+    "latency_ms": 6366,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M004',)",
+      "('M007',)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q07",
+    "difficulty": "E",
+    "generated_sql": "SELECT SUM(가입건수) FROM ods_fin_product WHERE 상품유형 = '카드'",
+    "latency_ms": 4684,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(60200,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q08",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 남녀구분코드 = 'F'",
+    "latency_ms": 5767,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(5,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q09",
+    "difficulty": "E",
+    "generated_sql": "SELECT 청구금액 FROM ods_card_billing WHERE 기준년월 = '202501'   AND 납부상태코드 = '02'",
+    "latency_ms": 6364,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(25500,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q10",
+    "difficulty": "E",
+    "generated_sql": "SELECT 상품명, 기준금리 FROM ods_fin_product WHERE 기준금리 > 0",
+    "latency_ms": 3402,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('스마트 신용대출', 4.5)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q11",
+    "difficulty": "E",
+    "generated_sql": "SELECT COUNT(*) FROM ods_card_member WHERE 기준년월 = '202501'   AND 연령대코드 = '30'",
+    "latency_ms": 6104,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(3,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q12",
+    "difficulty": "E",
+    "generated_sql": "SELECT     COUNT(*) AS 거래건수,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501'     AND 할부개월수 > 0",
+    "latency_ms": 10214,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(6, 11370000)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q13",
+    "difficulty": "E",
+    "generated_sql": "SELECT DISTINCT 발급회원번호 FROM ods_card_credit WHERE 기준년월 = '202501'   AND 한도소진율 >= 0.5",
+    "latency_ms": 6144,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M003',)",
+      "('M008',)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q14",
+    "difficulty": "M",
+    "generated_sql": "SELECT     발급회원번호,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501' GROUP BY     발급회원번호 ORDER BY     총이용금액 DESC",
+    "latency_ms": 8960,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M001', 1895500)",
+      "('M002', 45000)",
+      "('M003', 2535000)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q15",
+    "difficulty": "M",
+    "generated_sql": "SELECT SUM(t.이용금액) FROM ods_card_transaction t JOIN ods_card_member m ON t.발급회원번호 = m.발급회원번호 WHERE m.VIP등급코드 = '01'   AND t.기준년월 = '202501'",
+    "latency_ms": 10198,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(14101000,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q16",
+    "difficulty": "M",
+    "generated_sql": "SELECT     업종코드,     SUM(이용금액) AS 총이용금액 FROM     ods_card_transaction WHERE     기준년월 = '202501' GROUP BY     업종코드",
+    "latency_ms": 10216,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('구독', 17000)",
+      "('도서', 52000)",
+      "('백화점', 2450000)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q17",
+    "difficulty": "M",
+    "generated_sql": "SELECT     c.카드이용한도금액 FROM     ods_card_member m JOIN     ods_card_credit c ON m.발급회원번호 = c.발급회원번호 WHERE     m.신용등급 = 1     AND m.기준년월 = '202501'     AND c.기준년월 = '202501'",
+    "latency_ms": 16155,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(70000000,)",
+      "(80000000,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q18",
+    "difficulty": "M",
+    "generated_sql": "SELECT DISTINCT t1.발급회원번호 FROM ods_card_transaction t1 JOIN ods_card_transaction t2 ON t1.발급회원번호 = t2.발급회원번호 WHERE t1.기준년월 = '202501'   AND t2.기준년월 = '202502'",
+    "latency_ms": 13811,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('M001',)",
+      "('M002',)",
+      "('M003',)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q19",
+    "difficulty": "M",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  },
+  {
+    "run": 3,
+    "id": "Q20",
+    "difficulty": "M",
+    "generated_sql": "SELECT 업종코드 FROM ods_card_transaction WHERE 기준년월 = '202501' GROUP BY 업종코드 HAVING AVG(이용금액) >= 100000",
+    "latency_ms": 8609,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('백화점',)",
+      "('숙박',)",
+      "('여행',)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q21",
+    "difficulty": "M",
+    "generated_sql": "SELECT DISTINCT     m.고객명,     m.신용등급 FROM ods_card_member m JOIN ods_card_credit c ON m.발급회원번호 = c.발급회원번호 WHERE c.기준년월 = '202501'     AND c.연체잔액 > 0",
+    "latency_ms": 15981,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "('강동원', 5)",
+      "('최수연', 6)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q22",
+    "difficulty": "M",
+    "generated_sql": "SELECT      SUM(CASE WHEN 상품유형 = '카드' THEN 가입건수 ELSE 0 END) -      SUM(CASE WHEN 상품유형 = '대출' THEN 가입건수 ELSE 0 END) AS 가입건수차이 FROM ods_fin_product WHERE 상품유형 IN ('카드', '대출')",
+    "latency_ms": 20508,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(51300,)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q33",
+    "difficulty": "H",
+    "generated_sql": "SELECT      t.업종코드,     SUM(t.이용금액) AS 업종금액,     CAST(SUM(t.이용금액) AS REAL) / SUM(SUM(t.이용금액)) OVER() AS 비중 FROM      ods_card_member m JOIN      ods_card_transaction t ON m.발급회원번호 = t.발급회원번호 WHERE      m.기준년월 = '202501'     AND m.VIP등급코드 = 'VVIP'     AND t.기준년월 = '202501' GROUP BY      t.업종코드 ORDER BY      비중 DESC",
+    "latency_ms": 24508,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": []
+  },
+  {
+    "run": 3,
+    "id": "Q34",
+    "difficulty": "H",
+    "generated_sql": "SELECT      c.한도소진율,     c.연체일수 FROM      ods_card_credit c WHERE      c.기준년월 = '202501'",
+    "latency_ms": 7877,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(0.2143, 0)",
+      "(0.22, 0)",
+      "(0.25, 0)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q35",
+    "difficulty": "H",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  },
+  {
+    "run": 3,
+    "id": "Q36",
+    "difficulty": "H",
+    "generated_sql": "SELECT     m.신용등급,     AVG(c.한도소진율) AS 평균_한도소진율 FROM     ods_card_member m JOIN     ods_card_credit c ON m.발급회원번호 = c.발급회원번호 AND m.기준년월 = c.기준년월 WHERE     m.기준년월 = '202501'     AND m.신용등급 IS NOT NULL GROUP BY     m.신용등급 ORDER BY     m.신용등급 ASC",
+    "latency_ms": 24771,
+    "EX": true,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(1, 0.38839999999999997)",
+      "(2, 0.26665)",
+      "(3, 0.335)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q37",
+    "difficulty": "H",
+    "generated_sql": "SELECT      SUM(b.청구금액) AS 총청구금액,     SUM(c.연체잔액) AS 총연체잔액 FROM ods_card_billing b JOIN ods_card_credit c      ON b.발급회원번호 = c.발급회원번호      AND b.기준년월 = c.기준년월 WHERE b.기준년월 = '202501'   AND b.납부상태코드 = '미납'",
+    "latency_ms": 18644,
+    "EX": false,
+    "EM": false,
+    "EXEC": true,
+    "result": [
+      "(None, None)"
+    ]
+  },
+  {
+    "run": 3,
+    "id": "Q38",
+    "difficulty": "H",
+    "generated_sql": "ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)",
+    "latency_ms": 0,
+    "EX": false,
+    "EM": false,
+    "EXEC": false,
+    "error": "near \"ERROR\": syntax error"
+  }
+]

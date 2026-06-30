@@ -1,0 +1,7 @@
+{
+  "total_stages": 92,
+  "n_raters": 5,
+  "fleiss_kappa": 0.937,
+  "mean_pairwise_cohens_kappa": 0.937,
+  "full_consensus_rate": 0.913
+}

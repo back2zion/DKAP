@@ -1,0 +1,122 @@
+{
+  "experiment": "Stochastic Robustness (temp=0.3)",
+  "conditions": {
+    "B2": {
+      "n_total": 250,
+      "n_runs": 5,
+      "EX_overall_pct": 55.6,
+      "EM_overall_pct": 4.0,
+      "mean_EX_pct": 55.6,
+      "std_EX_pct": 2.2,
+      "run_EX_pcts": [
+        52.0,
+        56.0,
+        56.0,
+        56.0,
+        58.0
+      ],
+      "avg_latency_ms": 1444.8,
+      "by_difficulty": {
+        "E": {
+          "n": 65,
+          "EX": 60,
+          "EX_pct": 92.3,
+          "mean_EX_pct": 92.3,
+          "std_EX_pct": 0.0
+        },
+        "M": {
+          "n": 95,
+          "EX": 61,
+          "EX_pct": 64.2,
+          "mean_EX_pct": 64.2,
+          "std_EX_pct": 3.9
+        },
+        "H": {
+          "n": 90,
+          "EX": 18,
+          "EX_pct": 20.0,
+          "mean_EX_pct": 20.0,
+          "std_EX_pct": 2.7
+        }
+      }
+    },
+    "B2_PRIME": {
+      "n_total": 250,
+      "n_runs": 5,
+      "EX_overall_pct": 78.0,
+      "EM_overall_pct": 4.0,
+      "mean_EX_pct": 78.0,
+      "std_EX_pct": 1.4,
+      "run_EX_pcts": [
+        78.0,
+        78.0,
+        80.0,
+        76.0,
+        78.0
+      ],
+      "avg_latency_ms": 1590.4,
+      "by_difficulty": {
+        "E": {
+          "n": 65,
+          "EX": 60,
+          "EX_pct": 92.3,
+          "mean_EX_pct": 92.3,
+          "std_EX_pct": 0.0
+        },
+        "M": {
+          "n": 95,
+          "EX": 81,
+          "EX_pct": 85.3,
+          "mean_EX_pct": 85.3,
+          "std_EX_pct": 2.1
+        },
+        "H": {
+          "n": 90,
+          "EX": 54,
+          "EX_pct": 60.0,
+          "mean_EX_pct": 60.0,
+          "std_EX_pct": 4.2
+        }
+      }
+    },
+    "DKAP": {
+      "n_total": 250,
+      "n_runs": 5,
+      "EX_overall_pct": 78.4,
+      "EM_overall_pct": 4.0,
+      "mean_EX_pct": 78.4,
+      "std_EX_pct": 0.9,
+      "run_EX_pcts": [
+        80.0,
+        78.0,
+        78.0,
+        78.0,
+        78.0
+      ],
+      "avg_latency_ms": 1591.4,
+      "by_difficulty": {
+        "E": {
+          "n": 65,
+          "EX": 65,
+          "EX_pct": 100.0,
+          "mean_EX_pct": 100.0,
+          "std_EX_pct": 0.0
+        },
+        "M": {
+          "n": 95,
+          "EX": 85,
+          "EX_pct": 89.5,
+          "mean_EX_pct": 89.5,
+          "std_EX_pct": 0.0
+        },
+        "H": {
+          "n": 90,
+          "EX": 46,
+          "EX_pct": 51.1,
+          "mean_EX_pct": 51.1,
+          "std_EX_pct": 2.2
+        }
+      }
+    }
+  }
+}

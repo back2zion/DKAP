@@ -1,0 +1,116 @@
+{
+  "experiment": "B2' Information Control (temp=0.0)",
+  "conditions": {
+    "B2": {
+      "n_total": 150,
+      "n_runs": 3,
+      "EX_overall_pct": 54.0,
+      "EM_overall_pct": 4.0,
+      "mean_EX_pct": 54.0,
+      "std_EX_pct": 0.0,
+      "run_EX_pcts": [
+        54.0,
+        54.0,
+        54.0
+      ],
+      "avg_latency_ms": 1441.7,
+      "by_difficulty": {
+        "E": {
+          "n": 39,
+          "EX": 36,
+          "EX_pct": 92.3,
+          "mean_EX_pct": 92.3,
+          "std_EX_pct": 0.0
+        },
+        "M": {
+          "n": 57,
+          "EX": 36,
+          "EX_pct": 63.2,
+          "mean_EX_pct": 63.2,
+          "std_EX_pct": 0.0
+        },
+        "H": {
+          "n": 54,
+          "EX": 9,
+          "EX_pct": 16.7,
+          "mean_EX_pct": 16.7,
+          "std_EX_pct": 0.0
+        }
+      }
+    },
+    "B2_PRIME": {
+      "n_total": 150,
+      "n_runs": 3,
+      "EX_overall_pct": 80.0,
+      "EM_overall_pct": 4.0,
+      "mean_EX_pct": 80.0,
+      "std_EX_pct": 0.0,
+      "run_EX_pcts": [
+        80.0,
+        80.0,
+        80.0
+      ],
+      "avg_latency_ms": 1546.3,
+      "by_difficulty": {
+        "E": {
+          "n": 39,
+          "EX": 36,
+          "EX_pct": 92.3,
+          "mean_EX_pct": 92.3,
+          "std_EX_pct": 0.0
+        },
+        "M": {
+          "n": 57,
+          "EX": 48,
+          "EX_pct": 84.2,
+          "mean_EX_pct": 84.2,
+          "std_EX_pct": 0.0
+        },
+        "H": {
+          "n": 54,
+          "EX": 36,
+          "EX_pct": 66.7,
+          "mean_EX_pct": 66.7,
+          "std_EX_pct": 0.0
+        }
+      }
+    },
+    "DKAP": {
+      "n_total": 150,
+      "n_runs": 3,
+      "EX_overall_pct": 80.0,
+      "EM_overall_pct": 4.0,
+      "mean_EX_pct": 80.0,
+      "std_EX_pct": 0.0,
+      "run_EX_pcts": [
+        80.0,
+        80.0,
+        80.0
+      ],
+      "avg_latency_ms": 1515.7,
+      "by_difficulty": {
+        "E": {
+          "n": 39,
+          "EX": 39,
+          "EX_pct": 100.0,
+          "mean_EX_pct": 100.0,
+          "std_EX_pct": 0.0
+        },
+        "M": {
+          "n": 57,
+          "EX": 51,
+          "EX_pct": 89.5,
+          "mean_EX_pct": 89.5,
+          "std_EX_pct": 0.0
+        },
+        "H": {
+          "n": 54,
+          "EX": 30,
+          "EX_pct": 55.6,
+          "mean_EX_pct": 55.6,
+          "std_EX_pct": 0.0
+        }
+      }
+    }
+  }
+}

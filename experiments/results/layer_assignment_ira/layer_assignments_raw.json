@@ -1,0 +1,762 @@
+{
+  "MedRAG": {
+    "stages": [
+      "Corpus Loading: Load pre-indexed corpora (PubMed/StatPearls/Textbooks/Wikipedia) into FAISS index",
+      "Retrieval: BM25/Contriever/SPECTER/MedCPT multi-retriever search + RRF fusion",
+      "LLM Inference: GPT-4/Mixtral/Llama CoT prompting with retrieved snippets",
+      "Answer Extraction: Regex-based answer parsing from LLM output"
+    ],
+    "agent_assignments": {
+      "A1": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "A2": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "A3": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "A4": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "A5": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "Pulse_AI": {
+    "stages": [
+      "Input Parsing: Parse news article URL or text input",
+      "Source Classification: Classify source credibility and type",
+      "Content Fetching: Scrape and normalize article content",
+      "Summarization: LLM-based extractive/abstractive summarization",
+      "Output Formatting: Structure summary with metadata tags",
+      "Delivery: Push notification or API response"
+    ],
+    "agent_assignments": {
+      "A1": [
+        1,
+        3,
+        1,
+        4,
+        5,
+        5
+      ],
+      "A2": [
+        1,
+        3,
+        1,
+        4,
+        5,
+        5
+      ],
+      "A3": [
+        1,
+        3,
+        1,
+        4,
+        5,
+        5
+      ],
+      "A4": [
+        1,
+        3,
+        1,
+        4,
+        5,
+        5
+      ],
+      "A5": [
+        1,
+        3,
+        1,
+        4,
+        5,
+        5
+      ]
+    }
+  },
+  "CrewAI": {
+    "stages": [
+      "Task Decomposition: Parse user goal into sub-tasks",
+      "Agent Role Assignment: Assign specialized agent personas from role library",
+      "Memory Initialization: Load short-term and long-term agent memory",
+      "Tool Binding: Bind task-relevant tools to agents",
+      "Multi-agent Execution: Sequential/hierarchical agent task execution",
+      "Inter-agent Communication: Pass outputs between agents",
+      "Result Aggregation: Merge agent outputs into final response"
+    ],
+    "agent_assignments": {
+      "A1": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "A2": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "A3": [
+        1,
+        3,
+        2,
+        3,
+        4,
+        4,
+        5
+      ],
+      "A4": [
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "A5": [
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        5
+      ]
+    }
+  },
+  "LlamaIndex": {
+    "stages": [
+      "Document Loading: Ingest documents via data connectors (PDF, web, DB)",
+      "Chunking & Indexing: Split documents, embed chunks, build vector index",
+      "Query Understanding: Parse and classify user query",
+      "Retrieval: Vector similarity search over indexed chunks",
+      "Re-ranking: Optional reranker model to refine retrieval",
+      "Response Synthesis: LLM generates response from retrieved context"
+    ],
+    "agent_assignments": {
+      "A1": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "A2": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "A3": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "A4": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      "A5": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        4
+      ]
+    }
+  },
+  "BIRD_SQL": {
+    "stages": [
+      "Schema Preprocessing: Extract table/column metadata, FK constraints from DB",
+      "Schema Classification: RoBERTa cross-encoder scores table/column relevance",
+      "Schema Linking: Select top-k tables and columns for prompt",
+      "Data Augmentation: GPT-3.5 CoT/synonym/skeleton augmentation",
+      "Hint Generation: External knowledge hints for complex queries",
+      "SQL Generation: LLM generates SQL with schema-linked prompt",
+      "SQL Validation: Execution-based validation and self-consistency"
+    ],
+    "agent_assignments": {
+      "A1": [
+        2,
+        3,
+        3,
+        2,
+        3,
+        4,
+        5
+      ],
+      "A2": [
+        2,
+        3,
+        3,
+        2,
+        3,
+        4,
+        5
+      ],
+      "A3": [
+        2,
+        3,
+        3,
+        2,
+        3,
+        4,
+        5
+      ],
+      "A4": [
+        2,
+        3,
+        3,
+        2,
+        3,
+        4,
+        5
+      ],
+      "A5": [
+        2,
+        3,
+        3,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "Wheatley": {
+    "stages": [
+      "Job Shop Problem Loading: Parse Taillard benchmark instances (n jobs, m machines)",
+      "State Feature Extraction: Compute scheduling state features (load, makespan, etc.)",
+      "Dispatching Rule Application: Apply MWKR/composite heuristic rules",
+      "GNN Encoding: Graph neural network encodes job-machine graph topology",
+      "RL Policy Inference: Actor network selects next job-machine assignment",
+      "Schedule Update: Update partial schedule and compute reward",
+      "Constraint Validation: Check precedence and machine conflict constraints",
+      "Makespan Evaluation: Compute final makespan and optimality gap"
+    ],
+    "agent_assignments": {
+      "A1": [
+        1,
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5
+      ],
+      "A2": [
+        1,
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5
+      ],
+      "A3": [
+        1,
+        2,
+        4,
+        2,
+        4,
+        4,
+        5,
+        5
+      ],
+      "A4": [
+        1,
+        3,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5
+      ],
+      "A5": [
+        1,
+        1,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5
+      ]
+    }
+  },
+  "FinSQL": {
+    "stages": [
+      "Dataset Preprocessing: Normalize SQL, extract schema labels, FK injection",
+      "Schema Classifier Training: Train RoBERTa Cross-Encoder for schema ranking",
+      "Schema Prediction: Generate ranked schema (top-k tables/columns per query)",
+      "Hybrid Data Augmentation: GPT-3.5 CoT/synonymous/skeleton generation",
+      "LLM LoRA Fine-tuning: Llama2-13B LoRA training on augmented data",
+      "Inference + Post-processing: SQL generation + fuzzy schema matching",
+      "Self-consistency Voting: 8-way semantic SQL comparison"
+    ],
+    "agent_assignments": {
+      "A1": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        4,
+        5
+      ],
+      "A2": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        4,
+        5
+      ],
+      "A3": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        4,
+        5
+      ],
+      "A4": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        4,
+        5
+      ],
+      "A5": [
+        2,
+        2,
+        3,
+        2,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  "MetaGPT": {
+    "stages": [
+      "Role & Workflow Loading: Initialize agent roles (PM, Architect, Engineer) from templates",
+      "Requirement Analysis: PM agent parses user requirement into structured spec",
+      "System Design: Architect agent generates class/sequence diagrams and API spec",
+      "Code Generation: Engineer agents generate code per module spec",
+      "Code Review: QA agent reviews generated code against spec",
+      "Integration Testing: Run tests and validate output against requirement"
+    ],
+    "agent_assignments": {
+      "A1": [
+        2,
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "A2": [
+        2,
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "A3": [
+        2,
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "A4": [
+        2,
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "A5": [
+        2,
+        4,
+        4,
+        4,
+        5,
+        5
+      ]
+    }
+  },
+  "SpeechBrain": {
+    "stages": [
+      "Audio Loading & Normalization: Load waveform, resample, normalize amplitude",
+      "Feature Extraction: Compute MFCC/Fbank/raw waveform features",
+      "Encoder: ECAPA-TDNN/wav2vec2 speech encoder",
+      "Domain Adaptation Layer: Speaker/language adaptation embeddings",
+      "Decoder / CTC / Attention: ASR beam search, TTS spectrogram synthesis",
+      "Post-processing: Detokenization, prosody normalization",
+      "Evaluation: WER/SER computation",
+      "Experiment Logging: HyperPy YAML config + CSV logging"
+    ],
+    "agent_assignments": {
+      "A1": [
+        1,
+        1,
+        4,
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "A2": [
+        1,
+        1,
+        4,
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "A3": [
+        1,
+        1,
+        4,
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "A4": [
+        1,
+        1,
+        4,
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "A5": [
+        1,
+        1,
+        4,
+        2,
+        4,
+        5,
+        5,
+        5
+      ]
+    }
+  },
+  "AudioCraft": {
+    "stages": [
+      "Audio Conditioning: Load genre/instrument profiles and style conditioning tensors",
+      "Text Prompt Encoding: T5 encodes textual description into condition vector",
+      "Codec Encoding: EnCodec compresses reference audio into discrete tokens",
+      "Transformer LM Inference: MusicGen/AudioGen auto-regressive token generation",
+      "Codec Decoding: EnCodec decodes discrete tokens to waveform",
+      "Audio Post-processing: Loudness normalization, format conversion",
+      "Output Delivery: Save/stream generated audio"
+    ],
+    "agent_assignments": {
+      "A1": [
+        2,
+        1,
+        1,
+        4,
+        5,
+        5,
+        5
+      ],
+      "A2": [
+        2,
+        1,
+        1,
+        4,
+        5,
+        5,
+        5
+      ],
+      "A3": [
+        2,
+        1,
+        1,
+        4,
+        5,
+        5,
+        5
+      ],
+      "A4": [
+        2,
+        1,
+        1,
+        4,
+        5,
+        5,
+        5
+      ],
+      "A5": [
+        2,
+        1,
+        1,
+        4,
+        5,
+        5,
+        5
+      ]
+    }
+  },
+  "DeepTutor": {
+    "stages": [
+      "Document Ingestion: Parse PDF textbooks into structured page/paragraph chunks",
+      "Knowledge Graph Construction: Build concept dependency graph from textbook",
+      "Student Model Initialization: Initialize student knowledge state vector",
+      "Query Classification: Classify student question type (factual/conceptual/procedural)",
+      "Context Retrieval: Retrieve relevant passages using student model + KG context",
+      "Tutoring Response Generation: LLM generates Socratic hint or explanation",
+      "Student Model Update: Update knowledge state based on student response",
+      "Session Logging: Log interaction for learning analytics"
+    ],
+    "agent_assignments": {
+      "A1": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        2,
+        5
+      ],
+      "A2": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        2,
+        5
+      ],
+      "A3": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        2,
+        5
+      ],
+      "A4": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        2,
+        5
+      ],
+      "A5": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        2,
+        5
+      ]
+    }
+  },
+  "EmotiVoice": {
+    "stages": [
+      "Text Preprocessing: Tokenize Chinese/English text, normalize numbers/symbols",
+      "Phoneme Conversion: G2P conversion using 502-phoneme vocabulary",
+      "Emotion Conditioning: Load emotion embedding (happy/sad/angry/etc.) from 2013 speaker profiles",
+      "Acoustic Model: BERT+FastSpeech2 generates mel-spectrogram",
+      "Vocoder: HiFi-GAN converts mel-spectrogram to waveform",
+      "Speaker Adaptation: Apply speaker identity embedding for voice cloning",
+      "Audio Post-processing: Resample, normalize, format conversion",
+      "Evaluation: MOS estimation, speaker similarity scoring"
+    ],
+    "agent_assignments": {
+      "A1": [
+        1,
+        2,
+        2,
+        4,
+        4,
+        2,
+        5,
+        5
+      ],
+      "A2": [
+        1,
+        1,
+        2,
+        4,
+        4,
+        2,
+        5,
+        5
+      ],
+      "A3": [
+        1,
+        1,
+        2,
+        4,
+        4,
+        2,
+        5,
+        5
+      ],
+      "A4": [
+        1,
+        2,
+        2,
+        4,
+        4,
+        2,
+        5,
+        5
+      ],
+      "A5": [
+        1,
+        1,
+        2,
+        4,
+        4,
+        2,
+        5,
+        5
+      ]
+    }
+  },
+  "GraphRAG": {
+    "stages": [
+      "Document Chunking: Split documents into fixed-size text chunks",
+      "Entity & Relation Extraction: LLM extracts entity-relation triples from chunks",
+      "Community Detection: Leiden algorithm builds hierarchical KG communities",
+      "Community Report Generation: LLM summarizes each community into report",
+      "Embedding Indexing: Embed entities, reports, chunks into vector store",
+      "Query Routing: Classify query as local (entity) or global (community) search",
+      "Retrieval: Local = entity-based KG search; Global = community report retrieval",
+      "Response Generation: LLM synthesizes answer from retrieved context",
+      "Map-Reduce Aggregation: For global queries, aggregate partial answers",
+      "Final Response Formatting: Format and return answer with citations"
+    ],
+    "agent_assignments": {
+      "A1": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "A2": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "A3": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "A4": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "A5": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5
+      ]
+    }
+  }
+}

@@ -1,0 +1,6225 @@
+{
+  "Significant-Gravitas/AutoGPT": {
+    "paradigms": [
+      "Agentic AI",
+      "Computer Vision"
+    ],
+    "primary": "Agentic AI",
+    "stars": 183090,
+    "created": "2023-03-16",
+    "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our",
+    "size_kb": 450868,
+    "topics": [
+      "agentic-ai",
+      "agents",
+      "ai",
+      "artificial-intelligence",
+      "autonomous-agents",
+      "claude",
+      "gpt",
+      "llama-api",
+      "llm",
+      "openai",
+      "python"
+    ]
+  },
+  "AUTOMATIC1111/stable-diffusion-webui": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 162110,
+    "created": "2022-08-22",
+    "desc": "Stable Diffusion web UI",
+    "size_kb": 36552,
+    "topics": [
+      "ai",
+      "ai-art",
+      "deep-learning",
+      "diffusion",
+      "gradio",
+      "image-generation",
+      "image2image",
+      "img2img",
+      "pytorch",
+      "stable-diffusion",
+      "text2image",
+      "torch",
+      "txt2img",
+      "unstable",
+      "upscaling",
+      "web"
+    ]
+  },
+  "langchain-ai/langchain": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 132174,
+    "created": "2022-10-17",
+    "desc": "The agent engineering platform",
+    "size_kb": 531445,
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "deepagents",
+      "enterprise",
+      "framework",
+      "gemini",
+      "generative-ai",
+      "langchain",
+      "langgraph",
+      "llm",
+      "multiagent",
+      "open-source",
+      "openai",
+      "pydantic",
+      "python",
+      "rag"
+    ]
+  },
+  "open-webui/open-webui": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 129774,
+    "created": "2023-10-06",
+    "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+    "size_kb": 350072,
+    "topics": [
+      "ai",
+      "llm",
+      "llm-ui",
+      "llm-webui",
+      "llms",
+      "mcp",
+      "ollama",
+      "ollama-webui",
+      "open-webui",
+      "openai",
+      "openapi",
+      "rag",
+      "self-hosted",
+      "ui",
+      "webui"
+    ]
+  },
+  "Comfy-Org/ComfyUI": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 107646,
+    "created": "2023-01-17",
+    "desc": "The most powerful and modular diffusion model GUI, api and backend with a graph/",
+    "size_kb": 86185,
+    "topics": [
+      "ai",
+      "comfy",
+      "comfyui",
+      "python",
+      "pytorch",
+      "stable-diffusion"
+    ]
+  },
+  "hacksider/Deep-Live-Cam": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 87691,
+    "created": "2023-09-24",
+    "desc": "real time face swap and one-click video deepfake with only a single image",
+    "size_kb": 156000,
+    "topics": [
+      "ai",
+      "ai-deep-fake",
+      "ai-face",
+      "ai-webcam",
+      "artificial-intelligence",
+      "deep-fake",
+      "deepfake",
+      "deepfake-webcam",
+      "faceswap",
+      "fake-webcam",
+      "gan",
+      "real-time-deepfake",
+      "realtime",
+      "realtime-deepfake",
+      "realtime-face-changer",
+      "video-deepfake",
+      "webcam",
+      "webcamera"
+    ]
+  },
+  "github/spec-kit": {
+    "paradigms": [
+      "Code Gen"
+    ],
+    "primary": "Code Gen",
+    "stars": 84889,
+    "created": "2025-08-21",
+    "desc": "💫 Toolkit to help you get started with Spec-Driven Development",
+    "size_kb": 6631,
+    "topics": [
+      "ai",
+      "copilot",
+      "development",
+      "engineering",
+      "prd",
+      "spec",
+      "spec-driven"
+    ]
+  },
+  "infiniflow/ragflow": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 76983,
+    "created": "2023-12-12",
+    "desc": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine tha",
+    "size_kb": 115109,
+    "topics": [
+      "agent",
+      "agentic",
+      "agentic-ai",
+      "agentic-workflow",
+      "ai",
+      "ai-search",
+      "context-engineering",
+      "context-retrieval",
+      "deep-research",
+      "deepseek",
+      "deepseek-r1",
+      "document-parser",
+      "document-understanding",
+      "graphrag",
+      "llm",
+      "mcp",
+      "ollama",
+      "openai",
+      "rag",
+      "retrieval-augmented-generation"
+    ]
+  },
+  "hiyouga/LlamaFactory": {
+    "paradigms": [
+      "Agentic AI",
+      "Fine-tuning",
+      "NLP"
+    ],
+    "primary": "Agentic AI",
+    "stars": 69429,
+    "created": "2023-05-28",
+    "desc": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+    "size_kb": 13168,
+    "topics": [
+      "agent",
+      "ai",
+      "deepseek",
+      "fine-tuning",
+      "gemma",
+      "gpt",
+      "instruction-tuning",
+      "large-language-models",
+      "llama",
+      "llama3",
+      "llm",
+      "lora",
+      "moe",
+      "nlp",
+      "peft",
+      "qlora",
+      "quantization",
+      "qwen",
+      "rlhf",
+      "transformers"
+    ]
+  },
+  "OpenBB-finance/OpenBB": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 65183,
+    "created": "2020-12-20",
+    "desc": "Financial data platform for analysts, quants and AI agents.",
+    "size_kb": 2409613,
+    "topics": [
+      "ai",
+      "crypto",
+      "derivatives",
+      "economics",
+      "equity",
+      "finance",
+      "fixed-income",
+      "machine-learning",
+      "openbb",
+      "options",
+      "python",
+      "quantitative-finance",
+      "stocks"
+    ]
+  },
+  "bytedance/deer-flow": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 56967,
+    "created": "2025-05-07",
+    "desc": "An open-source long-horizon SuperAgent harness that researches, codes, and creat",
+    "size_kb": 25463,
+    "topics": [
+      "agent",
+      "agentic",
+      "agentic-framework",
+      "agentic-workflow",
+      "ai",
+      "ai-agents",
+      "deep-research",
+      "harness",
+      "langchain",
+      "langgraph",
+      "langmanus",
+      "llm",
+      "multi-agent",
+      "nodejs",
+      "podcast",
+      "python",
+      "superagent",
+      "typescript"
+    ]
+  },
+  "docling-project/docling": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 56954,
+    "created": "2024-07-09",
+    "desc": "Get your documents ready for gen AI",
+    "size_kb": 261235,
+    "topics": [
+      "ai",
+      "convert",
+      "document-parser",
+      "document-parsing",
+      "documents",
+      "docx",
+      "html",
+      "markdown",
+      "pdf",
+      "pdf-converter",
+      "pdf-to-json",
+      "pdf-to-text",
+      "pptx",
+      "tables",
+      "xlsx"
+    ]
+  },
+  "microsoft/autogen": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 56627,
+    "created": "2023-08-18",
+    "desc": "A programming framework for agentic AI",
+    "size_kb": 148610,
+    "topics": [
+      "agentic",
+      "agentic-agi",
+      "agents",
+      "ai",
+      "autogen",
+      "autogen-ecosystem",
+      "chatgpt",
+      "framework",
+      "llm-agent",
+      "llm-framework"
+    ]
+  },
+  "AntonOsika/gpt-engineer": {
+    "paradigms": [
+      "Code Gen"
+    ],
+    "primary": "Code Gen",
+    "stars": 55225,
+    "created": "2023-04-29",
+    "desc": "CLI platform to experiment with codegen. Precursor to: https://lovable.dev",
+    "size_kb": 20474,
+    "topics": [
+      "ai",
+      "autonomous-agent",
+      "code-generation",
+      "codebase-generation",
+      "codegen",
+      "coding-assistant",
+      "gpt-4",
+      "gpt-engineer",
+      "openai",
+      "python"
+    ]
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "paradigms": [
+      "Chatbot"
+    ],
+    "primary": "Chatbot",
+    "stars": 54883,
+    "created": "2024-03-11",
+    "desc": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+    "size_kb": 532470,
+    "topics": [
+      "ai",
+      "automation",
+      "chatgpt",
+      "moviepy",
+      "python",
+      "shortvideo",
+      "tiktok"
+    ]
+  },
+  "mem0ai/mem0": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 51833,
+    "created": "2023-06-20",
+    "desc": "Universal memory layer for AI Agents",
+    "size_kb": 46179,
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "application",
+      "chatbots",
+      "chatgpt",
+      "genai",
+      "llm",
+      "long-term-memory",
+      "memory",
+      "memory-management",
+      "python",
+      "rag",
+      "state-management"
+    ]
+  },
+  "sansan0/TrendRadar": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 50684,
+    "created": "2025-04-28",
+    "desc": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, ",
+    "size_kb": 30453,
+    "topics": [
+      "ai",
+      "bark",
+      "data-analysis",
+      "docker",
+      "hot-news",
+      "llm",
+      "mail",
+      "mcp",
+      "mcp-server",
+      "news",
+      "ntfy",
+      "python",
+      "rss",
+      "trending-topics",
+      "wechat",
+      "wework"
+    ]
+  },
+  "crewAIInc/crewAI": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 47894,
+    "created": "2023-10-27",
+    "desc": "Framework for orchestrating role-playing, autonomous AI agents. By fostering col",
+    "size_kb": 223267,
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "aiagentframework",
+      "llms"
+    ]
+  },
+  "zhayujie/chatgpt-on-wechat": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 42732,
+    "created": "2022-08-07",
+    "desc": "CowAgent是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、拥有长期记忆并不断成长，比OpenClaw更轻",
+    "size_kb": 6481,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "chatgpt",
+      "claude",
+      "deepseek",
+      "dingtalk",
+      "feishu-bot",
+      "gemini",
+      "kimi",
+      "linkai",
+      "llm",
+      "mcp",
+      "multi-agent",
+      "openai",
+      "openclaw",
+      "python3",
+      "qwen",
+      "skills",
+      "wechat",
+      "weixin"
+    ]
+  },
+  "hpcaitech/ColossalAI": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 41372,
+    "created": "2021-10-28",
+    "desc": "Making large AI models cheaper, faster and more accessible",
+    "size_kb": 66597,
+    "topics": [
+      "ai",
+      "big-model",
+      "data-parallelism",
+      "deep-learning",
+      "distributed-computing",
+      "foundation-models",
+      "heterogeneous-training",
+      "hpc",
+      "inference",
+      "large-scale",
+      "model-parallelism",
+      "pipeline-parallelism"
+    ]
+  },
+  "agno-agi/agno": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 39128,
+    "created": "2022-05-04",
+    "desc": "Build, run, manage agentic software at scale.",
+    "size_kb": 279390,
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "developer-tools",
+      "python"
+    ]
+  },
+  "QuivrHQ/quivr": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 39080,
+    "created": "2023-05-12",
+    "desc": "Opiniated RAG for integrating GenAI in your apps 🧠   Focus on your product rathe",
+    "size_kb": 130685,
+    "topics": [
+      "ai",
+      "api",
+      "chatbot",
+      "chatgpt",
+      "database",
+      "docker",
+      "framework",
+      "frontend",
+      "groq",
+      "html",
+      "javascript",
+      "llm",
+      "openai",
+      "postgresql",
+      "privacy",
+      "rag",
+      "react",
+      "security",
+      "typescript",
+      "vector"
+    ]
+  },
+  "mindsdb/mindsdb": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 38892,
+    "created": "2018-08-02",
+    "desc": "Query Engine for AI Analytics: Build self-reasoning agents across all your live ",
+    "size_kb": 279429,
+    "topics": [
+      "agents",
+      "ai",
+      "analytics",
+      "artificial-inteligence",
+      "bigquery",
+      "business-intelligence",
+      "databases",
+      "hacktoberfest",
+      "llms",
+      "mcp",
+      "mssql",
+      "mysql",
+      "postgresql",
+      "rag"
+    ]
+  },
+  "LAION-AI/Open-Assistant": {
+    "paradigms": [
+      "Chatbot"
+    ],
+    "primary": "Chatbot",
+    "stars": 37428,
+    "created": "2022-12-13",
+    "desc": "OpenAssistant is a chat-based assistant that understands tasks, can interact wit",
+    "size_kb": 35477,
+    "topics": [
+      "ai",
+      "assistant",
+      "chatgpt",
+      "discord-bot",
+      "language-model",
+      "machine-learning",
+      "nextjs",
+      "python",
+      "rlhf"
+    ]
+  },
+  "babysor/MockingBird": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 36902,
+    "created": "2021-08-07",
+    "desc": "🚀Clone a voice in 5 seconds to generate arbitrary speech in real-time",
+    "size_kb": 130787,
+    "topics": [
+      "ai",
+      "deep-learning",
+      "pytorch",
+      "speech",
+      "text-to-speech",
+      "tts"
+    ]
+  },
+  "D4Vinci/Scrapling": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 34491,
+    "created": "2024-10-13",
+    "desc": "🕷️ An adaptive Web Scraping framework that handles everything from a single requ",
+    "size_kb": 7424,
+    "topics": [
+      "ai",
+      "ai-scraping",
+      "automation",
+      "crawler",
+      "crawling",
+      "crawling-python",
+      "data",
+      "data-extraction",
+      "mcp",
+      "mcp-server",
+      "playwright",
+      "python",
+      "scraping",
+      "selectors",
+      "stealth",
+      "web-scraper",
+      "web-scraping",
+      "web-scraping-python",
+      "webscraping",
+      "xpath"
+    ]
+  },
+  "khoj-ai/khoj": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "Computer Vision"
+    ],
+    "primary": "RAG",
+    "stars": 33839,
+    "created": "2021-08-16",
+    "desc": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Buil",
+    "size_kb": 117335,
+    "topics": [
+      "agent",
+      "ai",
+      "assistant",
+      "chat",
+      "chatgpt",
+      "emacs",
+      "image-generation",
+      "llama3",
+      "llamacpp",
+      "llm",
+      "obsidian",
+      "obsidian-md",
+      "offline-llm",
+      "productivity",
+      "rag",
+      "research",
+      "self-hosted",
+      "semantic-search",
+      "stt",
+      "whatsapp-ai"
+    ]
+  },
+  "Pythagora-io/gpt-pilot": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 33794,
+    "created": "2023-08-16",
+    "desc": "The first real AI developer",
+    "size_kb": 52680,
+    "topics": [
+      "ai",
+      "codegen",
+      "coding-assistant",
+      "developer-tools",
+      "gpt-4",
+      "research-project"
+    ]
+  },
+  "explosion/spaCy": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 33411,
+    "created": "2014-07-03",
+    "desc": "💫 Industrial-strength Natural Language Processing (NLP) in Python",
+    "size_kb": 203709,
+    "topics": [
+      "ai",
+      "artificial-intelligence",
+      "cython",
+      "data-science",
+      "deep-learning",
+      "entity-linking",
+      "machine-learning",
+      "named-entity-recognition",
+      "natural-language-processing",
+      "neural-network",
+      "neural-networks",
+      "nlp",
+      "nlp-library",
+      "python",
+      "spacy",
+      "text-classification",
+      "tokenization"
+    ]
+  },
+  "Lightning-AI/pytorch-lightning": {
+    "paradigms": [
+      "Fine-tuning"
+    ],
+    "primary": "Fine-tuning",
+    "stars": 30986,
+    "created": "2019-03-31",
+    "desc": "Pretrain, finetune ANY AI model of ANY size on 1 or 10,000+ GPUs with zero code ",
+    "size_kb": 133651,
+    "topics": [
+      "ai",
+      "artificial-intelligence",
+      "data-science",
+      "deep-learning",
+      "machine-learning",
+      "python",
+      "pytorch"
+    ]
+  },
+  "AstrBotDevs/AstrBot": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 28788,
+    "created": "2022-12-08",
+    "desc": "Agentic IM Chatbot infrastructure that integrates lots of IM platforms, LLMs, pl",
+    "size_kb": 58801,
+    "topics": [
+      "agent",
+      "ai",
+      "chatbot",
+      "chatgpt",
+      "discord",
+      "docker",
+      "gemini",
+      "gpt",
+      "llama",
+      "llm",
+      "mcp",
+      "openai",
+      "python",
+      "qq",
+      "qqbot",
+      "telegram"
+    ]
+  },
+  "langchain-ai/langgraph": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 28296,
+    "created": "2023-08-09",
+    "desc": "Build resilient language agents as graphs.",
+    "size_kb": 515807,
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "chatgpt",
+      "deepagents",
+      "enterprise",
+      "framework",
+      "gemini",
+      "generative-ai",
+      "langchain",
+      "langgraph",
+      "llm",
+      "multiagent",
+      "open-source",
+      "openai",
+      "pydantic",
+      "python",
+      "rag"
+    ]
+  },
+  "github/awesome-copilot": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 28268,
+    "created": "2025-06-11",
+    "desc": "Community-contributed instructions, agents, skills, and configurations to help y",
+    "size_kb": 60992,
+    "topics": [
+      "agent-skills",
+      "agents",
+      "ai",
+      "awesome",
+      "custom-agents",
+      "github-copilot",
+      "hacktoberfest",
+      "prompt-engineering"
+    ]
+  },
+  "svc-develop-team/so-vits-svc": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 28050,
+    "created": "2023-03-10",
+    "desc": "SoftVC VITS Singing Voice Conversion",
+    "size_kb": 11145,
+    "topics": [
+      "ai",
+      "audio-analysis",
+      "deep-learning",
+      "flow",
+      "generative-adversarial-network",
+      "pytorch",
+      "singing-voice-conversion",
+      "so-vits-svc",
+      "sovits",
+      "speech",
+      "variational-inference",
+      "vc",
+      "vits",
+      "voice",
+      "voice-changer",
+      "voice-conversion",
+      "voiceconversion"
+    ]
+  },
+  "ZhuLinsen/daily_stock_analysis": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 27805,
+    "created": "2026-01-10",
+    "desc": "LLM驱动的 A/H/美股智能分析器：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered sto",
+    "size_kb": 58312,
+    "topics": [
+      "agent",
+      "ai",
+      "aigc",
+      "gemini",
+      "llm",
+      "quant",
+      "quantitative-trading",
+      "rag",
+      "stock"
+    ]
+  },
+  "facefusion/facefusion": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 27373,
+    "created": "2023-08-17",
+    "desc": "Industry leading face manipulation platform",
+    "size_kb": 31668,
+    "topics": [
+      "ai",
+      "deep-fake",
+      "deepfake",
+      "face-swap",
+      "faceswap",
+      "lip-sync",
+      "lipsync"
+    ]
+  },
+  "assafelovic/gpt-researcher": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 26198,
+    "created": "2023-05-12",
+    "desc": "An autonomous agent that conducts deep research on any data using any LLM provid",
+    "size_kb": 43291,
+    "topics": [
+      "agent",
+      "ai",
+      "automation",
+      "deepresearch",
+      "llms",
+      "mcp",
+      "mcp-server",
+      "python",
+      "research",
+      "search",
+      "webscraping"
+    ]
+  },
+  "Fosowl/agenticSeek": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 25792,
+    "created": "2025-02-19",
+    "desc": "Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent ",
+    "size_kb": 24272,
+    "topics": [
+      "agentic-ai",
+      "agents",
+      "ai",
+      "autonomous-agents",
+      "deepseek-r1",
+      "llm",
+      "llm-agents",
+      "voice-assistant"
+    ]
+  },
+  "mlflow/mlflow": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 25087,
+    "created": "2018-06-05",
+    "desc": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow ",
+    "size_kb": 1398455,
+    "topics": [
+      "agentops",
+      "agents",
+      "ai",
+      "ai-governance",
+      "apache-spark",
+      "evaluation",
+      "langchain",
+      "llm-evaluation",
+      "llmops",
+      "machine-learning",
+      "ml",
+      "mlflow",
+      "mlops",
+      "model-management",
+      "observability",
+      "open-source",
+      "openai",
+      "prompt-engineering"
+    ]
+  },
+  "VectifyAI/PageIndex": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 23758,
+    "created": "2025-04-01",
+    "desc": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+    "size_kb": 24178,
+    "topics": [
+      "agentic-ai",
+      "agents",
+      "ai",
+      "ai-agents",
+      "context-engineering",
+      "information-retrieval",
+      "llm",
+      "rag",
+      "reasoning",
+      "retrieval",
+      "retrieval-augmented-generation",
+      "vector-database"
+    ]
+  },
+  "sinaptik-ai/pandas-ai": {
+    "paradigms": [
+      "LLM App",
+      "Text-to-SQL"
+    ],
+    "primary": "LLM App",
+    "stars": 23434,
+    "created": "2023-04-22",
+    "desc": "Chat with your database or your datalake (SQL, CSV, parquet). PandasAI makes dat",
+    "size_kb": 57432,
+    "topics": [
+      "ai",
+      "csv",
+      "data",
+      "data-analysis",
+      "data-science",
+      "data-visualization",
+      "database",
+      "datalake",
+      "gpt-4",
+      "llm",
+      "pandas",
+      "sql",
+      "text-to-sql"
+    ]
+  },
+  "vanna-ai/vanna": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "Text-to-SQL"
+    ],
+    "primary": "RAG",
+    "stars": 23188,
+    "created": "2023-05-13",
+    "desc": "🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using ",
+    "size_kb": 8599,
+    "topics": [
+      "agent",
+      "ai",
+      "data-visualization",
+      "database",
+      "llm",
+      "rag",
+      "sql",
+      "text-to-sql"
+    ]
+  },
+  "NousResearch/hermes-agent": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 23088,
+    "created": "2025-07-22",
+    "desc": "The agent that grows with you",
+    "size_kb": 107836,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "clawdbot",
+      "codex",
+      "hermes",
+      "hermes-agent",
+      "llm",
+      "moltbot",
+      "nous-research",
+      "openai",
+      "openclaw"
+    ]
+  },
+  "oraios/serena": {
+    "paradigms": [
+      "Agentic AI",
+      "Code Gen"
+    ],
+    "primary": "Agentic AI",
+    "stars": 22420,
+    "created": "2025-03-23",
+    "desc": "A powerful coding agent toolkit providing semantic retrieval and editing capabil",
+    "size_kb": 8010,
+    "topics": [
+      "agent",
+      "ai",
+      "ai-coding",
+      "claude",
+      "claude-code",
+      "language-server",
+      "llms",
+      "mcp-server",
+      "programming",
+      "vibe-coding"
+    ]
+  },
+  "onyx-dot-app/onyx": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 22258,
+    "created": "2023-04-27",
+    "desc": "Open Source AI Platform - AI Chat with advanced features that works with every L",
+    "size_kb": 928620,
+    "topics": [
+      "ai",
+      "ai-chat",
+      "chatgpt",
+      "chatui",
+      "enterprise-search",
+      "gen-ai",
+      "information-retrieval",
+      "llm",
+      "llm-ui",
+      "nextjs",
+      "python",
+      "rag",
+      "self-hosted",
+      "vector-search"
+    ]
+  },
+  "letta-ai/letta": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 21867,
+    "created": "2023-10-11",
+    "desc": "Letta is the platform for building stateful agents: AI with advanced memory that",
+    "size_kb": 293353,
+    "topics": [
+      "ai",
+      "ai-agents",
+      "llm",
+      "llm-agent"
+    ]
+  },
+  "recommenders-team/recommenders": {
+    "paradigms": [
+      "ML Framework",
+      "Recommendation"
+    ],
+    "primary": "ML Framework",
+    "stars": 21587,
+    "created": "2018-09-19",
+    "desc": "Best Practices on Recommendation Systems",
+    "size_kb": 230820,
+    "topics": [
+      "ai",
+      "artificial-intelligence",
+      "data-science",
+      "deep-learning",
+      "jupyter-notebook",
+      "kubernetes",
+      "machine-learning",
+      "operationalization",
+      "python",
+      "ranking",
+      "rating",
+      "recommendation",
+      "recommendation-algorithm",
+      "recommendation-engine",
+      "recommendation-system",
+      "recommender",
+      "tutorial"
+    ]
+  },
+  "huggingface/datasets": {
+    "paradigms": [
+      "LLM App",
+      "Computer Vision",
+      "NLP",
+      "Speech/Audio"
+    ],
+    "primary": "LLM App",
+    "stars": 21360,
+    "created": "2020-03-26",
+    "desc": "🤗 The largest hub of ready-to-use datasets for AI models with fast, easy-to-use ",
+    "size_kb": 90263,
+    "topics": [
+      "ai",
+      "artificial-intelligence",
+      "computer-vision",
+      "dataset-hub",
+      "datasets",
+      "deep-learning",
+      "huggingface",
+      "llm",
+      "machine-learning",
+      "natural-language-processing",
+      "nlp",
+      "numpy",
+      "pandas",
+      "pytorch",
+      "speech",
+      "tensorflow"
+    ]
+  },
+  "Skyvern-AI/skyvern": {
+    "paradigms": [
+      "LLM Framework"
+    ],
+    "primary": "LLM Framework",
+    "stars": 21034,
+    "created": "2024-02-28",
+    "desc": "Automate browser based workflows with AI",
+    "size_kb": 531904,
+    "topics": [
+      "ai",
+      "api",
+      "automation",
+      "browser",
+      "browser-automation",
+      "computer",
+      "gpt",
+      "llm",
+      "playwright",
+      "powerautomate",
+      "puppeteer",
+      "python",
+      "rpa",
+      "selenium",
+      "vision",
+      "workflow"
+    ]
+  },
+  "onnx/onnx": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 20580,
+    "created": "2017-09-07",
+    "desc": "Open standard for machine learning interoperability",
+    "size_kb": 67146,
+    "topics": [
+      "ai",
+      "artificial-intelligence",
+      "deep-learning",
+      "deep-neural-networks",
+      "dnn",
+      "keras",
+      "machine-learning",
+      "ml",
+      "neural-network",
+      "onnx",
+      "pytorch",
+      "scikit-learn",
+      "tensorflow"
+    ]
+  },
+  "openai/openai-agents-python": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 20534,
+    "created": "2025-03-11",
+    "desc": "A lightweight, powerful framework for multi-agent workflows",
+    "size_kb": 21953,
+    "topics": [
+      "agents",
+      "ai",
+      "framework",
+      "llm",
+      "openai",
+      "python"
+    ]
+  },
+  "nari-labs/dia": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 19242,
+    "created": "2025-04-19",
+    "desc": "A TTS model capable of generating ultra-realistic dialogue in one pass.",
+    "size_kb": 596,
+    "topics": [
+      "ai",
+      "open-weight",
+      "text-to-speech"
+    ]
+  },
+  "langchain-ai/deepagents": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 18926,
+    "created": "2025-07-27",
+    "desc": "Agent harness built with LangChain and LangGraph. Equipped with a planning tool,",
+    "size_kb": 63336,
+    "topics": [
+      "ai",
+      "deepagents",
+      "langchain",
+      "langgraph"
+    ]
+  },
+  "SWE-agent/SWE-agent": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 18913,
+    "created": "2024-04-02",
+    "desc": "SWE-agent takes a GitHub issue and tries to automatically fix it, using your LM ",
+    "size_kb": 71744,
+    "topics": [
+      "agent",
+      "agent-based-model",
+      "ai",
+      "cybersecurity",
+      "developer-tools",
+      "llm",
+      "lms"
+    ]
+  },
+  "google/adk-python": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 18719,
+    "created": "2025-04-01",
+    "desc": "An open-source, code-first Python toolkit for building, evaluating, and deployin",
+    "size_kb": 49388,
+    "topics": [
+      "agent",
+      "agentic",
+      "agentic-ai",
+      "agents",
+      "agents-sdk",
+      "ai",
+      "ai-agents",
+      "aiagentframework",
+      "genai",
+      "genai-chatbot",
+      "llm",
+      "llms",
+      "multi-agent",
+      "multi-agent-systems",
+      "multi-agents",
+      "multi-agents-collaboration"
+    ]
+  },
+  "arc53/DocsGPT": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "NLP"
+    ],
+    "primary": "RAG",
+    "stars": 17802,
+    "created": "2023-02-02",
+    "desc": "Private AI platform for agents, assistants and enterprise search. Built-in Agent",
+    "size_kb": 90967,
+    "topics": [
+      "agent-builder",
+      "agents",
+      "ai",
+      "chatgpt",
+      "docsgpt",
+      "hacktoberfest",
+      "hacktoberfest2025",
+      "information-retrieval",
+      "language-model",
+      "llm",
+      "machine-learning",
+      "natural-language-processing",
+      "python",
+      "pytorch",
+      "rag",
+      "react",
+      "search",
+      "semantic-search",
+      "transformers"
+    ]
+  },
+  "cheahjs/free-llm-api-resources": {
+    "paradigms": [
+      "LLM Infra"
+    ],
+    "primary": "LLM Infra",
+    "stars": 17749,
+    "created": "2024-07-04",
+    "desc": "A list of free LLM inference resources accessible via API.",
+    "size_kb": 389,
+    "topics": [
+      "ai",
+      "claude",
+      "gemini",
+      "llama",
+      "llm",
+      "openai"
+    ]
+  },
+  "stas00/ml-engineering": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 17604,
+    "created": "2020-09-02",
+    "desc": "Machine Learning Engineering Open Book",
+    "size_kb": 11378,
+    "topics": [
+      "ai",
+      "debugging",
+      "gpus",
+      "inference",
+      "large-language-models",
+      "llm",
+      "machine-learning",
+      "machine-learning-engineering",
+      "mlops",
+      "network",
+      "pytorch",
+      "scalability",
+      "slurm",
+      "storage",
+      "training",
+      "transformers"
+    ]
+  },
+  "TransformerOptimus/SuperAGI": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 17408,
+    "created": "2023-05-13",
+    "desc": "<⚡️> SuperAGI - A dev-first open source autonomous AI agent framework. Enabling ",
+    "size_kb": 63451,
+    "topics": [
+      "agents",
+      "agi",
+      "ai",
+      "artificial-general-intelligence",
+      "artificial-intelligence",
+      "autonomous-agents",
+      "gpt-4",
+      "hacktoberfest",
+      "llm",
+      "llmops",
+      "nextjs",
+      "openai",
+      "pinecone",
+      "python",
+      "superagi"
+    ]
+  },
+  "agent0ai/agent-zero": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 16684,
+    "created": "2024-06-10",
+    "desc": "Agent Zero AI framework",
+    "size_kb": 39953,
+    "topics": [
+      "agent",
+      "ai",
+      "assistant",
+      "autonomous",
+      "linux",
+      "zero"
+    ]
+  },
+  "treeverse/dvc": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 15498,
+    "created": "2017-03-04",
+    "desc": "🦉 Data Versioning and ML Experiments",
+    "size_kb": 20946,
+    "topics": [
+      "ai",
+      "data-science",
+      "data-version-control",
+      "developer-tools",
+      "machine-learning",
+      "reproducibility",
+      "unstructured-data"
+    ]
+  },
+  "AsyncFuncAI/deepwiki-open": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 15363,
+    "created": "2025-04-30",
+    "desc": "Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repo",
+    "size_kb": 3981,
+    "topics": [
+      "ai",
+      "gemini",
+      "github",
+      "ollama",
+      "open-source",
+      "openai",
+      "openrouter",
+      "self-hosted",
+      "wiki"
+    ]
+  },
+  "topoteretes/cognee": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "Knowledge Graph"
+    ],
+    "primary": "RAG",
+    "stars": 14883,
+    "created": "2023-08-16",
+    "desc": "Knowledge Engine for AI Agent Memory in 6 lines of code",
+    "size_kb": 141544,
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-memory",
+      "cognitive-architecture",
+      "cognitive-memory",
+      "context-engineering",
+      "contributions-welcome",
+      "good-first-issue",
+      "good-first-pr",
+      "graph-database",
+      "graph-rag",
+      "graphrag",
+      "help-wanted",
+      "knowledge",
+      "knowledge-graph",
+      "neo4j",
+      "open-source",
+      "openai",
+      "rag",
+      "vector-database"
+    ]
+  },
+  "coderamp-labs/gitingest": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 14254,
+    "created": "2024-11-29",
+    "desc": "Replace 'hub' with 'ingest' in any GitHub URL to get a prompt-friendly extract o",
+    "size_kb": 1484,
+    "topics": [
+      "ai",
+      "code",
+      "developer-tool",
+      "ingestion"
+    ]
+  },
+  "WEIFENG2333/VideoCaptioner": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 13848,
+    "created": "2024-10-31",
+    "desc": "🎬 卡卡字幕助手 | VideoCaptioner - 基于 LLM 的智能字幕助手 - 视频字幕生成、断句、校正、字幕翻译全流程处理！- A powered ",
+    "size_kb": 60055,
+    "topics": [
+      "ai",
+      "subtitle",
+      "translate",
+      "video-subtile"
+    ]
+  },
+  "MODSetter/SurfSense": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 13636,
+    "created": "2024-07-30",
+    "desc": "An open source, privacy focused alternative to NotebookLM for teams with no data",
+    "size_kb": 157230,
+    "topics": [
+      "agent",
+      "agents",
+      "ai",
+      "chrome-extension",
+      "extension",
+      "fastapi",
+      "langchain",
+      "langgraph",
+      "nextjs",
+      "notebooklm",
+      "ollama",
+      "perplexity",
+      "python",
+      "rag",
+      "typescript"
+    ]
+  },
+  "Lightning-AI/litgpt": {
+    "paradigms": [
+      "LLM Infra",
+      "Fine-tuning"
+    ],
+    "primary": "LLM Infra",
+    "stars": 13274,
+    "created": "2023-05-04",
+    "desc": "20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale",
+    "size_kb": 5900,
+    "topics": [
+      "ai",
+      "artificial-intelligence",
+      "deep-learning",
+      "large-language-models",
+      "llm",
+      "llm-inference",
+      "llms"
+    ]
+  },
+  "MemoriLabs/Memori": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "Text-to-SQL"
+    ],
+    "primary": "RAG",
+    "stars": 12978,
+    "created": "2025-07-24",
+    "desc": "Memori is agent-native memory infrastructure. A SQL-native, LLM-agnostic layer t",
+    "size_kb": 28128,
+    "topics": [
+      "agent",
+      "agent-memory",
+      "ai",
+      "ai-memory",
+      "aiagent",
+      "awesome",
+      "chatgpt",
+      "llm",
+      "long-short-term-memory",
+      "memori-ai",
+      "memory",
+      "memory-management",
+      "memory-mcp",
+      "openclaw-memory",
+      "python",
+      "rag",
+      "state-management",
+      "stateful",
+      "typescript"
+    ]
+  },
+  "xszyou/Fay": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 12610,
+    "created": "2022-06-13",
+    "desc": "fay是一个帮助数字人（2.5d、3d、移动、pc、网页）或大语言模型（openai兼容、deepseek）连通业务系统的agent框架。",
+    "size_kb": 161439,
+    "topics": [
+      "ai",
+      "android",
+      "api",
+      "python",
+      "ue5",
+      "unity3d",
+      "wav2lip"
+    ]
+  },
+  "neuml/txtai": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "NLP"
+    ],
+    "primary": "RAG",
+    "stars": 12361,
+    "created": "2020-08-09",
+    "desc": "💡 All-in-one AI framework for semantic search, LLM orchestration and language mo",
+    "size_kb": 55734,
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "embeddings",
+      "information-retrieval",
+      "language-model",
+      "large-language-models",
+      "llm",
+      "nlp",
+      "python",
+      "rag",
+      "retrieval-augmented-generation",
+      "search",
+      "search-engine",
+      "semantic-search",
+      "sentence-embeddings",
+      "transformers",
+      "txtai",
+      "vector-database",
+      "vector-search"
+    ]
+  },
+  "microsoft/RD-Agent": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 12263,
+    "created": "2024-04-03",
+    "desc": "Research and development (R&D) is crucial for the enhancement of industrial prod",
+    "size_kb": 68667,
+    "topics": [
+      "agent",
+      "ai",
+      "automation",
+      "data-mining",
+      "data-science",
+      "development",
+      "llm",
+      "research"
+    ]
+  },
+  "h2oai/h2ogpt": {
+    "paradigms": [
+      "LLM App",
+      "Computer Vision"
+    ],
+    "primary": "LLM App",
+    "stars": 11990,
+    "created": "2023-03-24",
+    "desc": "Private chat with local GPT with document, images, video, etc. 100% private, Apa",
+    "size_kb": 54687,
+    "topics": [
+      "ai",
+      "chatgpt",
+      "embeddings",
+      "fedramp",
+      "generative",
+      "gpt",
+      "gpt4all",
+      "llama2",
+      "llm",
+      "mixtral",
+      "pdf",
+      "private",
+      "privategpt",
+      "vectorstore"
+    ]
+  },
+  "tadata-org/fastapi_mcp": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 11771,
+    "created": "2025-03-08",
+    "desc": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+    "size_kb": 423,
+    "topics": [
+      "ai",
+      "authentication",
+      "authorization",
+      "claude",
+      "cursor",
+      "fastapi",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "mcp-servers",
+      "modelcontextprotocol",
+      "openapi",
+      "windsurf"
+    ]
+  },
+  "e2b-dev/E2B": {
+    "paradigms": [
+      "Agentic AI",
+      "Code Gen"
+    ],
+    "primary": "Agentic AI",
+    "stars": 11560,
+    "created": "2023-03-04",
+    "desc": "Open-source, secure environment with real-world tools for enterprise-grade agent",
+    "size_kb": 124075,
+    "topics": [
+      "agent",
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "code-interpreter",
+      "copilot",
+      "development",
+      "devtools",
+      "gpt",
+      "gpt-4",
+      "javascript",
+      "llm",
+      "nextjs",
+      "openai",
+      "python",
+      "react",
+      "software",
+      "typescript"
+    ]
+  },
+  "EmbraceAGI/awesome-chatgpt-zh": {
+    "paradigms": [
+      "Chatbot"
+    ],
+    "primary": "Chatbot",
+    "stars": 11515,
+    "created": "2023-03-21",
+    "desc": "ChatGPT 中文指南🔥，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up! 🚀",
+    "size_kb": 69747,
+    "topics": [
+      "agi",
+      "ai",
+      "awesome",
+      "awesome-list",
+      "chat-gpt",
+      "chatglm",
+      "chatgpt",
+      "chatgpt3",
+      "chatgpt35-turbo",
+      "claude",
+      "deeplearning",
+      "gpt",
+      "gpt-4",
+      "langchain",
+      "openai",
+      "openai-chatgpt",
+      "prompt",
+      "prompt-engineering",
+      "tools"
+    ]
+  },
+  "simonw/llm": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 11508,
+    "created": "2023-04-01",
+    "desc": "Access large language models from the command-line",
+    "size_kb": 1405,
+    "topics": [
+      "ai",
+      "llms",
+      "openai"
+    ]
+  },
+  "microsoft/promptflow": {
+    "paradigms": [
+      "LLM Infra"
+    ],
+    "primary": "LLM Infra",
+    "stars": 11087,
+    "created": "2023-06-30",
+    "desc": "Build high-quality LLM apps - from prototyping, testing to production deployment",
+    "size_kb": 173466,
+    "topics": [
+      "ai",
+      "ai-application-development",
+      "ai-applications",
+      "chatgpt",
+      "gpt",
+      "llm",
+      "prompt",
+      "prompt-engineering"
+    ]
+  },
+  "pipecat-ai/pipecat": {
+    "paradigms": [
+      "Speech/Audio",
+      "VLM/Multimodal"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 11009,
+    "created": "2023-12-27",
+    "desc": "Open Source framework for voice and multimodal conversational AI",
+    "size_kb": 140558,
+    "topics": [
+      "ai",
+      "chatbot-framework",
+      "chatbots",
+      "real-time",
+      "voice",
+      "voice-assistant"
+    ]
+  },
+  "wandb/wandb": {
+    "paradigms": [
+      "Fine-tuning",
+      "RL"
+    ],
+    "primary": "Fine-tuning",
+    "stars": 10947,
+    "created": "2017-03-24",
+    "desc": "The AI developer platform. Use Weights & Biases to train and fine-tune models, a",
+    "size_kb": 205137,
+    "topics": [
+      "ai",
+      "collaboration",
+      "data-science",
+      "data-versioning",
+      "deep-learning",
+      "experiment-track",
+      "hyperparameter-optimization",
+      "hyperparameter-search",
+      "hyperparameter-tuning",
+      "jax",
+      "keras",
+      "machine-learning",
+      "ml-platform",
+      "mlops",
+      "model-versioning",
+      "pytorch",
+      "reinforcement-learning",
+      "reproducibility",
+      "tensorflow"
+    ]
+  },
+  "Usagi-org/ai-goofish-monitor": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 10552,
+    "created": "2025-07-16",
+    "desc": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+    "size_kb": 9813,
+    "topics": [
+      "ai",
+      "ai-assistant",
+      "ai-tools",
+      "automation",
+      "gemini",
+      "goofish",
+      "open-source",
+      "openai",
+      "playwright",
+      "tool",
+      "xian-yu",
+      "xianyu",
+      "xianyu-bot"
+    ]
+  },
+  "yichuan-w/LEANN": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 10388,
+    "created": "2025-06-09",
+    "desc": "[MLsys2026]: RAG on Everything with LEANN. Enjoy 97% storage savings while runni",
+    "size_kb": 83037,
+    "topics": [
+      "ai",
+      "faiss",
+      "gpt-oss",
+      "langchain",
+      "llama-index",
+      "llm",
+      "localstorage",
+      "offline-first",
+      "ollama",
+      "privacy",
+      "python",
+      "rag",
+      "retrieval-augmented-generation",
+      "vector-database",
+      "vector-search",
+      "vectors"
+    ]
+  },
+  "TEN-framework/ten-framework": {
+    "paradigms": [
+      "Agentic AI",
+      "Speech/Audio"
+    ],
+    "primary": "Agentic AI",
+    "stars": 10388,
+    "created": "2024-06-19",
+    "desc": " Open-source framework for conversational voice AI agents",
+    "size_kb": 125100,
+    "topics": [
+      "ai",
+      "multi-modal",
+      "real-time",
+      "video",
+      "voice"
+    ]
+  },
+  "sfyc23/EverydayWechat": {
+    "paradigms": [
+      "Chatbot"
+    ],
+    "primary": "Chatbot",
+    "stars": 10296,
+    "created": "2019-03-11",
+    "desc": "微信助手：1.每日定时给好友（女友）发送定制消息。2.机器人自动回复好友。3.群助手功能（例如：查询垃圾分类、天气、日历、电影实时票房、快递物流、PM2.5等）",
+    "size_kb": 359,
+    "topics": [
+      "ai",
+      "autoreply",
+      "bot",
+      "chat",
+      "chatbot",
+      "itchat",
+      "python",
+      "python3",
+      "tuling",
+      "wechat"
+    ]
+  },
+  "ValueCell-ai/valuecell": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 10190,
+    "created": "2025-09-01",
+    "desc": "ValueCell is a community-driven, multi-agent platform for financial applications",
+    "size_kb": 22133,
+    "topics": [
+      "agentic-ai",
+      "agents",
+      "ai",
+      "assitant",
+      "crypto",
+      "equity",
+      "finance",
+      "investment",
+      "mcp",
+      "python",
+      "react",
+      "stock-market"
+    ]
+  },
+  "google/magika": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 10189,
+    "created": "2023-08-22",
+    "desc": "Fast and accurate AI powered file content types detection ",
+    "size_kb": 85996,
+    "topics": [
+      "ai",
+      "deep-learning",
+      "filetype",
+      "keras-classification-models",
+      "keras-models",
+      "mime-types",
+      "onnx"
+    ]
+  },
+  "YaoFANGUK/video-subtitle-remover": {
+    "paradigms": [
+      "Other/General AI"
+    ],
+    "primary": "Other/General AI",
+    "stars": 10048,
+    "created": "2023-10-25",
+    "desc": "基于AI的图片/视频硬字幕去除、文本水印去除，无损分辨率生成去字幕、去水印后的图片/视频文件。无需申请第三方API，本地实现。AI-based tool for",
+    "size_kb": 1190929,
+    "topics": [
+      "ai",
+      "deepleanring",
+      "sub-remove",
+      "subtile",
+      "vsr"
+    ]
+  },
+  "Netflix/metaflow": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 10006,
+    "created": "2019-09-17",
+    "desc": "Build, Manage and Deploy AI/ML Systems",
+    "size_kb": 47239,
+    "topics": [
+      "agents",
+      "ai",
+      "aws",
+      "azure",
+      "cost-optimization",
+      "datascience",
+      "distributed-training",
+      "gcp",
+      "generative-ai",
+      "high-performance-computing",
+      "kubernetes",
+      "llm",
+      "llmops",
+      "machine-learning",
+      "ml",
+      "ml-infrastructure",
+      "ml-platform",
+      "mlops",
+      "model-management",
+      "python"
+    ]
+  },
+  "huggingface/transformers": {
+    "paradigms": [
+      "LLM App",
+      "NLP",
+      "Speech/Audio",
+      "VLM/Multimodal"
+    ],
+    "primary": "LLM App",
+    "stars": 158728,
+    "created": "2018-10-29",
+    "desc": "🤗 Transformers: the model-definition framework for state-of-the-art machine lear",
+    "size_kb": 462984,
+    "topics": [
+      "audio",
+      "deep-learning",
+      "deepseek",
+      "gemma",
+      "glm",
+      "hacktoberfest",
+      "llm",
+      "machine-learning",
+      "model-hub",
+      "natural-language-processing",
+      "nlp",
+      "pretrained-models",
+      "python",
+      "pytorch",
+      "pytorch-transformers",
+      "qwen",
+      "speech-recognition",
+      "transformer",
+      "vlm"
+    ]
+  },
+  "pytorch/pytorch": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 98766,
+    "created": "2016-08-13",
+    "desc": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "size_kb": 1286886,
+    "topics": [
+      "autograd",
+      "deep-learning",
+      "gpu",
+      "machine-learning",
+      "neural-network",
+      "numpy",
+      "python",
+      "tensor"
+    ]
+  },
+  "d2l-ai/d2l-zh": {
+    "paradigms": [
+      "Computer Vision",
+      "NLP"
+    ],
+    "primary": "Computer Vision",
+    "stars": 76744,
+    "created": "2017-08-23",
+    "desc": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
+    "size_kb": 316965,
+    "topics": [
+      "book",
+      "chinese",
+      "computer-vision",
+      "deep-learning",
+      "machine-learning",
+      "natural-language-processing",
+      "notebook",
+      "python"
+    ]
+  },
+  "labmlai/annotated_deep_learning_paper_implementations": {
+    "paradigms": [
+      "RL"
+    ],
+    "primary": "RL",
+    "stars": 66214,
+    "created": "2020-08-25",
+    "desc": "🧑‍🏫 60+ Implementations/tutorials of deep learning papers with side-by-side note",
+    "size_kb": 156370,
+    "topics": [
+      "attention",
+      "deep-learning",
+      "deep-learning-tutorial",
+      "gan",
+      "literate-programming",
+      "lora",
+      "machine-learning",
+      "neural-networks",
+      "optimizers",
+      "pytorch",
+      "reinforcement-learning",
+      "transformer",
+      "transformers"
+    ]
+  },
+  "scikit-learn/scikit-learn": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 65604,
+    "created": "2010-08-17",
+    "desc": "scikit-learn: machine learning in Python",
+    "size_kb": 180882,
+    "topics": [
+      "data-analysis",
+      "data-science",
+      "machine-learning",
+      "python",
+      "statistics"
+    ]
+  },
+  "keras-team/keras": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 63928,
+    "created": "2015-03-28",
+    "desc": "Deep Learning for humans",
+    "size_kb": 51455,
+    "topics": [
+      "data-science",
+      "deep-learning",
+      "jax",
+      "machine-learning",
+      "neural-networks",
+      "python",
+      "pytorch",
+      "tensorflow"
+    ]
+  },
+  "ultralytics/yolov5": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 57149,
+    "created": "2020-05-18",
+    "desc": "YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite",
+    "size_kb": 17368,
+    "topics": [
+      "coreml",
+      "deep-learning",
+      "ios",
+      "machine-learning",
+      "ml",
+      "object-detection",
+      "onnx",
+      "pytorch",
+      "tflite",
+      "ultralytics",
+      "yolo",
+      "yolov3",
+      "yolov5"
+    ]
+  },
+  "ageitgey/face_recognition": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 56261,
+    "created": "2017-03-03",
+    "desc": "The world's simplest facial recognition api for Python and the command line",
+    "size_kb": 103959,
+    "topics": [
+      "face-detection",
+      "face-recognition",
+      "machine-learning",
+      "python"
+    ]
+  },
+  "ultralytics/ultralytics": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 55365,
+    "created": "2022-09-11",
+    "desc": "Ultralytics YOLO 🚀",
+    "size_kb": 52563,
+    "topics": [
+      "cli",
+      "computer-vision",
+      "deep-learning",
+      "hub",
+      "image-classification",
+      "instance-segmentation",
+      "machine-learning",
+      "object-detection",
+      "pose-estimation",
+      "python",
+      "pytorch",
+      "rotated-object-detection",
+      "segment-anything",
+      "tracking",
+      "ultralytics",
+      "yolo",
+      "yolo-world",
+      "yolo11",
+      "yolo26",
+      "yolov8"
+    ]
+  },
+  "deepfakes/faceswap": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 55109,
+    "created": "2017-12-19",
+    "desc": "Deepfakes Software For All",
+    "size_kb": 205566,
+    "topics": [
+      "deep-face-swap",
+      "deep-learning",
+      "deep-neural-networks",
+      "deepface",
+      "deepfakes",
+      "deeplearning",
+      "face-swap",
+      "faceswap",
+      "fakeapp",
+      "machine-learning",
+      "myfakeapp",
+      "neural-nets",
+      "neural-networks",
+      "openfaceswap"
+    ]
+  },
+  "apache/airflow": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 44868,
+    "created": "2015-04-13",
+    "desc": "Apache Airflow - A platform to programmatically author, schedule, and monitor wo",
+    "size_kb": 560992,
+    "topics": [
+      "airflow",
+      "apache",
+      "apache-airflow",
+      "automation",
+      "dag",
+      "data-engineering",
+      "data-integration",
+      "data-orchestrator",
+      "data-pipelines",
+      "data-science",
+      "elt",
+      "etl",
+      "machine-learning",
+      "mlops",
+      "orchestration",
+      "python",
+      "scheduler",
+      "workflow",
+      "workflow-engine",
+      "workflow-orchestration"
+    ]
+  },
+  "streamlit/streamlit": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 44099,
+    "created": "2019-08-24",
+    "desc": "Streamlit — A faster way to build and share data apps.",
+    "size_kb": 920160,
+    "topics": [
+      "data-analysis",
+      "data-science",
+      "data-visualization",
+      "deep-learning",
+      "developer-tools",
+      "machine-learning",
+      "python",
+      "streamlit"
+    ]
+  },
+  "gradio-app/gradio": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 42240,
+    "created": "2018-12-19",
+    "desc": "Build and share delightful machine learning apps, all in Python. 🌟 Star to suppo",
+    "size_kb": 318893,
+    "topics": [
+      "data-analysis",
+      "data-science",
+      "data-visualization",
+      "deep-learning",
+      "deploy",
+      "gradio",
+      "gradio-interface",
+      "interface",
+      "machine-learning",
+      "models",
+      "python",
+      "python-notebook",
+      "ui",
+      "ui-components"
+    ]
+  },
+  "deepspeedai/DeepSpeed": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 41975,
+    "created": "2020-01-23",
+    "desc": "DeepSpeed is a deep learning optimization library that makes distributed trainin",
+    "size_kb": 245096,
+    "topics": [
+      "billion-parameters",
+      "compression",
+      "data-parallelism",
+      "deep-learning",
+      "gpu",
+      "inference",
+      "machine-learning",
+      "mixture-of-experts",
+      "model-parallelism",
+      "pipeline-parallelism",
+      "pytorch",
+      "trillion-parameters",
+      "zero"
+    ]
+  },
+  "ray-project/ray": {
+    "paradigms": [
+      "LLM App",
+      "RL"
+    ],
+    "primary": "LLM App",
+    "stars": 41931,
+    "created": "2016-10-25",
+    "desc": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a se",
+    "size_kb": 708698,
+    "topics": [
+      "data-science",
+      "deep-learning",
+      "deployment",
+      "distributed",
+      "hyperparameter-optimization",
+      "hyperparameter-search",
+      "large-language-models",
+      "llm",
+      "llm-inference",
+      "llm-serving",
+      "machine-learning",
+      "optimization",
+      "parallel",
+      "python",
+      "pytorch",
+      "ray",
+      "reinforcement-learning",
+      "rllib",
+      "serving",
+      "tensorflow"
+    ]
+  },
+  "microsoft/qlib": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 40093,
+    "created": "2020-08-14",
+    "desc": "Qlib is an AI-oriented Quant investment platform that aims to use AI tech to emp",
+    "size_kb": 17977,
+    "topics": [
+      "algorithmic-trading",
+      "auto-quant",
+      "deep-learning",
+      "finance",
+      "fintech",
+      "investment",
+      "machine-learning",
+      "paper",
+      "platform",
+      "python",
+      "quant",
+      "quant-dataset",
+      "quant-models",
+      "quantitative-finance",
+      "quantitative-trading",
+      "research",
+      "research-paper",
+      "stock-data"
+    ]
+  },
+  "paperless-ngx/paperless-ngx": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 37805,
+    "created": "2022-02-12",
+    "desc": "A community-supported supercharged document management system: scan, index and a",
+    "size_kb": 185907,
+    "topics": [
+      "angular",
+      "archiving",
+      "django",
+      "dms",
+      "document-management",
+      "document-management-system",
+      "hacktoberfest",
+      "machine-learning",
+      "ocr",
+      "optical-character-recognition",
+      "pdf"
+    ]
+  },
+  "roboflow/supervision": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 37491,
+    "created": "2022-11-28",
+    "desc": "We write your reusable computer vision tools. 💜",
+    "size_kb": 2988422,
+    "topics": [
+      "classification",
+      "coco",
+      "computer-vision",
+      "deep-learning",
+      "hacktoberfest",
+      "image-processing",
+      "instance-segmentation",
+      "low-code",
+      "machine-learning",
+      "metrics",
+      "object-detection",
+      "oriented-bounding-box",
+      "pascal-voc",
+      "python",
+      "pytorch",
+      "tensorflow",
+      "tracking",
+      "video-processing",
+      "yolo"
+    ]
+  },
+  "eriklindernoren/ML-From-Scratch": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 31179,
+    "created": "2017-02-05",
+    "desc": "Machine Learning From Scratch. Bare bones NumPy implementations of machine learn",
+    "size_kb": 553,
+    "topics": [
+      "data-mining",
+      "data-science",
+      "deep-learning",
+      "deep-reinforcement-learning",
+      "genetic-algorithm",
+      "machine-learning",
+      "machine-learning-from-scratch"
+    ]
+  },
+  "iperov/DeepFaceLive": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 30697,
+    "created": "2020-12-15",
+    "desc": "Real-time face swap for PC streaming or video calls",
+    "size_kb": 1540184,
+    "topics": [
+      "deepfake",
+      "faceswap",
+      "machine-learning",
+      "real-time",
+      "streaming",
+      "videocall",
+      "webcam"
+    ]
+  },
+  "JaidedAI/EasyOCR": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 29215,
+    "created": "2020-03-14",
+    "desc": "Ready-to-use OCR with 80+ supported languages and all popular writing scripts in",
+    "size_kb": 161635,
+    "topics": [
+      "cnn",
+      "crnn",
+      "data-mining",
+      "deep-learning",
+      "easyocr",
+      "image-processing",
+      "information-retrieval",
+      "lstm",
+      "machine-learning",
+      "ocr",
+      "optical-character-recognition",
+      "python",
+      "pytorch",
+      "scene-text",
+      "scene-text-recognition"
+    ]
+  },
+  "donnemartin/data-science-ipython-notebooks": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 28964,
+    "created": "2015-01-23",
+    "desc": "Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras),",
+    "size_kb": 49025,
+    "topics": [
+      "aws",
+      "big-data",
+      "caffe",
+      "data-science",
+      "deep-learning",
+      "hadoop",
+      "kaggle",
+      "keras",
+      "machine-learning",
+      "mapreduce",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "python",
+      "scikit-learn",
+      "scipy",
+      "spark",
+      "tensorflow",
+      "theano"
+    ]
+  },
+  "d2l-ai/d2l-en": {
+    "paradigms": [
+      "Computer Vision",
+      "NLP",
+      "RL"
+    ],
+    "primary": "Computer Vision",
+    "stars": 28547,
+    "created": "2018-10-09",
+    "desc": "Interactive deep learning book with multi-framework code, math, and discussions.",
+    "size_kb": 317904,
+    "topics": [
+      "book",
+      "computer-vision",
+      "data-science",
+      "deep-learning",
+      "gaussian-processes",
+      "hyperparameter-optimization",
+      "jax",
+      "kaggle",
+      "keras",
+      "machine-learning",
+      "mxnet",
+      "natural-language-processing",
+      "notebook",
+      "python",
+      "pytorch",
+      "recommender-system",
+      "reinforcement-learning",
+      "tensorflow"
+    ]
+  },
+  "sebastianruder/NLP-progress": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 22973,
+    "created": "2018-06-22",
+    "desc": "Repository to track the progress in Natural Language Processing (NLP), including",
+    "size_kb": 1399,
+    "topics": [
+      "dialogue",
+      "machine-learning",
+      "machine-translation",
+      "named-entity-recognition",
+      "natural-language-processing",
+      "nlp-tasks"
+    ]
+  },
+  "serengil/deepface": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 22471,
+    "created": "2020-02-08",
+    "desc": "A Lightweight Face Recognition and Facial Attribute Analysis (Age, Gender, Emoti",
+    "size_kb": 58352,
+    "topics": [
+      "age-prediction",
+      "arcface",
+      "deep-learning",
+      "deepface",
+      "deepid",
+      "emotion-recognition",
+      "face-analysis",
+      "face-recognition",
+      "facenet",
+      "facial-expression-recognition",
+      "facial-recognition",
+      "gender-prediction",
+      "machine-learning",
+      "openface",
+      "python",
+      "race-classification",
+      "vgg-face"
+    ]
+  },
+  "jina-ai/serve": {
+    "paradigms": [
+      "ML Framework",
+      "VLM/Multimodal"
+    ],
+    "primary": "ML Framework",
+    "stars": 21864,
+    "created": "2020-02-13",
+    "desc": "☁️ Build multimodal AI applications with cloud-native stack",
+    "size_kb": 1681072,
+    "topics": [
+      "cloud-native",
+      "cncf",
+      "deep-learning",
+      "docker",
+      "fastapi",
+      "framework",
+      "generative-ai",
+      "grpc",
+      "jaeger",
+      "kubernetes",
+      "llmops",
+      "machine-learning",
+      "microservice",
+      "mlops",
+      "multimodal",
+      "neural-search",
+      "opentelemetry",
+      "orchestration",
+      "pipeline",
+      "prometheus"
+    ]
+  },
+  "RasaHQ/rasa": {
+    "paradigms": [
+      "NLP",
+      "Speech/Audio"
+    ],
+    "primary": "NLP",
+    "stars": 21112,
+    "created": "2016-10-14",
+    "desc": "💬   Open source machine learning framework to automate text- and voice-based con",
+    "size_kb": 1612007,
+    "topics": [
+      "bot",
+      "bot-framework",
+      "botkit",
+      "bots",
+      "chatbot",
+      "chatbots",
+      "chatbots-framework",
+      "conversation-driven-development",
+      "conversational-agents",
+      "conversational-ai",
+      "conversational-bots",
+      "machine-learning",
+      "machine-learning-library",
+      "mitie",
+      "natural-language-processing",
+      "nlp",
+      "nlu",
+      "rasa",
+      "spacy",
+      "wit"
+    ]
+  },
+  "Zeyi-Lin/HivisionIDPhotos": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 20971,
+    "created": "2023-06-18",
+    "desc": "⚡️HivisionIDPhotos: a lightweight and efficient AI ID photos tools. 一个轻量级的AI证件照制",
+    "size_kb": 48958,
+    "topics": [
+      "cnn",
+      "demo",
+      "docker",
+      "face-recognition",
+      "fastapi",
+      "gradio",
+      "idphoto",
+      "machine-learning",
+      "matting",
+      "mtcnn",
+      "tools",
+      "unet"
+    ]
+  },
+  "marimo-team/marimo": {
+    "paradigms": [
+      "ML Framework",
+      "Text-to-SQL"
+    ],
+    "primary": "ML Framework",
+    "stars": 20110,
+    "created": "2023-08-14",
+    "desc": "A reactive notebook for Python — run reproducible experiments, query with SQL, e",
+    "size_kb": 208497,
+    "topics": [
+      "artificial-intelligence",
+      "dag",
+      "data-science",
+      "data-visualization",
+      "dataflow",
+      "developer-tools",
+      "machine-learning",
+      "notebooks",
+      "pipeline",
+      "python",
+      "reactive",
+      "sql",
+      "web-app"
+    ]
+  },
+  "iperov/DeepFaceLab": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 19118,
+    "created": "2018-06-04",
+    "desc": "DeepFaceLab is the leading software for creating deepfakes.",
+    "size_kb": 848594,
+    "topics": [
+      "arxiv",
+      "creating-deepfakes",
+      "deep-face-swap",
+      "deep-learning",
+      "deep-neural-networks",
+      "deepface",
+      "deepfacelab",
+      "deepfakes",
+      "deeplearning",
+      "face-swap",
+      "faceswap",
+      "fakeapp",
+      "machine-learning",
+      "neural-nets",
+      "neural-networks"
+    ]
+  },
+  "pytorch/vision": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 17612,
+    "created": "2016-11-09",
+    "desc": "Datasets, Transforms and Models specific to Computer Vision",
+    "size_kb": 1283108,
+    "topics": [
+      "computer-vision",
+      "machine-learning"
+    ]
+  },
+  "tensorflow/tensor2tensor": {
+    "paradigms": [
+      "RL"
+    ],
+    "primary": "RL",
+    "stars": 17128,
+    "created": "2017-06-15",
+    "desc": "Library of deep learning models and datasets designed to make deep learning more",
+    "size_kb": 17508,
+    "topics": [
+      "deep-learning",
+      "machine-learning",
+      "machine-translation",
+      "reinforcement-learning",
+      "tpu"
+    ]
+  },
+  "bbfamily/abu": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 16708,
+    "created": "2016-09-19",
+    "desc": "阿布量化交易系统(股票，期权，期货，比特币，机器学习) 基于python的开源量化交易，量化投资架构",
+    "size_kb": 96204,
+    "topics": [
+      "algorithmic-trading",
+      "bitcoin",
+      "machine-learning",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "quant",
+      "quantitative-trading",
+      "stock",
+      "trade",
+      "trading"
+    ]
+  },
+  "piskvorky/gensim": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 16386,
+    "created": "2011-02-10",
+    "desc": "Topic Modelling for Humans",
+    "size_kb": 106568,
+    "topics": [
+      "data-mining",
+      "data-science",
+      "document-similarity",
+      "fasttext",
+      "gensim",
+      "information-retrieval",
+      "machine-learning",
+      "natural-language-processing",
+      "neural-network",
+      "nlp",
+      "python",
+      "topic-modeling",
+      "word-embeddings",
+      "word-similarity",
+      "word2vec"
+    ]
+  },
+  "ddbourgin/numpy-ml": {
+    "paradigms": [
+      "RL"
+    ],
+    "primary": "RL",
+    "stars": 16301,
+    "created": "2019-04-06",
+    "desc": "Machine learning, in numpy",
+    "size_kb": 10514,
+    "topics": [
+      "attention",
+      "bayesian-inference",
+      "gaussian-mixture-models",
+      "gaussian-processes",
+      "good-turing-smoothing",
+      "gradient-boosting",
+      "hidden-markov-models",
+      "knn",
+      "lstm",
+      "machine-learning",
+      "mfcc",
+      "neural-networks",
+      "reinforcement-learning",
+      "resnet",
+      "topic-modeling",
+      "vae",
+      "wavenet",
+      "wgan-gp",
+      "word2vec"
+    ]
+  },
+  "lukas-blecher/LaTeX-OCR": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 16290,
+    "created": "2020-12-11",
+    "desc": "pix2tex: Using a ViT to convert images of equations into LaTeX code.",
+    "size_kb": 9503,
+    "topics": [
+      "dataset",
+      "deep-learning",
+      "im2latex",
+      "im2markup",
+      "im2text",
+      "image-processing",
+      "image2text",
+      "latex",
+      "latex-ocr",
+      "machine-learning",
+      "math-ocr",
+      "ocr",
+      "python",
+      "pytorch",
+      "transformer",
+      "vision-transformer",
+      "vit"
+    ]
+  },
+  "albumentations-team/albumentations": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 15292,
+    "created": "2018-06-06",
+    "desc": "Fast and flexible image augmentation library. Paper about the library: https://w",
+    "size_kb": 105146,
+    "topics": [
+      "augmentation",
+      "deep-learning",
+      "detection",
+      "fast-augmentations",
+      "image-augmentation",
+      "image-classification",
+      "image-processing",
+      "image-segmentation",
+      "machine-learning",
+      "object-detection",
+      "python",
+      "segmentation"
+    ]
+  },
+  "aleju/imgaug": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 14733,
+    "created": "2015-07-10",
+    "desc": "Image augmentation for machine learning experiments.",
+    "size_kb": 28618,
+    "topics": [
+      "affine-transformation",
+      "augment-images",
+      "augmentation",
+      "bounding-boxes",
+      "contrast",
+      "crop",
+      "deep-learning",
+      "heatmap",
+      "image-augmentation",
+      "images",
+      "keypoints",
+      "machine-learning",
+      "polygon",
+      "segmentation-maps"
+    ]
+  },
+  "hindupuravinash/the-gan-zoo": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 14697,
+    "created": "2017-04-14",
+    "desc": "A list of all named GANs!",
+    "size_kb": 2198,
+    "topics": [
+      "gan",
+      "generative-adversarial-network",
+      "machine-learning"
+    ]
+  },
+  "horovod/horovod": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 14684,
+    "created": "2017-08-09",
+    "desc": "Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.",
+    "size_kb": 7087,
+    "topics": [
+      "baidu",
+      "deep-learning",
+      "deeplearning",
+      "keras",
+      "machine-learning",
+      "machinelearning",
+      "mpi",
+      "mxnet",
+      "pytorch",
+      "ray",
+      "spark",
+      "tensorflow",
+      "uber"
+    ]
+  },
+  "nltk/nltk": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 14583,
+    "created": "2009-09-07",
+    "desc": "NLTK Source",
+    "size_kb": 354884,
+    "topics": [
+      "machine-learning",
+      "natural-language-processing",
+      "nlp",
+      "nltk",
+      "python"
+    ]
+  },
+  "gunthercox/ChatterBot": {
+    "paradigms": [
+      "Chatbot"
+    ],
+    "primary": "Chatbot",
+    "stars": 14490,
+    "created": "2014-09-28",
+    "desc": "ChatterBot is a machine learning, conversational dialog engine for creating chat",
+    "size_kb": 8393,
+    "topics": [
+      "bot",
+      "chatbot",
+      "chatterbot",
+      "conversation",
+      "language",
+      "machine-learning",
+      "python"
+    ]
+  },
+  "flairNLP/flair": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 14361,
+    "created": "2018-06-11",
+    "desc": "A very simple framework for state-of-the-art Natural Language Processing (NLP)",
+    "size_kb": 395584,
+    "topics": [
+      "machine-learning",
+      "named-entity-recognition",
+      "natural-language-processing",
+      "nlp",
+      "pytorch",
+      "semantic-role-labeling",
+      "sequence-labeling",
+      "word-embeddings"
+    ]
+  },
+  "microsoft/nni": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 14348,
+    "created": "2018-06-01",
+    "desc": "An open source AutoML toolkit for automate machine learning lifecycle, including",
+    "size_kb": 133124,
+    "topics": [
+      "automated-machine-learning",
+      "automl",
+      "bayesian-optimization",
+      "data-science",
+      "deep-learning",
+      "deep-neural-network",
+      "distributed",
+      "feature-engineering",
+      "hyperparameter-optimization",
+      "hyperparameter-tuning",
+      "machine-learning",
+      "machine-learning-algorithms",
+      "mlops",
+      "model-compression",
+      "nas",
+      "neural-architecture-search",
+      "neural-network",
+      "python",
+      "pytorch",
+      "tensorflow"
+    ]
+  },
+  "jindongwang/transferlearning": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 14318,
+    "created": "2017-04-30",
+    "desc": "Transfer learning / domain adaptation / domain generalization / multi-task learn",
+    "size_kb": 37145,
+    "topics": [
+      "deep-learning",
+      "domain-adaptation",
+      "domain-adaption",
+      "domain-generalization",
+      "few-shot",
+      "few-shot-learning",
+      "generalization",
+      "machine-learning",
+      "meta-learning",
+      "paper",
+      "papers",
+      "representation-learning",
+      "self-supervised-learning",
+      "style-transfer",
+      "survey",
+      "theory",
+      "transfer-learning",
+      "transferlearning",
+      "tutorial-code",
+      "unsupervised-learning"
+    ]
+  },
+  "donnemartin/awesome-aws": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 13966,
+    "created": "2015-10-12",
+    "desc": "A curated list of awesome Amazon Web Services (AWS) libraries, open source repos",
+    "size_kb": 803,
+    "topics": [
+      "aws",
+      "aws-cli",
+      "aws-sdk",
+      "cloud",
+      "cloud-management",
+      "cloudformation",
+      "cloudwatch",
+      "dynamodb",
+      "ec2",
+      "ecs",
+      "elasticsearch",
+      "iam",
+      "kinesis",
+      "lambda",
+      "machine-learning",
+      "rds",
+      "redshift",
+      "route53",
+      "s3",
+      "serverless"
+    ]
+  },
+  "optuna/optuna": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 13830,
+    "created": "2018-02-21",
+    "desc": "A hyperparameter optimization framework",
+    "size_kb": 23105,
+    "topics": [
+      "distributed",
+      "hyperparameter-optimization",
+      "machine-learning",
+      "parallel",
+      "python"
+    ]
+  },
+  "Data-Centric-AI-Community/ydata-profiling": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 13464,
+    "created": "2016-01-09",
+    "desc": "1 Line of code data quality profiling & exploratory data analysis for Pandas and",
+    "size_kb": 919556,
+    "topics": [
+      "big-data-analytics",
+      "data-analysis",
+      "data-exploration",
+      "data-profiling",
+      "data-quality",
+      "data-science",
+      "deep-learning",
+      "eda",
+      "exploration",
+      "exploratory-data-analysis",
+      "hacktoberfest",
+      "html-report",
+      "jupyter",
+      "jupyter-notebook",
+      "machine-learning",
+      "pandas",
+      "pandas-dataframe",
+      "pandas-profiling",
+      "python",
+      "statistics"
+    ]
+  },
+  "apache/tvm": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 13243,
+    "created": "2016-10-12",
+    "desc": "Open Machine Learning Compiler Framework",
+    "size_kb": 128781,
+    "topics": [
+      "compiler",
+      "deep-learning",
+      "gpu",
+      "javascript",
+      "machine-learning",
+      "metal",
+      "opencl",
+      "performance",
+      "rocm",
+      "spirv",
+      "tensor",
+      "tvm",
+      "vulkan"
+    ]
+  },
+  "DLR-RM/stable-baselines3": {
+    "paradigms": [
+      "RL"
+    ],
+    "primary": "RL",
+    "stars": 13020,
+    "created": "2020-05-05",
+    "desc": "PyTorch version of Stable Baselines, reliable implementations of reinforcement l",
+    "size_kb": 5176,
+    "topics": [
+      "baselines",
+      "gsde",
+      "gym",
+      "machine-learning",
+      "openai",
+      "python",
+      "pytorch",
+      "reinforcement-learning",
+      "reinforcement-learning-algorithms",
+      "robotics",
+      "sb3",
+      "sde",
+      "stable-baselines",
+      "toolbox"
+    ]
+  },
+  "MorvanZhou/tutorials": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 12871,
+    "created": "2016-05-29",
+    "desc": "机器学习相关教程",
+    "size_kb": 62652,
+    "topics": [
+      "machine-learning",
+      "multiprocessing",
+      "neural-network",
+      "numpy",
+      "python",
+      "sklearn",
+      "tensorflow",
+      "theano",
+      "threading"
+    ]
+  },
+  "jacobgil/pytorch-grad-cam": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 12722,
+    "created": "2017-05-31",
+    "desc": "Advanced AI Explainability for computer vision.  Support for CNNs, Vision Transf",
+    "size_kb": 140850,
+    "topics": [
+      "class-activation-maps",
+      "computer-vision",
+      "deep-learning",
+      "explainable-ai",
+      "explainable-ml",
+      "grad-cam",
+      "image-classification",
+      "interpretability",
+      "interpretable-ai",
+      "interpretable-deep-learning",
+      "machine-learning",
+      "object-detection",
+      "pytorch",
+      "score-cam",
+      "vision-transformers",
+      "visualizations",
+      "xai"
+    ]
+  },
+  "zalandoresearch/fashion-mnist": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 12694,
+    "created": "2017-08-25",
+    "desc": "A MNIST-like fashion product database. Benchmark :point_down: ",
+    "size_kb": 108395,
+    "topics": [
+      "benchmark",
+      "computer-vision",
+      "convolutional-neural-networks",
+      "dataset",
+      "deep-learning",
+      "fashion",
+      "fashion-mnist",
+      "gan",
+      "machine-learning",
+      "mnist",
+      "zalando"
+    ]
+  },
+  "ludwig-ai/ludwig": {
+    "paradigms": [
+      "LLM App",
+      "Fine-tuning",
+      "Computer Vision",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 11663,
+    "created": "2018-12-27",
+    "desc": "Low-code framework for building custom LLMs, neural networks, and other AI model",
+    "size_kb": 30430,
+    "topics": [
+      "computer-vision",
+      "data-centric",
+      "data-science",
+      "deep",
+      "deep-learning",
+      "deeplearning",
+      "fine-tuning",
+      "learning",
+      "llama",
+      "llama2",
+      "llm",
+      "llm-training",
+      "machine-learning",
+      "machinelearning",
+      "mistral",
+      "ml",
+      "natural-language",
+      "natural-language-processing",
+      "neural-network",
+      "pytorch"
+    ]
+  },
+  "cleanlab/cleanlab": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 11407,
+    "created": "2018-05-11",
+    "desc": "Cleanlab's open-source library is the standard data-centric AI package for data ",
+    "size_kb": 18212,
+    "topics": [
+      "active-learning",
+      "annotation",
+      "anomaly-detection",
+      "data-annotation",
+      "data-centric-ai",
+      "data-cleaning",
+      "data-curation",
+      "data-labeling",
+      "data-profiling",
+      "data-quality",
+      "data-science",
+      "data-validation",
+      "datasets",
+      "exploratory-data-analysis",
+      "labeling",
+      "machine-learning",
+      "noisy-labels",
+      "out-of-distribution-detection",
+      "outlier-detection",
+      "weak-supervision"
+    ]
+  },
+  "nerfstudio-project/nerfstudio": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 11396,
+    "created": "2022-05-31",
+    "desc": "A collaboration friendly studio for NeRFs",
+    "size_kb": 121997,
+    "topics": [
+      "3d",
+      "3d-graphics",
+      "3d-reconstruction",
+      "computer-vision",
+      "deep-learning",
+      "gaussian-splatting",
+      "machine-learning",
+      "nerf",
+      "photogrammetry",
+      "pytorch"
+    ]
+  },
+  "kornia/kornia": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 11151,
+    "created": "2018-08-22",
+    "desc": "🐍 Geometric Computer Vision Library for Spatial AI",
+    "size_kb": 83167,
+    "topics": [
+      "artificial-intelligence",
+      "computer-vision",
+      "deep-learning",
+      "hacktoberfest",
+      "image-processing",
+      "machine-learning",
+      "neural-network",
+      "python",
+      "pytorch",
+      "robotics",
+      "spatial-ai"
+    ]
+  },
+  "rushter/MLAlgorithms": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 10969,
+    "created": "2016-10-05",
+    "desc": "Minimal and clean examples of machine learning algorithms implementations",
+    "size_kb": 11935,
+    "topics": [
+      "deep-learning",
+      "machine-learning",
+      "machine-learning-algorithms",
+      "neural-networks",
+      "python"
+    ]
+  },
+  "kedro-org/kedro": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 10806,
+    "created": "2019-04-18",
+    "desc": "Kedro is a toolbox for production-ready data science. It uses software engineeri",
+    "size_kb": 246690,
+    "topics": [
+      "experiment-tracking",
+      "hacktoberfest",
+      "kedro",
+      "machine-learning",
+      "machine-learning-engineering",
+      "mlops",
+      "pipeline",
+      "python"
+    ]
+  },
+  "doccano/doccano": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 10598,
+    "created": "2018-05-09",
+    "desc": "Open source annotation tool for machine learning practitioners.",
+    "size_kb": 57494,
+    "topics": [
+      "annotation-tool",
+      "data-labeling",
+      "dataset",
+      "datasets",
+      "machine-learning",
+      "natural-language-processing",
+      "nuxt",
+      "nuxtjs",
+      "python",
+      "text-annotation",
+      "vue",
+      "vuejs"
+    ]
+  },
+  "ultralytics/yolov3": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 10562,
+    "created": "2018-08-26",
+    "desc": "YOLOv3 in PyTorch > ONNX > CoreML > TFLite",
+    "size_kb": 11226,
+    "topics": [
+      "deep-learning",
+      "machine-learning",
+      "object-detection",
+      "ultralytics",
+      "yolo",
+      "yolov3",
+      "yolov5"
+    ]
+  },
+  "voxel51/fiftyone": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 10533,
+    "created": "2020-04-22",
+    "desc": "Refine high-quality datasets and visual AI models",
+    "size_kb": 2282568,
+    "topics": [
+      "active-learning",
+      "artificial-intelligence",
+      "computer-vision",
+      "data-centric-ai",
+      "data-cleaning",
+      "data-curation",
+      "data-quality",
+      "data-science",
+      "deep-learning",
+      "developer-tools",
+      "image-classification",
+      "machine-learning",
+      "object-detection",
+      "python",
+      "unstructured-data",
+      "vector-search",
+      "visualization"
+    ]
+  },
+  "Yorko/mlcourse.ai": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 10533,
+    "created": "2017-02-27",
+    "desc": "Open Machine Learning Course",
+    "size_kb": 649524,
+    "topics": [
+      "algorithms",
+      "data-analysis",
+      "data-science",
+      "docker",
+      "ipynb",
+      "kaggle-inclass",
+      "machine-learning",
+      "math",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "plotly",
+      "python",
+      "scikit-learn",
+      "scipy",
+      "seaborn",
+      "vowpal-wabbit"
+    ]
+  },
+  "triton-inference-server/server": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 10511,
+    "created": "2018-10-04",
+    "desc": "The Triton Inference Server provides an optimized cloud and edge inferencing sol",
+    "size_kb": 39473,
+    "topics": [
+      "cloud",
+      "datacenter",
+      "deep-learning",
+      "edge",
+      "gpu",
+      "inference",
+      "machine-learning"
+    ]
+  },
+  "chiphuyen/stanford-tensorflow-tutorials": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 10383,
+    "created": "2016-11-05",
+    "desc": "This repository contains code examples for the Stanford's course: TensorFlow for",
+    "size_kb": 14037,
+    "topics": [
+      "chatbot",
+      "course-materials",
+      "deep-learning",
+      "machine-learning",
+      "natural-language-processing",
+      "nlp",
+      "python",
+      "stanford",
+      "tensorflow",
+      "tutorial"
+    ]
+  },
+  "Jack-Cherish/Machine-Learning": {
+    "paradigms": [
+      "ML Framework"
+    ],
+    "primary": "ML Framework",
+    "stars": 10268,
+    "created": "2017-03-25",
+    "desc": ":zap:机器学习实战（Python3）：kNN、决策树、贝叶斯、逻辑回归、SVM、线性回归、树回归",
+    "size_kb": 1132,
+    "topics": [
+      "adaboost",
+      "adaboost-algorithm",
+      "decision-tree",
+      "knn",
+      "logistic",
+      "machine-learning",
+      "navie-bayes-algorithm",
+      "python",
+      "python3",
+      "regression",
+      "smo",
+      "svm"
+    ]
+  },
+  "autogluon/autogluon": {
+    "paradigms": [
+      "Computer Vision",
+      "NLP"
+    ],
+    "primary": "Computer Vision",
+    "stars": 10193,
+    "created": "2019-07-29",
+    "desc": "Fast and Accurate ML in 3 Lines of Code",
+    "size_kb": 25235,
+    "topics": [
+      "autogluon",
+      "automated-machine-learning",
+      "automl",
+      "computer-vision",
+      "data-science",
+      "deep-learning",
+      "ensemble-learning",
+      "forecasting",
+      "gluon",
+      "hyperparameter-optimization",
+      "machine-learning",
+      "natural-language-processing",
+      "object-detection",
+      "python",
+      "pytorch",
+      "scikit-learn",
+      "structured-data",
+      "tabular-data",
+      "time-series",
+      "transfer-learning"
+    ]
+  },
+  "bigscience-workshop/petals": {
+    "paradigms": [
+      "LLM Infra",
+      "Fine-tuning",
+      "NLP"
+    ],
+    "primary": "LLM Infra",
+    "stars": 10039,
+    "created": "2022-06-12",
+    "desc": "🌸 Run LLMs at home, BitTorrent-style. Fine-tuning and inference up to 10x faster",
+    "size_kb": 4256,
+    "topics": [
+      "bloom",
+      "chatbot",
+      "deep-learning",
+      "distributed-systems",
+      "falcon",
+      "gpt",
+      "guanaco",
+      "language-models",
+      "large-language-models",
+      "llama",
+      "machine-learning",
+      "mixtral",
+      "neural-networks",
+      "nlp",
+      "pipeline-parallelism",
+      "pretrained-models",
+      "pytorch",
+      "tensor-parallelism",
+      "transformer",
+      "volunteer-computing"
+    ]
+  },
+  "CorentinJ/Real-Time-Voice-Cloning": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 59582,
+    "created": "2019-05-26",
+    "desc": "Clone a voice in 5 seconds to generate arbitrary speech in real-time",
+    "size_kb": 369730,
+    "topics": [
+      "deep-learning",
+      "python",
+      "pytorch",
+      "tensorflow",
+      "tts",
+      "voice-cloning"
+    ]
+  },
+  "coqui-ai/TTS": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 44967,
+    "created": "2020-05-20",
+    "desc": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and p",
+    "size_kb": 170196,
+    "topics": [
+      "deep-learning",
+      "glow-tts",
+      "hifigan",
+      "melgan",
+      "multi-speaker-tts",
+      "python",
+      "pytorch",
+      "speaker-encoder",
+      "speaker-encodings",
+      "speech",
+      "speech-synthesis",
+      "tacotron",
+      "text-to-speech",
+      "tts",
+      "tts-model",
+      "vocoder",
+      "voice-cloning",
+      "voice-conversion",
+      "voice-synthesis"
+    ]
+  },
+  "floodsung/Deep-Learning-Papers-Reading-Roadmap": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 39475,
+    "created": "2016-10-14",
+    "desc": "Deep Learning papers reading roadmap for anyone who are eager to learn this amaz",
+    "size_kb": 3638,
+    "topics": [
+      "deep-learning"
+    ]
+  },
+  "TencentARC/GFPGAN": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 37411,
+    "created": "2021-03-19",
+    "desc": "GFPGAN aims at developing Practical Algorithms for Real-world Face Restoration.",
+    "size_kb": 5467,
+    "topics": [
+      "deep-learning",
+      "face-restoration",
+      "gan",
+      "gfpgan",
+      "image-restoration",
+      "pytorch",
+      "super-resolution"
+    ]
+  },
+  "huggingface/diffusers": {
+    "paradigms": [
+      "Computer Vision",
+      "Speech/Audio"
+    ],
+    "primary": "Computer Vision",
+    "stars": 33247,
+    "created": "2022-05-30",
+    "desc": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio gener",
+    "size_kb": 94498,
+    "topics": [
+      "deep-learning",
+      "diffusion",
+      "flux",
+      "image-generation",
+      "image2image",
+      "image2video",
+      "latent-diffusion-models",
+      "pytorch",
+      "qwen-image",
+      "score-based-generative-modeling",
+      "stable-diffusion",
+      "stable-diffusion-diffusers",
+      "text2image",
+      "text2video",
+      "video2video"
+    ]
+  },
+  "yunjey/pytorch-tutorial": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 32244,
+    "created": "2017-03-10",
+    "desc": "PyTorch Tutorial for Deep Learning Researchers",
+    "size_kb": 13110,
+    "topics": [
+      "deep-learning",
+      "neural-networks",
+      "pytorch",
+      "pytorch-tutorial"
+    ]
+  },
+  "tatsu-lab/stanford_alpaca": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 30258,
+    "created": "2023-03-10",
+    "desc": "Code and documentation to train Stanford's Alpaca models, and generate the data.",
+    "size_kb": 8654,
+    "topics": [
+      "deep-learning",
+      "instruction-following",
+      "language-model"
+    ]
+  },
+  "deezer/spleeter": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 28137,
+    "created": "2019-09-26",
+    "desc": "Deezer source separation library including pretrained models.",
+    "size_kb": 9630,
+    "topics": [
+      "audio-processing",
+      "bass",
+      "deep-learning",
+      "deezer",
+      "drums",
+      "model",
+      "pretrained-models",
+      "python",
+      "tensorflow",
+      "vocals"
+    ]
+  },
+  "WZMIAOMIAO/deep-learning-for-image-processing": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 26167,
+    "created": "2019-11-14",
+    "desc": "deep learning for image processing including classification and object-detection",
+    "size_kb": 25637,
+    "topics": [
+      "bilibili",
+      "classification",
+      "deep-learning",
+      "object-detection",
+      "pytorch",
+      "segmentation",
+      "tensorflow2"
+    ]
+  },
+  "junyanz/pytorch-CycleGAN-and-pix2pix": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 25056,
+    "created": "2017-04-18",
+    "desc": "Image-to-Image Translation in PyTorch",
+    "size_kb": 8464,
+    "topics": [
+      "computer-graphics",
+      "computer-vision",
+      "cyclegan",
+      "deep-learning",
+      "gan",
+      "gans",
+      "generative-adversarial-network",
+      "image-generation",
+      "image-manipulation",
+      "pix2pix",
+      "pytorch"
+    ]
+  },
+  "HumanSignal/labelImg": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 24891,
+    "created": "2015-09-17",
+    "desc": "LabelImg is now part of the Label Studio community. The popular image annotation",
+    "size_kb": 242833,
+    "topics": [
+      "annotations",
+      "deep-learning",
+      "detection",
+      "image-classification",
+      "imagenet",
+      "python2",
+      "python3",
+      "recognition",
+      "tools"
+    ]
+  },
+  "microsoft/JARVIS": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 24617,
+    "created": "2023-03-30",
+    "desc": "JARVIS, a system to connect LLMs with ML community. Paper: https://arxiv.org/pdf",
+    "size_kb": 41674,
+    "topics": [
+      "deep-learning",
+      "platform",
+      "pytorch"
+    ]
+  },
+  "pyg-team/pytorch_geometric": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 23637,
+    "created": "2017-10-06",
+    "desc": "Graph Neural Network Library for PyTorch",
+    "size_kb": 24833,
+    "topics": [
+      "deep-learning",
+      "geometric-deep-learning",
+      "graph-convolutional-networks",
+      "graph-neural-networks",
+      "pytorch"
+    ]
+  },
+  "SYSTRAN/faster-whisper": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 21923,
+    "created": "2023-02-11",
+    "desc": "Faster Whisper transcription with CTranslate2",
+    "size_kb": 40514,
+    "topics": [
+      "deep-learning",
+      "inference",
+      "openai",
+      "quantization",
+      "speech-recognition",
+      "speech-to-text",
+      "transformer",
+      "whisper"
+    ]
+  },
+  "camel-ai/camel": {
+    "paradigms": [
+      "Agentic AI",
+      "NLP"
+    ],
+    "primary": "Agentic AI",
+    "stars": 16579,
+    "created": "2023-03-17",
+    "desc": "🐫 CAMEL: The first and the best multi-agent framework. Finding the Scaling Law o",
+    "size_kb": 486173,
+    "topics": [
+      "agent",
+      "ai-societies",
+      "artificial-intelligence",
+      "communicative-ai",
+      "cooperative-ai",
+      "deep-learning",
+      "large-language-models",
+      "multi-agent-systems",
+      "natural-language-processing"
+    ]
+  },
+  "wkentaro/labelme": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 15707,
+    "created": "2016-05-09",
+    "desc": "Image annotation with Python. Supports polygon, rectangle, circle, line, point, ",
+    "size_kb": 51626,
+    "topics": [
+      "annotations",
+      "classification",
+      "computer-vision",
+      "deep-learning",
+      "image-annotation",
+      "instance-segmentation",
+      "python",
+      "semantic-segmentation",
+      "video-annotation"
+    ]
+  },
+  "cvat-ai/cvat": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 15548,
+    "created": "2018-06-29",
+    "desc": "Annotate better with CVAT, the industry-leading data engine for machine learning",
+    "size_kb": 350256,
+    "topics": [
+      "annotation",
+      "annotation-tool",
+      "annotations",
+      "boundingbox",
+      "computer-vision",
+      "computer-vision-annotation",
+      "dataset",
+      "deep-learning",
+      "image-annotation",
+      "image-classification",
+      "image-labeling",
+      "image-labelling-tool",
+      "imagenet",
+      "labeling",
+      "labeling-tool",
+      "object-detection",
+      "pytorch",
+      "semantic-segmentation",
+      "tensorflow",
+      "video-annotation"
+    ]
+  },
+  "BlinkDL/RWKV-LM": {
+    "paradigms": [
+      "Chatbot"
+    ],
+    "primary": "Chatbot",
+    "stars": 14449,
+    "created": "2021-08-08",
+    "desc": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be",
+    "size_kb": 30763,
+    "topics": [
+      "attention-mechanism",
+      "chatgpt",
+      "deep-learning",
+      "gpt",
+      "gpt-2",
+      "gpt-3",
+      "language-model",
+      "linear-attention",
+      "lstm",
+      "pytorch",
+      "rnn",
+      "rwkv",
+      "transformer",
+      "transformers"
+    ]
+  },
+  "davidsandberg/facenet": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 14316,
+    "created": "2016-02-12",
+    "desc": "Face recognition using Tensorflow",
+    "size_kb": 2991,
+    "topics": [
+      "computer-vision",
+      "deep-learning",
+      "face-detection",
+      "face-recognition",
+      "facenet",
+      "mtcnn",
+      "tensorflow"
+    ]
+  },
+  "dmlc/dgl": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 14259,
+    "created": "2018-04-20",
+    "desc": "Python package built to ease deep learning on graph, on top of existing DL frame",
+    "size_kb": 30768,
+    "topics": [
+      "deep-learning",
+      "graph-neural-networks"
+    ]
+  },
+  "mlfoundations/open_clip": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 13629,
+    "created": "2021-07-28",
+    "desc": "An open source implementation of CLIP.",
+    "size_kb": 15913,
+    "topics": [
+      "computer-vision",
+      "contrastive-loss",
+      "deep-learning",
+      "language-model",
+      "multi-modal-learning",
+      "pretrained-models",
+      "pytorch",
+      "zero-shot-classification"
+    ]
+  },
+  "microsoft/LoRA": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 13385,
+    "created": "2021-06-18",
+    "desc": "Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Langu",
+    "size_kb": 34907,
+    "topics": [
+      "adaptation",
+      "deberta",
+      "deep-learning",
+      "gpt-2",
+      "gpt-3",
+      "language-model",
+      "lora",
+      "low-rank",
+      "pytorch",
+      "roberta"
+    ]
+  },
+  "jina-ai/clip-as-service": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 12828,
+    "created": "2018-11-12",
+    "desc": "🏄 Scalable embedding, reasoning, ranking for images and sentences with CLIP",
+    "size_kb": 28701,
+    "topics": [
+      "bert",
+      "bert-as-service",
+      "clip-as-service",
+      "clip-model",
+      "cross-modal-retrieval",
+      "cross-modality",
+      "deep-learning",
+      "image2vec",
+      "multi-modality",
+      "neural-search",
+      "onnx",
+      "openai",
+      "pytorch",
+      "sentence-encoding",
+      "sentence2vec"
+    ]
+  },
+  "GeeeekExplorer/nano-vllm": {
+    "paradigms": [
+      "LLM App",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 12653,
+    "created": "2025-06-09",
+    "desc": "Nano vLLM",
+    "size_kb": 435,
+    "topics": [
+      "deep-learning",
+      "inference",
+      "llm",
+      "nlp",
+      "pytorch",
+      "transformer"
+    ]
+  },
+  "sapientinc/HRM": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 12374,
+    "created": "2025-07-09",
+    "desc": "Hierarchical Reasoning Model Official Release",
+    "size_kb": 119,
+    "topics": [
+      "brain-inspired-ai",
+      "deep-learning",
+      "large-language-models",
+      "reasoning"
+    ]
+  },
+  "OpenMOSS/MOSS": {
+    "paradigms": [
+      "LLM App",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 12088,
+    "created": "2023-04-15",
+    "desc": "An open-source tool-augmented conversational language model from Fudan Universit",
+    "size_kb": 39938,
+    "topics": [
+      "chatgpt",
+      "deep-learning",
+      "dialogue-systems",
+      "large-language-models",
+      "natural-language-processing",
+      "text-generation"
+    ]
+  },
+  "tonybeltramelli/pix2code": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 12047,
+    "created": "2017-05-24",
+    "desc": "pix2code: Generating Code from a Graphical User Interface Screenshot",
+    "size_kb": 1233636,
+    "topics": [
+      "datasets",
+      "deep-learning",
+      "deep-neural-networks",
+      "front-end-development",
+      "graphical-user-interface"
+    ]
+  },
+  "thuml/Time-Series-Library": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 11937,
+    "created": "2023-02-13",
+    "desc": "A Library for Advanced Deep Time Series Models for General Time Series Analysis.",
+    "size_kb": 80310,
+    "topics": [
+      "deep-learning",
+      "time-series",
+      "time-series-analysis"
+    ]
+  },
+  "allenai/allennlp": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 11893,
+    "created": "2017-05-15",
+    "desc": "An open-source NLP research library, built on PyTorch.",
+    "size_kb": 74709,
+    "topics": [
+      "data-science",
+      "deep-learning",
+      "natural-language-processing",
+      "nlp",
+      "python",
+      "pytorch"
+    ]
+  },
+  "hoya012/deep_learning_object_detection": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 11413,
+    "created": "2018-09-18",
+    "desc": "A paper list of object detection using deep learning.",
+    "size_kb": 785,
+    "topics": [
+      "deep-learning",
+      "deep-neural-networks",
+      "deeplearning",
+      "object-detection",
+      "objectdetection"
+    ]
+  },
+  "speechbrain/speechbrain": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 11412,
+    "created": "2020-04-28",
+    "desc": "A PyTorch-based Speech Toolkit",
+    "size_kb": 104770,
+    "topics": [
+      "asr",
+      "audio",
+      "audio-processing",
+      "deep-learning",
+      "huggingface",
+      "language-model",
+      "pytorch",
+      "speaker-diarization",
+      "speaker-recognition",
+      "speaker-verification",
+      "speech-enhancement",
+      "speech-processing",
+      "speech-recognition",
+      "speech-separation",
+      "speech-to-text",
+      "speech-toolkit",
+      "speechrecognition",
+      "spoken-language-understanding",
+      "transformers",
+      "voice-recognition"
+    ]
+  },
+  "Jack-Cherish/PythonPark": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 11335,
+    "created": "2020-04-29",
+    "desc": "Python 开源项目之「自学编程之路」，保姆级教程：AI实验室、宝藏视频、数据结构、学习指南、机器学习实战、深度学习实战、网络爬虫、大厂面经、程序人生、资源分",
+    "size_kb": 2886,
+    "topics": [
+      "deep-learning",
+      "deeplearning",
+      "python",
+      "python-spider",
+      "python3",
+      "pytorch",
+      "webspider"
+    ]
+  },
+  "milesial/Pytorch-UNet": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 11330,
+    "created": "2017-08-16",
+    "desc": "PyTorch implementation of the U-Net for image semantic segmentation with high qu",
+    "size_kb": 48537,
+    "topics": [
+      "convolutional-networks",
+      "convolutional-neural-networks",
+      "deep-learning",
+      "kaggle",
+      "pytorch",
+      "pytorch-unet",
+      "semantic-segmentation",
+      "tensorboard",
+      "unet",
+      "wandb",
+      "weights-and-biases"
+    ]
+  },
+  "lucidrains/DALLE2-pytorch": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 11324,
+    "created": "2022-04-07",
+    "desc": "Implementation of DALL-E 2, OpenAI's updated text-to-image synthesis neural netw",
+    "size_kb": 3946,
+    "topics": [
+      "artificial-intelligence",
+      "deep-learning",
+      "text-to-image"
+    ]
+  },
+  "lengstrom/fast-style-transfer": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 10974,
+    "created": "2016-07-21",
+    "desc": "TensorFlow CNN for fast style transfer ⚡🖥🎨🖼",
+    "size_kb": 11288,
+    "topics": [
+      "deep-learning",
+      "neural-networks",
+      "neural-style",
+      "style-transfer"
+    ]
+  },
+  "huggingface/text-generation-inference": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 10818,
+    "created": "2022-10-08",
+    "desc": "Large Language Model Text Generation Inference",
+    "size_kb": 14170,
+    "topics": [
+      "bloom",
+      "deep-learning",
+      "falcon",
+      "gpt",
+      "inference",
+      "nlp",
+      "pytorch",
+      "starcoder",
+      "transformer"
+    ]
+  },
+  "lucidrains/denoising-diffusion-pytorch": {
+    "paradigms": [
+      "DL Framework"
+    ],
+    "primary": "DL Framework",
+    "stars": 10478,
+    "created": "2020-08-26",
+    "desc": "Implementation of Denoising Diffusion Probabilistic Model in Pytorch",
+    "size_kb": 2636,
+    "topics": [
+      "artificial-intelligence",
+      "deep-learning",
+      "generative-model",
+      "score-matching"
+    ]
+  },
+  "Megvii-BaseDetection/YOLOX": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 10408,
+    "created": "2021-07-17",
+    "desc": "YOLOX is a high-performance anchor-free YOLO, exceeding yolov3~v5 with MegEngine",
+    "size_kb": 7721,
+    "topics": [
+      "deep-learning",
+      "megengine",
+      "ncnn",
+      "object-detection",
+      "onnx",
+      "openvino",
+      "pytorch",
+      "tensorrt",
+      "yolo",
+      "yolov3",
+      "yolox"
+    ]
+  },
+  "browser-use/browser-use": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 85783,
+    "created": "2024-10-31",
+    "desc": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+    "size_kb": 30910,
+    "topics": [
+      "ai-agents",
+      "ai-tools",
+      "browser-automation",
+      "browser-use",
+      "llm",
+      "playwright",
+      "python"
+    ]
+  },
+  "vllm-project/vllm": {
+    "paradigms": [
+      "LLM Infra"
+    ],
+    "primary": "LLM Infra",
+    "stars": 75088,
+    "created": "2023-02-09",
+    "desc": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "size_kb": 184236,
+    "topics": [
+      "amd",
+      "blackwell",
+      "cuda",
+      "deepseek",
+      "deepseek-v3",
+      "gpt",
+      "gpt-oss",
+      "inference",
+      "kimi",
+      "llama",
+      "llm",
+      "llm-serving",
+      "model-serving",
+      "moe",
+      "openai",
+      "pytorch",
+      "qwen",
+      "qwen3",
+      "tpu",
+      "transformer"
+    ]
+  },
+  "OpenHands/OpenHands": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 70485,
+    "created": "2024-03-13",
+    "desc": "🙌 OpenHands: AI-Driven Development",
+    "size_kb": 307869,
+    "topics": [
+      "agent",
+      "artificial-intelligence",
+      "chatgpt",
+      "claude-ai",
+      "cli",
+      "developer-tools",
+      "gpt",
+      "llm",
+      "openai"
+    ]
+  },
+  "FoundationAgents/MetaGPT": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 66593,
+    "created": "2023-06-30",
+    "desc": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language",
+    "size_kb": 184037,
+    "topics": [
+      "agent",
+      "gpt",
+      "llm",
+      "metagpt",
+      "multi-agent"
+    ]
+  },
+  "unslothai/unsloth": {
+    "paradigms": [
+      "Agentic AI",
+      "Fine-tuning",
+      "Speech/Audio",
+      "RL"
+    ],
+    "primary": "Agentic AI",
+    "stars": 59096,
+    "created": "2023-11-29",
+    "desc": "Unsloth Studio is a web UI for training and running open models like Qwen, DeepS",
+    "size_kb": 66229,
+    "topics": [
+      "agent",
+      "deepseek",
+      "fine-tuning",
+      "gemma",
+      "gemma3",
+      "gpt-oss",
+      "llama",
+      "llama3",
+      "llm",
+      "llms",
+      "mistral",
+      "openai",
+      "qwen",
+      "reinforcement-learning",
+      "self-hosted",
+      "text-to-speech",
+      "tts",
+      "ui",
+      "unsloth"
+    ]
+  },
+  "run-llama/llama_index": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "Fine-tuning"
+    ],
+    "primary": "RAG",
+    "stars": 48250,
+    "created": "2022-11-02",
+    "desc": "LlamaIndex is the leading document agent and OCR platform",
+    "size_kb": 447517,
+    "topics": [
+      "agents",
+      "application",
+      "data",
+      "fine-tuning",
+      "framework",
+      "llamaindex",
+      "llm",
+      "multi-agents",
+      "rag",
+      "vector-database"
+    ]
+  },
+  "TauricResearch/TradingAgents": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 46359,
+    "created": "2024-12-28",
+    "desc": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "size_kb": 4238,
+    "topics": [
+      "agent",
+      "finance",
+      "llm",
+      "multiagent",
+      "trading"
+    ]
+  },
+  "BerriAI/litellm": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 42018,
+    "created": "2023-07-27",
+    "desc": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native",
+    "size_kb": 1003070,
+    "topics": [
+      "ai-gateway",
+      "anthropic",
+      "azure-openai",
+      "bedrock",
+      "gateway",
+      "langchain",
+      "litellm",
+      "llm",
+      "llm-gateway",
+      "llmops",
+      "mcp-gateway",
+      "openai",
+      "openai-proxy",
+      "vertex-ai"
+    ]
+  },
+  "2noise/ChatTTS": {
+    "paradigms": [
+      "Agentic AI",
+      "Speech/Audio"
+    ],
+    "primary": "Agentic AI",
+    "stars": 39015,
+    "created": "2024-05-27",
+    "desc": "A generative speech model for daily dialogue.",
+    "size_kb": 10726,
+    "topics": [
+      "agent",
+      "chat",
+      "chatgpt",
+      "chattts",
+      "chinese",
+      "chinese-language",
+      "english",
+      "english-language",
+      "gpt",
+      "llm",
+      "llm-agent",
+      "natural-language-inference",
+      "python",
+      "text-to-speech",
+      "torch",
+      "torchaudio",
+      "tts"
+    ]
+  },
+  "chatchat-space/Langchain-Chatchat": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 37733,
+    "created": "2023-03-31",
+    "desc": "Langchain-Chatchat（原Langchain-ChatGLM）基于 Langchain 与 ChatGLM, Qwen 与 Llama 等语言模型",
+    "size_kb": 144496,
+    "topics": [
+      "chatbot",
+      "chatchat",
+      "chatglm",
+      "chatgpt",
+      "embedding",
+      "faiss",
+      "fastchat",
+      "gpt",
+      "knowledge-base",
+      "langchain",
+      "langchain-chatglm",
+      "llama",
+      "llm",
+      "milvus",
+      "ollama",
+      "qwen",
+      "rag",
+      "retrieval-augmented-generation",
+      "streamlit",
+      "xinference"
+    ]
+  },
+  "hesreallyhim/awesome-claude-code": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 36001,
+    "created": "2025-04-19",
+    "desc": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, ap",
+    "size_kb": 19563,
+    "topics": [
+      "agent-skills",
+      "agentic-code",
+      "agentic-coding",
+      "ai-workflow-optimization",
+      "ai-workflows",
+      "anthropic",
+      "anthropic-claude",
+      "awesome",
+      "awesome-list",
+      "awesome-lists",
+      "awesome-resources",
+      "claude",
+      "claude-code",
+      "coding-agent",
+      "coding-agents",
+      "coding-assistant",
+      "coding-assistants",
+      "llm"
+    ]
+  },
+  "google/langextract": {
+    "paradigms": [
+      "LLM App",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 35208,
+    "created": "2025-07-08",
+    "desc": "A Python library for extracting structured information from unstructured text us",
+    "size_kb": 10853,
+    "topics": [
+      "gemini",
+      "gemini-ai",
+      "gemini-api",
+      "gemini-flash",
+      "gemini-pro",
+      "information-extration",
+      "large-language-models",
+      "llm",
+      "nlp",
+      "python",
+      "structured-data"
+    ]
+  },
+  "datawhalechina/hello-agents": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 33341,
+    "created": "2025-09-07",
+    "desc": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+    "size_kb": 184324,
+    "topics": [
+      "agent",
+      "llm",
+      "rag",
+      "tutorial"
+    ]
+  },
+  "microsoft/graphrag": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 31957,
+    "created": "2024-03-27",
+    "desc": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
+    "size_kb": 206272,
+    "topics": [
+      "gpt",
+      "gpt-4",
+      "gpt4",
+      "graphrag",
+      "llm",
+      "llms",
+      "rag"
+    ]
+  },
+  "HKUDS/LightRAG": {
+    "paradigms": [
+      "RAG",
+      "Knowledge Graph"
+    ],
+    "primary": "RAG",
+    "stars": 31667,
+    "created": "2024-10-02",
+    "desc": "[EMNLP2025] \"LightRAG: Simple and Fast Retrieval-Augmented Generation\"",
+    "size_kb": 87943,
+    "topics": [
+      "genai",
+      "gpt",
+      "gpt-4",
+      "graphrag",
+      "knowledge-graph",
+      "large-language-models",
+      "llm",
+      "rag",
+      "retrieval-augmented-generation"
+    ]
+  },
+  "sgl-project/sglang": {
+    "paradigms": [
+      "LLM Infra",
+      "Computer Vision",
+      "RL",
+      "VLM/Multimodal"
+    ],
+    "primary": "LLM Infra",
+    "stars": 25370,
+    "created": "2024-01-08",
+    "desc": "SGLang is a high-performance serving framework for large language models and mul",
+    "size_kb": 103135,
+    "topics": [
+      "attention",
+      "blackwell",
+      "cuda",
+      "deepseek",
+      "diffusion",
+      "glm",
+      "gpt-oss",
+      "inference",
+      "llama",
+      "llm",
+      "minimax",
+      "moe",
+      "qwen",
+      "qwen-image",
+      "reinforcement-learning",
+      "transformer",
+      "vlm",
+      "wan"
+    ]
+  },
+  "ScrapeGraphAI/Scrapegraph-ai": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 23207,
+    "created": "2024-01-27",
+    "desc": "Python scraper based on AI",
+    "size_kb": 16987,
+    "topics": [
+      "ai-crawler",
+      "ai-scraping",
+      "ai-search",
+      "crawler",
+      "data-extraction",
+      "firecrawl-alternative",
+      "large-language-model",
+      "llm",
+      "markdown",
+      "rag",
+      "scraping",
+      "scraping-python",
+      "web-crawler",
+      "web-crawlers",
+      "web-data",
+      "web-data-extraction",
+      "web-scraper",
+      "web-scraping",
+      "web-search",
+      "webscraping"
+    ]
+  },
+  "usestrix/strix": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 23072,
+    "created": "2025-08-05",
+    "desc": "Open-source AI hackers to find and fix your app’s vulnerabilities.",
+    "size_kb": 5325,
+    "topics": [
+      "agents",
+      "artificial-intelligence",
+      "cybersecurity",
+      "generative-ai",
+      "llm",
+      "penetration-testing"
+    ]
+  },
+  "agentscope-ai/agentscope": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 22864,
+    "created": "2024-01-12",
+    "desc": "Build and run agents you can see, understand and trust.",
+    "size_kb": 49324,
+    "topics": [
+      "agent",
+      "chatbot",
+      "large-language-models",
+      "llm",
+      "llm-agent",
+      "mcp",
+      "multi-agent",
+      "multi-modal",
+      "react-agent"
+    ]
+  },
+  "mlc-ai/mlc-llm": {
+    "paradigms": [
+      "LLM Infra"
+    ],
+    "primary": "LLM Infra",
+    "stars": 22317,
+    "created": "2023-04-29",
+    "desc": "Universal LLM Deployment Engine with ML Compilation",
+    "size_kb": 36410,
+    "topics": [
+      "language-model",
+      "llm",
+      "machine-learning-compilation",
+      "tvm"
+    ]
+  },
+  "microsoft/unilm": {
+    "paradigms": [
+      "LLM App",
+      "NLP",
+      "VLM/Multimodal"
+    ],
+    "primary": "LLM App",
+    "stars": 22077,
+    "created": "2019-07-23",
+    "desc": "Large-scale Self-supervised Pre-training Across Tasks, Languages, and Modalities",
+    "size_kb": 77210,
+    "topics": [
+      "beit",
+      "beit-3",
+      "bitnet",
+      "deepnet",
+      "document-ai",
+      "foundation-models",
+      "kosmos",
+      "kosmos-1",
+      "layoutlm",
+      "layoutxlm",
+      "llm",
+      "minilm",
+      "mllm",
+      "multimodal",
+      "nlp",
+      "pre-trained-model",
+      "textdiffuser",
+      "trocr",
+      "unilm",
+      "xlm-e"
+    ]
+  },
+  "QwenLM/Qwen": {
+    "paradigms": [
+      "LLM App",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 20905,
+    "created": "2023-08-03",
+    "desc": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed",
+    "size_kb": 37377,
+    "topics": [
+      "chinese",
+      "flash-attention",
+      "large-language-models",
+      "llm",
+      "natural-language-processing",
+      "pretrained-models"
+    ]
+  },
+  "huggingface/peft": {
+    "paradigms": [
+      "LLM App",
+      "Fine-tuning",
+      "Computer Vision"
+    ],
+    "primary": "LLM App",
+    "stars": 20879,
+    "created": "2022-11-25",
+    "desc": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
+    "size_kb": 25643,
+    "topics": [
+      "adapter",
+      "diffusion",
+      "fine-tuning",
+      "llm",
+      "lora",
+      "parameter-efficient-learning",
+      "peft",
+      "python",
+      "pytorch",
+      "transformers"
+    ]
+  },
+  "volcengine/OpenViking": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 20691,
+    "created": "2026-01-05",
+    "desc": "OpenViking is an open-source context database designed specifically for AI Agent",
+    "size_kb": 63513,
+    "topics": [
+      "agent",
+      "agentic-rag",
+      "ai-agents",
+      "clawbot",
+      "context-database",
+      "context-engineering",
+      "filesystem",
+      "llm",
+      "memory",
+      "openclaw",
+      "opencode",
+      "rag",
+      "skill"
+    ]
+  },
+  "1Panel-dev/MaxKB": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 20633,
+    "created": "2023-09-14",
+    "desc": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开",
+    "size_kb": 64521,
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "chatbot",
+      "deepseek-r1",
+      "knowledgebase",
+      "langchain",
+      "llama3",
+      "llm",
+      "maxkb",
+      "mcp-server",
+      "ollama",
+      "pgvector",
+      "qwen3",
+      "rag"
+    ]
+  },
+  "ymcui/Chinese-LLaMA-Alpaca": {
+    "paradigms": [
+      "LLM App",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 18961,
+    "created": "2023-03-15",
+    "desc": "中文LLaMA&Alpaca大语言模型+本地CPU/GPU训练部署 (Chinese LLaMA & Alpaca LLMs)",
+    "size_kb": 24069,
+    "topics": [
+      "alpaca",
+      "alpaca-2",
+      "large-language-models",
+      "llama",
+      "llama-2",
+      "llm",
+      "lora",
+      "nlp",
+      "plm",
+      "pre-trained-language-models",
+      "quantization"
+    ]
+  },
+  "comet-ml/opik": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 18616,
+    "created": "2023-05-10",
+    "desc": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic wor",
+    "size_kb": 503322,
+    "topics": [
+      "evaluation",
+      "hacktoberfest",
+      "hacktoberfest2025",
+      "langchain",
+      "llama-index",
+      "llm",
+      "llm-evaluation",
+      "llm-observability",
+      "llmops",
+      "open-source",
+      "openai",
+      "playground",
+      "prompt-engineering"
+    ]
+  },
+  "Alibaba-NLP/DeepResearch": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 18590,
+    "created": "2025-01-09",
+    "desc": "Tongyi Deep Research, the Leading Open-source Deep Research Agent",
+    "size_kb": 309493,
+    "topics": [
+      "agent",
+      "alibaba",
+      "artificial-intelligence",
+      "deep-research",
+      "deepresearch",
+      "information-seeking",
+      "llm",
+      "tongyi",
+      "web-agent"
+    ]
+  },
+  "eosphoros-ai/DB-GPT": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 18437,
+    "created": "2023-04-13",
+    "desc": "open-source agentic AI data assistant for the next generation of AI + Data produ",
+    "size_kb": 455051,
+    "topics": [
+      "agents",
+      "bgi",
+      "database",
+      "deepseek",
+      "gpt",
+      "gpt-4",
+      "hacktoberfest",
+      "llm",
+      "private",
+      "rag",
+      "security",
+      "vicuna"
+    ]
+  },
+  "p-e-w/heretic": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 18186,
+    "created": "2025-09-21",
+    "desc": "Fully automatic censorship removal for language models",
+    "size_kb": 672,
+    "topics": [
+      "abliteration",
+      "llm",
+      "transformer"
+    ]
+  },
+  "emcie-co/parlant": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 17870,
+    "created": "2024-02-15",
+    "desc": "The conversational control layer for customer-facing AI agents - Parlant is a co",
+    "size_kb": 87147,
+    "topics": [
+      "ai-agents",
+      "ai-alignment",
+      "customer-service",
+      "customer-success",
+      "gemini",
+      "genai",
+      "hacktoberfest",
+      "llama3",
+      "llm",
+      "openai",
+      "python"
+    ]
+  },
+  "deepseek-ai/Janus": {
+    "paradigms": [
+      "LLM App",
+      "VLM/Multimodal"
+    ],
+    "primary": "LLM App",
+    "stars": 17701,
+    "created": "2024-10-18",
+    "desc": "Janus-Series: Unified Multimodal Understanding and Generation Models",
+    "size_kb": 7321,
+    "topics": [
+      "any-to-any",
+      "foundation-models",
+      "llm",
+      "multimodal",
+      "unified-model",
+      "vision-language-pretraining"
+    ]
+  },
+  "microsoft/agent-lightning": {
+    "paradigms": [
+      "Agentic AI",
+      "RL"
+    ],
+    "primary": "Agentic AI",
+    "stars": 16489,
+    "created": "2025-06-18",
+    "desc": "The absolute trainer to light up AI agents.",
+    "size_kb": 51656,
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "llm",
+      "mlops",
+      "reinforcement-learning"
+    ]
+  },
+  "xming521/WeClone": {
+    "paradigms": [
+      "LLM App",
+      "Fine-tuning"
+    ],
+    "primary": "LLM App",
+    "stars": 16483,
+    "created": "2024-01-31",
+    "desc": "🚀 One-stop solution for creating your AI twin from chat history 💡 Fine-tune LLMs",
+    "size_kb": 2476,
+    "topics": [
+      "chat-history",
+      "digital-avatar",
+      "llm",
+      "qwen",
+      "telegram"
+    ]
+  },
+  "pydantic/pydantic-ai": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 16056,
+    "created": "2024-06-21",
+    "desc": "AI Agent Framework, the Pydantic way",
+    "size_kb": 183069,
+    "topics": [
+      "agent-framework",
+      "genai",
+      "llm",
+      "pydantic",
+      "python"
+    ]
+  },
+  "langbot-app/LangBot": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 15737,
+    "created": "2022-12-07",
+    "desc": "Production-grade platform for building agentic IM bots - 生产级多平台智能机器人开发平台. 提供 Age",
+    "size_kb": 271291,
+    "topics": [
+      "agent",
+      "coze",
+      "deepseek",
+      "dify",
+      "dingtalk",
+      "discord",
+      "feishu",
+      "kook",
+      "langbot",
+      "lark",
+      "line",
+      "llm",
+      "n8n",
+      "ollama",
+      "openai",
+      "plugins",
+      "qq",
+      "rag",
+      "telegram",
+      "wechat"
+    ]
+  },
+  "zai-org/ChatGLM2-6B": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 15626,
+    "created": "2023-06-24",
+    "desc": "ChatGLM2-6B: An Open Bilingual Chat LLM | 开源双语对话语言模型",
+    "size_kb": 7469,
+    "topics": [
+      "chatglm",
+      "chatglm-6b",
+      "large-language-models",
+      "llm"
+    ]
+  },
+  "llmware-ai/llmware": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 14861,
+    "created": "2023-09-29",
+    "desc": "Unified framework for building enterprise RAG pipelines with small, specialized ",
+    "size_kb": 1239838,
+    "topics": [
+      "agents",
+      "generative-ai-tools",
+      "llamacpp",
+      "llm",
+      "onnx",
+      "openvino",
+      "parsing",
+      "retrieval-augmented-generation",
+      "small-specialized-models"
+    ]
+  },
+  "LlamaChinese/Llama-Chinese": {
+    "paradigms": [
+      "Agentic AI",
+      "RL"
+    ],
+    "primary": "Agentic AI",
+    "stars": 14739,
+    "created": "2023-07-19",
+    "desc": "Llama中文社区，实时汇总最新Llama学习资料，构建最好的中文Llama大模型开源生态，完全开源可商用",
+    "size_kb": 20102,
+    "topics": [
+      "agent",
+      "llama",
+      "llama4",
+      "llm",
+      "pretraining",
+      "rl"
+    ]
+  },
+  "cft0808/edict": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 14104,
+    "created": "2026-02-23",
+    "desc": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents w",
+    "size_kb": 56206,
+    "topics": [
+      "ai-agents",
+      "ai-orchestration",
+      "autonomous-agents",
+      "claude",
+      "dashboard",
+      "kanban",
+      "llm",
+      "multi-agent",
+      "openai",
+      "openclaw",
+      "orchestration",
+      "python",
+      "workflow-automation"
+    ]
+  },
+  "modelscope/ms-swift": {
+    "paradigms": [
+      "LLM App",
+      "VLM/Multimodal"
+    ],
+    "primary": "LLM App",
+    "stars": 13509,
+    "created": "2023-08-01",
+    "desc": "Use PEFT or Full-parameter to CPT/SFT/DPO/GRPO 600+ LLMs (Qwen3.5, DeepSeek-R1, ",
+    "size_kb": 79955,
+    "topics": [
+      "deepseek-r1",
+      "embedding",
+      "grpo",
+      "internvl",
+      "liger",
+      "llama",
+      "llama4",
+      "llm",
+      "lora",
+      "megatron",
+      "moe",
+      "multimodal",
+      "open-r1",
+      "peft",
+      "qwen3",
+      "qwen3-5",
+      "qwen3-omni",
+      "qwen3-vl",
+      "reranker",
+      "sft"
+    ]
+  },
+  "vibrantlabsai/ragas": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 13203,
+    "created": "2023-05-08",
+    "desc": "Supercharge Your LLM Application Evaluations 🚀",
+    "size_kb": 47555,
+    "topics": [
+      "evaluation",
+      "llm",
+      "llmops"
+    ]
+  },
+  "PaddlePaddle/PaddleNLP": {
+    "paradigms": [
+      "LLM App",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 12929,
+    "created": "2021-02-05",
+    "desc": "Easy-to-use and powerful LLM and SLM library with awesome model zoo.",
+    "size_kb": 117872,
+    "topics": [
+      "bert",
+      "compression",
+      "distributed-training",
+      "document-intelligence",
+      "embedding",
+      "ernie",
+      "information-extraction",
+      "llama",
+      "llm",
+      "neural-search",
+      "nlp",
+      "paddlenlp",
+      "pretrained-models",
+      "question-answering",
+      "search-engine",
+      "semantic-analysis",
+      "sentiment-analysis",
+      "transformers",
+      "uie"
+    ]
+  },
+  "ShishirPatil/gorilla": {
+    "paradigms": [
+      "LLM Framework"
+    ],
+    "primary": "LLM Framework",
+    "stars": 12791,
+    "created": "2023-05-19",
+    "desc": "Gorilla: Training and Evaluating LLMs for Function Calls (Tool Calls)",
+    "size_kb": 380135,
+    "topics": [
+      "api",
+      "api-documentation",
+      "chatgpt",
+      "claude-api",
+      "gpt-4-api",
+      "llm",
+      "openai-api",
+      "openai-functions"
+    ]
+  },
+  "zai-org/CogVideo": {
+    "paradigms": [
+      "LLM App",
+      "Computer Vision"
+    ],
+    "primary": "LLM App",
+    "stars": 12584,
+    "created": "2022-05-29",
+    "desc": "text and image to video generation: CogVideoX (2024) and CogVideo (ICLR 2023)",
+    "size_kb": 182687,
+    "topics": [
+      "cogvideox",
+      "image-to-video",
+      "llm",
+      "sora",
+      "text-to-video",
+      "video-generation"
+    ]
+  },
+  "GreyDGL/PentestGPT": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 12367,
+    "created": "2023-02-27",
+    "desc": "Automated Penetration Testing Agentic Framework Powered by Large Language Models",
+    "size_kb": 34782,
+    "topics": [
+      "large-language-models",
+      "llm",
+      "penetration-testing",
+      "python"
+    ]
+  },
+  "bentoml/OpenLLM": {
+    "paradigms": [
+      "LLM App",
+      "Fine-tuning"
+    ],
+    "primary": "LLM App",
+    "stars": 12270,
+    "created": "2023-04-19",
+    "desc": "Run any open-source LLMs, such as DeepSeek and Llama, as OpenAI compatible API e",
+    "size_kb": 42807,
+    "topics": [
+      "bentoml",
+      "fine-tuning",
+      "llama",
+      "llama2",
+      "llama3-1",
+      "llama3-2",
+      "llama3-2-vision",
+      "llm",
+      "llm-inference",
+      "llm-ops",
+      "llm-serving",
+      "llmops",
+      "mistral",
+      "mlops",
+      "model-inference",
+      "open-source-llm",
+      "openllm",
+      "vicuna"
+    ]
+  },
+  "The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge": {
+    "paradigms": [
+      "LLM App",
+      "Code Gen"
+    ],
+    "primary": "LLM App",
+    "stars": 12180,
+    "created": "2025-04-02",
+    "desc": "Pocket Flow: Codebase to Tutorial",
+    "size_kb": 11844,
+    "topics": [
+      "coding",
+      "large-language-model",
+      "large-language-models",
+      "llm",
+      "llm-agent",
+      "llm-agents",
+      "llm-application",
+      "llm-apps",
+      "llm-framework",
+      "llm-frameworks",
+      "llms",
+      "pocket-flow",
+      "pocketflow"
+    ]
+  },
+  "RUCAIBox/LLMSurvey": {
+    "paradigms": [
+      "LLM App",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 12139,
+    "created": "2023-03-14",
+    "desc": "The official GitHub page for the survey paper \"A Survey of Large Language Models",
+    "size_kb": 45230,
+    "topics": [
+      "chain-of-thought",
+      "chatgpt",
+      "in-context-learning",
+      "instruction-tuning",
+      "large-language-models",
+      "llm",
+      "llms",
+      "natural-language-processing",
+      "pre-trained-language-models",
+      "pre-training",
+      "rlhf"
+    ]
+  },
+  "TheR1D/shell_gpt": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 11940,
+    "created": "2023-01-18",
+    "desc": "A command-line productivity tool powered by AI large language models like GPT-5,",
+    "size_kb": 325,
+    "topics": [
+      "chatgpt",
+      "cheat-sheet",
+      "cli",
+      "commands",
+      "gpt-3",
+      "gpt-4",
+      "gpt-5",
+      "linux",
+      "llama",
+      "llm",
+      "ollama",
+      "openai",
+      "productivity",
+      "python",
+      "shell",
+      "terminal"
+    ]
+  },
+  "Chainlit/chainlit": {
+    "paradigms": [
+      "LLM App"
+    ],
+    "primary": "LLM App",
+    "stars": 11855,
+    "created": "2023-03-14",
+    "desc": "Build Conversational AI in minutes ⚡️",
+    "size_kb": 10828,
+    "topics": [
+      "chatgpt",
+      "langchain",
+      "llm",
+      "openai",
+      "openai-chatgpt",
+      "python",
+      "ui"
+    ]
+  },
+  "axolotl-ai-cloud/axolotl": {
+    "paradigms": [
+      "LLM App",
+      "Fine-tuning"
+    ],
+    "primary": "LLM App",
+    "stars": 11567,
+    "created": "2023-04-14",
+    "desc": "Go ahead and axolotl questions",
+    "size_kb": 33942,
+    "topics": [
+      "fine-tuning",
+      "llm"
+    ]
+  },
+  "FlagOpen/FlagEmbedding": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 11489,
+    "created": "2023-08-02",
+    "desc": "Retrieval and Retrieval-augmented LLMs",
+    "size_kb": 53050,
+    "topics": [
+      "embeddings",
+      "information-retrieval",
+      "llm",
+      "retrieval-augmented-generation",
+      "sentence-embeddings",
+      "text-semantic-similarity"
+    ]
+  },
+  "bytedance/trae-agent": {
+    "paradigms": [
+      "Agentic AI"
+    ],
+    "primary": "Agentic AI",
+    "stars": 11235,
+    "created": "2025-06-13",
+    "desc": "Trae Agent is an LLM-based agent for general purpose software engineering tasks.",
+    "size_kb": 3072,
+    "topics": [
+      "agent",
+      "llm",
+      "software-engineering"
+    ]
+  },
+  "apachecn/ailearning": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 42163,
+    "created": "2017-02-25",
+    "desc": "AiLearning：数据分析+机器学习实战+线性代数+PyTorch+NLTK+TF2",
+    "size_kb": 171378,
+    "topics": [
+      "adaboost",
+      "apriori",
+      "deeplearning",
+      "dnn",
+      "fp-growth",
+      "kmeans",
+      "logistic",
+      "lstm",
+      "mahchine-leaning",
+      "naivebayes",
+      "nlp",
+      "pca",
+      "python",
+      "recommendedsystem",
+      "regression",
+      "rnn",
+      "scikit-learn",
+      "sklearn",
+      "svd",
+      "svm"
+    ]
+  },
+  "666ghj/BettaFish": {
+    "paradigms": [
+      "Agentic AI",
+      "NLP"
+    ],
+    "primary": "Agentic AI",
+    "stars": 40131,
+    "created": "2024-07-01",
+    "desc": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。",
+    "size_kb": 187489,
+    "topics": [
+      "agent-framework",
+      "data-analysis",
+      "deep-research",
+      "deep-search",
+      "llms",
+      "multi-agent-system",
+      "nlp",
+      "public-opinion-analysis",
+      "python3",
+      "sentiment-analysis"
+    ]
+  },
+  "google-research/bert": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 39949,
+    "created": "2018-10-25",
+    "desc": "TensorFlow code and pre-trained models for BERT",
+    "size_kb": 317,
+    "topics": [
+      "google",
+      "natural-language-processing",
+      "natural-language-understanding",
+      "nlp",
+      "tensorflow"
+    ]
+  },
+  "hankcs/HanLP": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 36236,
+    "created": "2014-10-09",
+    "desc": "中文分词 词性标注 命名实体识别 依存句法分析 成分句法分析 语义依存分析 语义角色标注 指代消解 风格转换 语义相似度 新词发现 关键词短语提取 自动摘要 文",
+    "size_kb": 72904,
+    "topics": [
+      "dependency-parser",
+      "hanlp",
+      "named-entity-recognition",
+      "natural-language-processing",
+      "nlp",
+      "pos-tagging",
+      "semantic-parsing",
+      "text-classification"
+    ]
+  },
+  "stanford-oval/storm": {
+    "paradigms": [
+      "LLM App",
+      "NLP"
+    ],
+    "primary": "LLM App",
+    "stars": 28047,
+    "created": "2024-03-24",
+    "desc": "An LLM-powered knowledge curation system that researches a topic and generates a",
+    "size_kb": 8212,
+    "topics": [
+      "agentic-rag",
+      "deep-research",
+      "emnlp2024",
+      "knowledge-curation",
+      "large-language-models",
+      "naacl",
+      "nlp",
+      "report-generation",
+      "retrieval-augmented-generation"
+    ]
+  },
+  "ymcui/Chinese-BERT-wwm": {
+    "paradigms": [
+      "NLP"
+    ],
+    "primary": "NLP",
+    "stars": 10193,
+    "created": "2019-06-19",
+    "desc": "Pre-Training with Whole Word Masking for Chinese BERT（中文BERT-wwm系列模型）",
+    "size_kb": 16234,
+    "topics": [
+      "bert",
+      "bert-wwm",
+      "bert-wwm-ext",
+      "chinese-bert",
+      "nlp",
+      "pytorch",
+      "rbt",
+      "roberta",
+      "roberta-wwm",
+      "tensorflow"
+    ]
+  },
+  "Shubhamsaboo/awesome-llm-apps": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI"
+    ],
+    "primary": "RAG",
+    "stars": 104360,
+    "created": "2024-04-29",
+    "desc": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, G",
+    "size_kb": 201386,
+    "topics": [
+      "agents",
+      "llms",
+      "python",
+      "rag"
+    ]
+  },
+  "PaddlePaddle/PaddleOCR": {
+    "paradigms": [
+      "RAG",
+      "Computer Vision"
+    ],
+    "primary": "RAG",
+    "stars": 74780,
+    "created": "2020-05-08",
+    "desc": "Turn any PDF or image document into structured data for your AI. A powerful, lig",
+    "size_kb": 1855164,
+    "topics": [
+      "ai4science",
+      "chineseocr",
+      "document-parsing",
+      "document-translation",
+      "kie",
+      "ocr",
+      "paddleocr-vl",
+      "pdf-extractor-rag",
+      "pdf-parser",
+      "pdf2markdown",
+      "pp-ocr",
+      "pp-structure",
+      "rag"
+    ]
+  },
+  "Cinnamon/kotaemon": {
+    "paradigms": [
+      "RAG"
+    ],
+    "primary": "RAG",
+    "stars": 25247,
+    "created": "2024-03-25",
+    "desc": "An open-source RAG-based tool for chatting with your documents.",
+    "size_kb": 44264,
+    "topics": [
+      "chatbot",
+      "llms",
+      "open-source",
+      "rag"
+    ]
+  },
+  "getzep/graphiti": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "Knowledge Graph"
+    ],
+    "primary": "RAG",
+    "stars": 24456,
+    "created": "2024-08-08",
+    "desc": "Build Real-Time Knowledge Graphs for AI Agents",
+    "size_kb": 13569,
+    "topics": [
+      "agents",
+      "graph",
+      "llms",
+      "rag"
+    ]
+  },
+  "HKUDS/DeepTutor": {
+    "paradigms": [
+      "RAG",
+      "Agentic AI",
+      "Knowledge Graph"
+    ],
+    "primary": "RAG",
+    "stars": 10970,
+    "created": "2025-12-28",
+    "desc": "\"DeepTutor: AI-Powered Personalized Learning Assistant\"",
+    "size_kb": 129726,
+    "topics": [
+      "ai-agents",
+      "ai-tutor",
+      "deepresearch",
+      "idea-generation",
+      "interactive-learning",
+      "knowledge-graph",
+      "large-language-models",
+      "multi-agent-systems",
+      "rag"
+    ]
+  },
+  "ShangtongZhang/reinforcement-learning-an-introduction": {
+    "paradigms": [
+      "RL"
+    ],
+    "primary": "RL",
+    "stars": 14592,
+    "created": "2016-09-13",
+    "desc": "Python Implementation of Reinforcement Learning: An Introduction",
+    "size_kb": 6085,
+    "topics": [
+      "artificial-intelligence",
+      "reinforcement-learning"
+    ]
+  },
+  "Farama-Foundation/Gymnasium": {
+    "paradigms": [
+      "Agentic AI",
+      "RL"
+    ],
+    "primary": "Agentic AI",
+    "stars": 11633,
+    "created": "2022-09-08",
+    "desc": "An API standard for single-agent reinforcement learning environments, with popul",
+    "size_kb": 362110,
+    "topics": [
+      "api",
+      "gym",
+      "reinforcement-learning"
+    ]
+  },
+  "lucidrains/vit-pytorch": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 25019,
+    "created": "2020-10-03",
+    "desc": "Implementation of Vision Transformer, a simple way to achieve SOTA in vision cla",
+    "size_kb": 10890,
+    "topics": [
+      "artificial-intelligence",
+      "attention-mechanism",
+      "computer-vision",
+      "image-classification",
+      "transformers"
+    ]
+  },
+  "graphdeco-inria/gaussian-splatting": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 21238,
+    "created": "2023-07-04",
+    "desc": "Original reference implementation of \"3D Gaussian Splatting for Real-Time Radian",
+    "size_kb": 80569,
+    "topics": [
+      "computer-graphics",
+      "computer-vision",
+      "radiance-field"
+    ]
+  },
+  "qubvel-org/segmentation_models.pytorch": {
+    "paradigms": [
+      "Computer Vision"
+    ],
+    "primary": "Computer Vision",
+    "stars": 11447,
+    "created": "2019-03-01",
+    "desc": "Semantic segmentation models with 500+ pretrained convolutional and transformer-",
+    "size_kb": 17664,
+    "topics": [
+      "computer-vision",
+      "deeplab-v3-plus",
+      "deeplabv3",
+      "dpt",
+      "fpn",
+      "image-processing",
+      "image-segmentation",
+      "imagenet",
+      "models",
+      "pretrained-weights",
+      "pspnet",
+      "pytorch",
+      "segformer",
+      "segmentation",
+      "segmentation-models",
+      "semantic-segmentation",
+      "transformers",
+      "unet",
+      "unet-pytorch",
+      "unetplusplus"
+    ]
+  },
+  "m-bain/whisperX": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 21078,
+    "created": "2022-12-09",
+    "desc": "WhisperX:  Automatic Speech Recognition with Word-level Timestamps (& Diarizatio",
+    "size_kb": 41788,
+    "topics": [
+      "asr",
+      "speech",
+      "speech-recognition",
+      "speech-to-text",
+      "whisper"
+    ]
+  },
+  "AIGC-Audio/AudioGPT": {
+    "paradigms": [
+      "Speech/Audio"
+    ],
+    "primary": "Speech/Audio",
+    "stars": 10205,
+    "created": "2023-03-16",
+    "desc": "AudioGPT: Understanding and Generating Speech, Music, Sound, and Talking Head",
+    "size_kb": 24122,
+    "topics": [
+      "audio",
+      "gpt",
+      "music",
+      "sound",
+      "speech",
+      "talking-head"
+    ]
+  }
+}

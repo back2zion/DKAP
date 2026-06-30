@@ -1,0 +1,56 @@
+{
+  "B1_ta01": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  },
+  "B1_ta02": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  },
+  "B1_ta03": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  },
+  "B2_ta01": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  },
+  "B2_ta02": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  },
+  "B2_ta03": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  },
+  "DKAP_ta01": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  },
+  "DKAP_ta02": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  },
+  "DKAP_ta03": {
+    "best_makespan": null,
+    "best_ratio": null,
+    "spt_baseline": null,
+    "mwkr_baseline": null
+  }
+}

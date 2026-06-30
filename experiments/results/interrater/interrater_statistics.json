@@ -1,0 +1,427 @@
+{
+  "n_systems": 12,
+  "n_raters": 5,
+  "n_scorings": 60,
+  "rater_summaries": {
+    "SW_Architect": {
+      "mean_total": 31.25,
+      "std_total": 17.65939315680657,
+      "mean_dks": 28.75,
+      "mean_rss": 2.5
+    },
+    "ML_Researcher": {
+      "mean_total": 31.083333333333332,
+      "std_total": 16.760361637572807,
+      "mean_dks": 28.5,
+      "mean_rss": 2.5833333333333335
+    },
+    "Data_Engineer": {
+      "mean_total": 30.833333333333332,
+      "std_total": 17.468225121313527,
+      "mean_dks": 27.916666666666668,
+      "mean_rss": 2.9166666666666665
+    },
+    "Domain_Specialist": {
+      "mean_total": 30.916666666666668,
+      "std_total": 16.69060780465735,
+      "mean_dks": 28.25,
+      "mean_rss": 2.6666666666666665
+    },
+    "Junior_Developer": {
+      "mean_total": 29.583333333333332,
+      "std_total": 17.52359520443476,
+      "mean_dks": 27.0,
+      "mean_rss": 2.5833333333333335
+    }
+  },
+  "pairwise_cohens_kappa": {
+    "SW_Architect_vs_ML_Researcher": 0.958,
+    "SW_Architect_vs_Data_Engineer": 0.958,
+    "SW_Architect_vs_Domain_Specialist": 0.923,
+    "SW_Architect_vs_Junior_Developer": 0.958,
+    "ML_Researcher_vs_Data_Engineer": 1.0,
+    "ML_Researcher_vs_Domain_Specialist": 1.0,
+    "ML_Researcher_vs_Junior_Developer": 0.972,
+    "Data_Engineer_vs_Domain_Specialist": 0.964,
+    "Data_Engineer_vs_Junior_Developer": 1.0,
+    "Domain_Specialist_vs_Junior_Developer": 0.972
+  },
+  "mean_pairwise_kappa": 0.971,
+  "pairwise_spearman": {
+    "SW_Architect_vs_ML_Researcher": {
+      "rho": 0.96,
+      "p": 0.0
+    },
+    "SW_Architect_vs_Data_Engineer": {
+      "rho": 0.958,
+      "p": 0.0
+    },
+    "SW_Architect_vs_Domain_Specialist": {
+      "rho": 0.9,
+      "p": 0.0001
+    },
+    "SW_Architect_vs_Junior_Developer": {
+      "rho": 0.902,
+      "p": 0.0001
+    },
+    "ML_Researcher_vs_Data_Engineer": {
+      "rho": 0.989,
+      "p": 0.0
+    },
+    "ML_Researcher_vs_Domain_Specialist": {
+      "rho": 0.967,
+      "p": 0.0
+    },
+    "ML_Researcher_vs_Junior_Developer": {
+      "rho": 0.97,
+      "p": 0.0
+    },
+    "Data_Engineer_vs_Domain_Specialist": {
+      "rho": 0.963,
+      "p": 0.0
+    },
+    "Data_Engineer_vs_Junior_Developer": {
+      "rho": 0.977,
+      "p": 0.0
+    },
+    "Domain_Specialist_vs_Junior_Developer": {
+      "rho": 0.979,
+      "p": 0.0
+    }
+  },
+  "mean_spearman_rho": 0.956,
+  "pairwise_pearson": {
+    "SW_Architect_vs_ML_Researcher": {
+      "r": 0.971,
+      "p": 0.0
+    },
+    "SW_Architect_vs_Data_Engineer": {
+      "r": 0.984,
+      "p": 0.0
+    },
+    "SW_Architect_vs_Domain_Specialist": {
+      "r": 0.942,
+      "p": 0.0
+    },
+    "SW_Architect_vs_Junior_Developer": {
+      "r": 0.944,
+      "p": 0.0
+    },
+    "ML_Researcher_vs_Data_Engineer": {
+      "r": 0.989,
+      "p": 0.0
+    },
+    "ML_Researcher_vs_Domain_Specialist": {
+      "r": 0.985,
+      "p": 0.0
+    },
+    "ML_Researcher_vs_Junior_Developer": {
+      "r": 0.988,
+      "p": 0.0
+    },
+    "Data_Engineer_vs_Domain_Specialist": {
+      "r": 0.977,
+      "p": 0.0
+    },
+    "Data_Engineer_vs_Junior_Developer": {
+      "r": 0.984,
+      "p": 0.0
+    },
+    "Domain_Specialist_vs_Junior_Developer": {
+      "r": 0.993,
+      "p": 0.0
+    }
+  },
+  "fleiss_kappa_4bin": 0.897,
+  "icc_2k": {
+    "dks": 0.995,
+    "rss": 0.993,
+    "total": 0.995
+  },
+  "r1_vs_agent_mean": {
+    "spearman_rho": 0.675,
+    "spearman_p": 0.0159,
+    "pearson_r": 0.783,
+    "pearson_p": 0.0026,
+    "cohens_kappa_4bin": 0.712,
+    "mean_abs_diff": 9.7
+  },
+  "system_scores": [
+    {
+      "system": "MedRAG",
+      "r1_dks": 5,
+      "r1_rss": 5,
+      "r1_total": 10,
+      "SW_Architect_dks": 3,
+      "SW_Architect_rss": 5,
+      "SW_Architect_total": 8,
+      "ML_Researcher_dks": 3,
+      "ML_Researcher_rss": 5,
+      "ML_Researcher_total": 8,
+      "Data_Engineer_dks": 3,
+      "Data_Engineer_rss": 5,
+      "Data_Engineer_total": 8,
+      "Domain_Specialist_dks": 3,
+      "Domain_Specialist_rss": 5,
+      "Domain_Specialist_total": 8,
+      "Junior_Developer_dks": 3,
+      "Junior_Developer_rss": 5,
+      "Junior_Developer_total": 8,
+      "agent_mean_total": 8.0,
+      "agent_std_total": 0.0
+    },
+    {
+      "system": "LLaVA",
+      "r1_dks": 12,
+      "r1_rss": 2,
+      "r1_total": 14,
+      "SW_Architect_dks": 3,
+      "SW_Architect_rss": 0,
+      "SW_Architect_total": 3,
+      "ML_Researcher_dks": 8,
+      "ML_Researcher_rss": 0,
+      "ML_Researcher_total": 8,
+      "Data_Engineer_dks": 3,
+      "Data_Engineer_rss": 0,
+      "Data_Engineer_total": 3,
+      "Domain_Specialist_dks": 8,
+      "Domain_Specialist_rss": 0,
+      "Domain_Specialist_total": 8,
+      "Junior_Developer_dks": 3,
+      "Junior_Developer_rss": 0,
+      "Junior_Developer_total": 3,
+      "agent_mean_total": 5.0,
+      "agent_std_total": 2.4
+    },
+    {
+      "system": "CrewAI",
+      "r1_dks": 15,
+      "r1_rss": 9,
+      "r1_total": 24,
+      "SW_Architect_dks": 11,
+      "SW_Architect_rss": 2,
+      "SW_Architect_total": 13,
+      "ML_Researcher_dks": 11,
+      "ML_Researcher_rss": 3,
+      "ML_Researcher_total": 14,
+      "Data_Engineer_dks": 11,
+      "Data_Engineer_rss": 5,
+      "Data_Engineer_total": 16,
+      "Domain_Specialist_dks": 11,
+      "Domain_Specialist_rss": 3,
+      "Domain_Specialist_total": 14,
+      "Junior_Developer_dks": 11,
+      "Junior_Developer_rss": 3,
+      "Junior_Developer_total": 14,
+      "agent_mean_total": 14.2,
+      "agent_std_total": 1.0
+    },
+    {
+      "system": "LlamaIndex",
+      "r1_dks": 20,
+      "r1_rss": 7,
+      "r1_total": 27,
+      "SW_Architect_dks": 39,
+      "SW_Architect_rss": 8,
+      "SW_Architect_total": 47,
+      "ML_Researcher_dks": 34,
+      "ML_Researcher_rss": 7,
+      "ML_Researcher_total": 41,
+      "Data_Engineer_dks": 31,
+      "Data_Engineer_rss": 8,
+      "Data_Engineer_total": 39,
+      "Domain_Specialist_dks": 26,
+      "Domain_Specialist_rss": 7,
+      "Domain_Specialist_total": 33,
+      "Junior_Developer_dks": 26,
+      "Junior_Developer_rss": 7,
+      "Junior_Developer_total": 33,
+      "agent_mean_total": 38.6,
+      "agent_std_total": 5.3
+    },
+    {
+      "system": "BIRD-SQL",
+      "r1_dks": 26,
+      "r1_rss": 3,
+      "r1_total": 29,
+      "SW_Architect_dks": 21,
+      "SW_Architect_rss": 0,
+      "SW_Architect_total": 21,
+      "ML_Researcher_dks": 18,
+      "ML_Researcher_rss": 1,
+      "ML_Researcher_total": 19,
+      "Data_Engineer_dks": 21,
+      "Data_Engineer_rss": 0,
+      "Data_Engineer_total": 21,
+      "Domain_Specialist_dks": 18,
+      "Domain_Specialist_rss": 2,
+      "Domain_Specialist_total": 20,
+      "Junior_Developer_dks": 18,
+      "Junior_Developer_rss": 0,
+      "Junior_Developer_total": 18,
+      "agent_mean_total": 19.8,
+      "agent_std_total": 1.2
+    },
+    {
+      "system": "Wheatley",
+      "r1_dks": 33,
+      "r1_rss": 2,
+      "r1_total": 35,
+      "SW_Architect_dks": 47,
+      "SW_Architect_rss": 0,
+      "SW_Architect_total": 47,
+      "ML_Researcher_dks": 47,
+      "ML_Researcher_rss": 0,
+      "ML_Researcher_total": 47,
+      "Data_Engineer_dks": 47,
+      "Data_Engineer_rss": 0,
+      "Data_Engineer_total": 47,
+      "Domain_Specialist_dks": 47,
+      "Domain_Specialist_rss": 0,
+      "Domain_Specialist_total": 47,
+      "Junior_Developer_dks": 47,
+      "Junior_Developer_rss": 0,
+      "Junior_Developer_total": 47,
+      "agent_mean_total": 47.0,
+      "agent_std_total": 0.0
+    },
+    {
+      "system": "FinSQL",
+      "r1_dks": 35,
+      "r1_rss": 6,
+      "r1_total": 41,
+      "SW_Architect_dks": 33,
+      "SW_Architect_rss": 3,
+      "SW_Architect_total": 36,
+      "ML_Researcher_dks": 33,
+      "ML_Researcher_rss": 3,
+      "ML_Researcher_total": 36,
+      "Data_Engineer_dks": 31,
+      "Data_Engineer_rss": 5,
+      "Data_Engineer_total": 36,
+      "Domain_Specialist_dks": 33,
+      "Domain_Specialist_rss": 5,
+      "Domain_Specialist_total": 38,
+      "Junior_Developer_dks": 33,
+      "Junior_Developer_rss": 5,
+      "Junior_Developer_total": 38,
+      "agent_mean_total": 36.8,
+      "agent_std_total": 1.0
+    },
+    {
+      "system": "SpeechBrain",
+      "r1_dks": 37,
+      "r1_rss": 4,
+      "r1_total": 41,
+      "SW_Architect_dks": 46,
+      "SW_Architect_rss": 0,
+      "SW_Architect_total": 46,
+      "ML_Researcher_dks": 46,
+      "ML_Researcher_rss": 0,
+      "ML_Researcher_total": 46,
+      "Data_Engineer_dks": 46,
+      "Data_Engineer_rss": 0,
+      "Data_Engineer_total": 46,
+      "Domain_Specialist_dks": 51,
+      "Domain_Specialist_rss": 0,
+      "Domain_Specialist_total": 51,
+      "Junior_Developer_dks": 46,
+      "Junior_Developer_rss": 0,
+      "Junior_Developer_total": 46,
+      "agent_mean_total": 47.0,
+      "agent_std_total": 2.0
+    },
+    {
+      "system": "Logic-LLM",
+      "r1_dks": 41,
+      "r1_rss": 3,
+      "r1_total": 44,
+      "SW_Architect_dks": 18,
+      "SW_Architect_rss": 2,
+      "SW_Architect_total": 20,
+      "ML_Researcher_dks": 13,
+      "ML_Researcher_rss": 2,
+      "ML_Researcher_total": 15,
+      "Data_Engineer_dks": 13,
+      "Data_Engineer_rss": 2,
+      "Data_Engineer_total": 15,
+      "Domain_Specialist_dks": 13,
+      "Domain_Specialist_rss": 2,
+      "Domain_Specialist_total": 15,
+      "Junior_Developer_dks": 8,
+      "Junior_Developer_rss": 2,
+      "Junior_Developer_total": 10,
+      "agent_mean_total": 15.0,
+      "agent_std_total": 3.2
+    },
+    {
+      "system": "AudioCraft",
+      "r1_dks": 42,
+      "r1_rss": 4,
+      "r1_total": 46,
+      "SW_Architect_dks": 34,
+      "SW_Architect_rss": 0,
+      "SW_Architect_total": 34,
+      "ML_Researcher_dks": 34,
+      "ML_Researcher_rss": 0,
+      "ML_Researcher_total": 34,
+      "Data_Engineer_dks": 34,
+      "Data_Engineer_rss": 0,
+      "Data_Engineer_total": 34,
+      "Domain_Specialist_dks": 34,
+      "Domain_Specialist_rss": 0,
+      "Domain_Specialist_total": 34,
+      "Junior_Developer_dks": 34,
+      "Junior_Developer_rss": 0,
+      "Junior_Developer_total": 34,
+      "agent_mean_total": 34.0,
+      "agent_std_total": 0.0
+    },
+    {
+      "system": "EmotiVoice",
+      "r1_dks": 47,
+      "r1_rss": 3,
+      "r1_total": 50,
+      "SW_Architect_dks": 36,
+      "SW_Architect_rss": 0,
+      "SW_Architect_total": 36,
+      "ML_Researcher_dks": 46,
+      "ML_Researcher_rss": 0,
+      "ML_Researcher_total": 46,
+      "Data_Engineer_dks": 41,
+      "Data_Engineer_rss": 0,
+      "Data_Engineer_total": 41,
+      "Domain_Specialist_dks": 46,
+      "Domain_Specialist_rss": 0,
+      "Domain_Specialist_total": 46,
+      "Junior_Developer_dks": 46,
+      "Junior_Developer_rss": 0,
+      "Junior_Developer_total": 46,
+      "agent_mean_total": 43.0,
+      "agent_std_total": 4.0
+    },
+    {
+      "system": "GraphRAG",
+      "r1_dks": 57,
+      "r1_rss": 8,
+      "r1_total": 65,
+      "SW_Architect_dks": 54,
+      "SW_Architect_rss": 10,
+      "SW_Architect_total": 64,
+      "ML_Researcher_dks": 49,
+      "ML_Researcher_rss": 10,
+      "ML_Researcher_total": 59,
+      "Data_Engineer_dks": 54,
+      "Data_Engineer_rss": 10,
+      "Data_Engineer_total": 64,
+      "Domain_Specialist_dks": 49,
+      "Domain_Specialist_rss": 8,
+      "Domain_Specialist_total": 57,
+      "Junior_Developer_dks": 49,
+      "Junior_Developer_rss": 9,
+      "Junior_Developer_total": 58,
+      "agent_mean_total": 60.4,
+      "agent_std_total": 3.0
+    }
+  ]
+}

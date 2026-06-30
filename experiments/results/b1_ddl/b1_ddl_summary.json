@@ -1,0 +1,28 @@
+{
+  "condition": "B1_DDL",
+  "description": "Raw DDL schema provided, no semantic annotations, no RAG",
+  "n_queries": 28,
+  "n_runs": 3,
+  "EX_total": 53,
+  "EX_pct": 63.1,
+  "EXEC_total": 75,
+  "EXEC_pct": 89.3,
+  "avg_latency_ms": 10526,
+  "by_difficulty": {
+    "E": {
+      "EX_pct": 92.3,
+      "EXEC_pct": 100.0,
+      "n": 39
+    },
+    "M": {
+      "EX_pct": 51.9,
+      "EXEC_pct": 85.2,
+      "n": 27
+    },
+    "H": {
+      "EX_pct": 16.7,
+      "EXEC_pct": 72.2,
+      "n": 18
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "B1": {
+    "n": 75,
+    "EX_total": 0,
+    "EX_pct": 0.0,
+    "EM_total": 0,
+    "EM_pct": 0.0,
+    "EXEC_total": 0,
+    "EXEC_pct": 0.0,
+    "avg_latency_ms": 367.6,
+    "by_difficulty": {
+      "E": {
+        "n": 27,
+        "EX": 0,
+        "EX_pct": 0.0,
+        "EM": 0,
+        "EM_pct": 0.0
+      },
+      "M": {
+        "n": 27,
+        "EX": 0,
+        "EX_pct": 0.0,
+        "EM": 0,
+        "EM_pct": 0.0
+      },
+      "H": {
+        "n": 21,
+        "EX": 0,
+        "EX_pct": 0.0,
+        "EM": 0,
+        "EM_pct": 0.0
+      }
+    },
+    "by_run": {
+      "run_1": 0.0,
+      "run_2": 0.0,
+      "run_3": 0.0
+    }
+  },
+  "B2": {
+    "n": 75,
+    "EX_total": 48,
+    "EX_pct": 64.0,
+    "EM_total": 6,
+    "EM_pct": 8.0,
+    "EXEC_total": 63,
+    "EXEC_pct": 84.0,
+    "avg_latency_ms": 603.5,
+    "by_difficulty": {
+      "E": {
+        "n": 27,
+        "EX": 24,
+        "EX_pct": 88.9,
+        "EM": 3,
+        "EM_pct": 11.1
+      },
+      "M": {
+        "n": 27,
+        "EX": 21,
+        "EX_pct": 77.8,
+        "EM": 3,
+        "EM_pct": 11.1
+      },
+      "H": {
+        "n": 21,
+        "EX": 3,
+        "EX_pct": 14.3,
+        "EM": 0,
+        "EM_pct": 0.0
+      }
+    },
+    "by_run": {
+      "run_1": 64.0,
+      "run_2": 64.0,
+      "run_3": 64.0
+    }
+  },
+  "DKAP": {
+    "n": 75,
+    "EX_total": 48,
+    "EX_pct": 64.0,
+    "EM_total": 6,
+    "EM_pct": 8.0,
+    "EXEC_total": 72,
+    "EXEC_pct": 96.0,
+    "avg_latency_ms": 696.5,
+    "by_difficulty": {
+      "E": {
+        "n": 27,
+        "EX": 24,
+        "EX_pct": 88.9,
+        "EM": 3,
+        "EM_pct": 11.1
+      },
+      "M": {
+        "n": 27,
+        "EX": 18,
+        "EX_pct": 66.7,
+        "EM": 3,
+        "EM_pct": 11.1
+      },
+      "H": {
+        "n": 21,
+        "EX": 6,
+        "EX_pct": 28.6,
+        "EM": 0,
+        "EM_pct": 0.0
+      }
+    },
+    "by_run": {
+      "run_1": 64.0,
+      "run_2": 64.0,
+      "run_3": 64.0
+    }
+  }
+}

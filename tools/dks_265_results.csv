@@ -1,0 +1,264 @@
+repo,paradigm,stars,python_loc,python_files,total_files,dks_total,d1_lexicon,d2_ontology,d3_cross_ont,d4_schema,d5_profiles,d6_rules,d7_multilang,d8_regulatory
+infiniflow/ragflow,RAG,0,94059,407,2813,91,15,15,5,15,6,10,10,15
+streamlit/streamlit,ML Framework,0,105254,541,9209,88,10,15,10,15,3,10,10,15
+PaddlePaddle/PaddleNLP,LLM App,0,436063,1630,5693,86,15,15,10,15,3,3,10,15
+microsoft/LoRA,DL Framework,0,349,4,1216,85,15,15,10,15,0,10,5,15
+TEN-framework/ten-framework,Agentic AI,0,91695,654,30717,85,15,15,5,15,10,10,10,5
+huggingface/transformers,LLM App,0,889692,2631,5766,84,15,15,5,15,3,6,10,15
+apache/airflow,ML Framework,0,508670,3121,12087,81,10,10,5,15,6,10,10,15
+tensorflow/tensor2tensor,RL,0,100333,320,580,81,15,15,10,10,3,3,10,15
+docling-project/docling,Other/General AI,0,0,0,1166,80,5,10,10,15,10,10,5,15
+microsoft/unilm,LLM App,0,494154,2762,6077,79,15,15,10,15,3,6,10,5
+microsoft/graphrag,RAG,0,31328,440,913,77,10,15,5,15,6,6,10,10
+LAION-AI/Open-Assistant,Chatbot,0,37931,334,1603,76,10,10,5,15,10,6,10,10
+sgl-project/sglang,LLM Infra,0,497110,1518,4331,74,10,15,10,15,3,6,10,5
+Comfy-Org/ComfyUI,Computer Vision,0,139565,474,802,73,15,15,10,15,3,10,5,0
+crewAIInc/crewAI,Agentic AI,0,112784,765,3016,73,0,15,10,15,3,10,10,10
+marimo-team/marimo,ML Framework,0,121486,774,4367,73,15,15,5,15,3,10,10,0
+camel-ai/camel,Agentic AI,0,129554,498,2234,73,0,15,5,15,3,10,10,15
+github/awesome-copilot,Agentic AI,0,6152,20,1895,71,15,0,10,10,10,6,5,15
+Significant-Gravitas/AutoGPT,Agentic AI,0,159883,695,5048,70,5,15,10,15,10,10,5,0
+pytorch/pytorch,ML Framework,0,886167,2292,21705,68,10,15,10,15,3,10,5,0
+BerriAI/litellm,LLM App,0,482939,1864,7976,68,5,10,5,15,3,10,10,10
+Lightning-AI/pytorch-lightning,Fine-tuning,0,45797,267,1083,68,5,5,10,15,3,10,5,15
+comet-ml/opik,RAG,0,162305,1568,9604,68,5,15,5,15,3,10,10,5
+vibrantlabsai/ragas,LLM App,0,29881,203,721,68,0,15,10,15,3,10,10,5
+vllm-project/vllm,LLM Infra,0,480364,1491,4516,67,10,15,5,15,6,6,5,5
+run-llama/llama_index,RAG,0,262123,2313,10928,67,10,15,5,15,6,6,10,0
+ray-project/ray,LLM App,0,463878,2030,10265,66,10,15,5,15,6,10,5,0
+emcie-co/parlant,Agentic AI,0,76432,169,793,66,15,10,5,15,3,3,0,15
+microsoft/RD-Agent,Agentic AI,0,47476,461,934,66,5,15,10,15,6,10,5,0
+HKUDS/DeepTutor,RAG,0,41598,225,555,66,5,15,5,15,6,10,10,0
+doccano/doccano,NLP,0,0,0,860,65,0,10,0,15,10,10,5,15
+explosion/spaCy,NLP,0,87676,447,1804,64,15,15,5,10,3,6,10,0
+google/adk-python,Agentic AI,0,113455,829,1600,64,0,10,5,15,3,6,10,15
+h2oai/h2ogpt,LLM App,0,55075,109,413,64,5,10,10,15,3,6,10,5
+hiyouga/LlamaFactory,Agentic AI,0,35427,225,561,63,5,0,10,15,3,10,5,15
+google/langextract,LLM App,0,9303,45,156,63,0,5,10,15,3,10,5,15
+huggingface/diffusers,Computer Vision,0,456387,961,2515,63,0,15,5,10,3,10,5,15
+mlflow/mlflow,Agentic AI,0,258244,1156,6604,63,5,15,5,15,3,10,10,0
+onyx-dot-app/onyx,RAG,0,208614,1381,4591,63,5,15,5,15,3,10,10,0
+volcengine/OpenViking,RAG,0,102111,545,1981,63,5,15,5,15,3,10,10,0
+nltk/nltk,NLP,0,110963,296,542,63,15,15,10,5,3,10,5,0
+mem0ai/mem0,RAG,0,44297,393,1905,62,5,15,5,15,6,6,10,0
+unslothai/unsloth,Agentic AI,0,83096,195,937,61,5,10,5,15,6,10,5,5
+bytedance/deer-flow,RAG,0,24228,197,814,61,0,10,5,15,6,10,10,5
+gradio-app/gradio,ML Framework,0,46094,176,2992,61,5,5,10,15,6,10,10,0
+hesreallyhim/awesome-claude-code,Agentic AI,0,8233,61,770,61,0,10,10,10,6,10,0,15
+RasaHQ/rasa,NLP,0,65719,296,1414,61,10,15,5,10,6,10,5,0
+speechbrain/speechbrain,Speech/Audio,0,214397,622,1516,61,5,15,10,5,6,10,10,0
+nerfstudio-project/nerfstudio,Computer Vision,0,40129,200,524,61,0,10,10,15,3,3,5,15
+wandb/wandb,Fine-tuning,0,191963,954,8209,61,5,15,5,10,6,10,10,0
+ShishirPatil/gorilla,LLM Framework,0,32222,183,561,60,5,10,5,10,10,10,5,5
+Chainlit/chainlit,LLM App,0,14436,122,651,60,5,10,0,15,10,10,10,0
+Shubhamsaboo/awesome-llm-apps,RAG,0,55784,439,1219,59,0,15,5,15,3,6,5,10
+agno-agi/agno,Agentic AI,0,356259,2558,4270,59,0,15,5,15,3,6,10,5
+getzep/graphiti,RAG,0,31691,179,364,59,0,15,0,15,3,6,5,15
+huggingface/peft,LLM App,0,47609,227,747,59,5,10,5,15,6,3,0,15
+eosphoros-ai/DB-GPT,RAG,0,142602,997,4270,59,5,15,5,15,3,6,10,0
+modelscope/ms-swift,LLM App,0,74731,460,1258,59,10,15,5,15,3,6,5,0
+apache/tvm,ML Framework,0,138653,674,3019,59,0,15,10,5,3,6,5,15
+kornia/kornia,Computer Vision,0,83208,491,932,59,0,15,5,10,3,6,5,15
+langchain-ai/langchain,RAG,0,153931,1440,2879,58,0,15,0,15,3,10,10,5
+OpenHands/OpenHands,Agentic AI,0,108423,819,2824,58,5,10,5,15,3,10,10,0
+langchain-ai/langgraph,RAG,0,49301,166,540,58,5,10,5,15,3,10,10,0
+NousResearch/hermes-agent,Agentic AI,0,139016,253,1345,58,0,15,10,10,3,10,5,5
+piskvorky/gensim,NLP,0,30981,84,879,58,15,10,5,10,3,10,5,0
+axolotl-ai-cloud/axolotl,LLM App,0,66683,426,1198,58,5,10,10,15,3,10,0,5
+microsoft/promptflow,LLM Infra,0,96130,612,3742,58,0,15,5,15,3,10,10,0
+open-webui/open-webui,RAG,0,67064,216,4950,57,5,10,5,15,6,6,10,0
+topoteretes/cognee,RAG,0,60965,918,1816,57,5,15,5,15,6,6,5,0
+ludwig-ai/ludwig,LLM App,0,78543,387,940,57,0,15,5,10,6,6,5,10
+github/spec-kit,Code Gen,0,9018,34,280,56,0,10,10,5,6,10,0,15
+paperless-ngx/paperless-ngx,Computer Vision,0,10994,69,1436,56,0,10,5,15,6,10,5,5
+hankcs/HanLP,NLP,0,46535,362,724,56,15,15,5,5,0,6,5,5
+xming521/WeClone,LLM App,0,3156,31,94,56,0,0,5,15,6,10,5,15
+cvat-ai/cvat,Computer Vision,0,56548,401,2687,56,10,10,5,10,6,10,5,0
+arc53/DocsGPT,RAG,0,0,0,958,55,5,10,0,15,10,10,5,0
+browser-use/browser-use,Agentic AI,0,51303,167,500,53,0,15,5,15,3,10,5,0
+FoundationAgents/MetaGPT,Agentic AI,0,49834,487,1282,53,5,15,5,15,3,10,0,0
+OpenBB-finance/OpenBB,Agentic AI,0,159729,1002,2260,53,5,10,5,10,3,10,5,5
+HKUDS/LightRAG,RAG,0,49590,77,433,53,0,15,5,15,3,10,5,0
+Skyvern-AI/skyvern,LLM Framework,0,148851,816,2778,53,0,15,5,15,3,10,5,0
+QwenLM/Qwen,LLM App,0,4317,21,171,53,0,10,10,15,3,10,5,0
+pydantic/pydantic-ai,Agentic AI,0,64585,268,1736,53,0,10,5,15,3,10,5,5
+microsoft/nni,ML Framework,0,65751,409,2206,53,5,10,5,15,3,10,5,0
+WEIFENG2333/VideoCaptioner,Other/General AI,0,22070,126,329,53,0,10,10,15,3,10,5,0
+PaddlePaddle/PaddleOCR,RAG,0,78627,387,2124,52,0,10,5,5,6,6,5,15
+AstrBotDevs/AstrBot,Agentic AI,0,85846,401,1317,52,5,10,0,15,6,6,10,0
+langbot-app/LangBot,RAG,0,40748,410,835,52,0,15,0,15,6,6,10,0
+microsoft/autogen,Agentic AI,0,52885,396,1912,51,0,10,5,15,6,10,5,0
+hpcaitech/ColossalAI,DL Framework,0,159408,1000,2232,51,5,15,10,10,3,3,5,0
+khoj-ai/khoj,RAG,0,29510,219,729,51,5,10,0,15,6,10,5,0
+sebastianruder/NLP-progress,NLP,0,365,1,108,51,5,0,10,0,6,10,5,15
+agent0ai/agent-zero,Agentic AI,0,38340,348,1772,51,0,10,5,15,6,10,0,5
+microsoft/agent-lightning,Agentic AI,0,29652,122,603,51,0,15,5,15,6,10,0,0
+FlagOpen/FlagEmbedding,RAG,0,78183,465,1170,51,5,10,5,15,3,3,5,5
+kedro-org/kedro,ML Framework,0,13707,80,690,51,5,10,5,15,6,10,0,0
+google/magika,DL Framework,0,2650,23,564,51,5,0,0,15,10,6,0,15
+tatsu-lab/stanford_alpaca,DL Framework,0,657,4,50,50,0,0,0,15,10,10,0,15
+keras-team/keras,ML Framework,0,163543,640,1035,49,0,15,10,10,3,6,5,0
+deepfakes/faceswap,ML Framework,0,75001,272,602,49,5,10,10,10,3,6,5,0
+mindsdb/mindsdb,RAG,0,127539,1231,3310,49,0,15,0,15,3,6,10,0
+chatchat-space/Langchain-Chatchat,RAG,0,21122,230,550,49,0,10,5,15,3,6,10,0
+Cinnamon/kotaemon,RAG,0,25794,221,434,49,5,15,0,10,3,6,10,0
+llmware-ai/llmware,RAG,0,35548,28,561,49,0,10,5,15,3,6,5,5
+flairNLP/flair,NLP,0,35201,86,428,49,5,15,10,5,3,6,5,0
+MODSetter/SurfSense,RAG,0,89886,404,1557,49,10,5,5,15,3,6,5,0
+Data-Centric-AI-Community/ydata-profiling,ML Framework,0,13121,174,468,49,0,10,0,15,3,6,0,15
+MemoriLabs/Memori,RAG,0,13301,116,491,49,0,15,0,15,6,3,10,0
+RUCAIBox/LLMSurvey,LLM App,0,17499,120,364,49,5,0,10,15,6,3,5,5
+allenai/allennlp,NLP,0,46767,340,781,49,15,10,5,10,3,6,0,0
+scikit-learn/scikit-learn,ML Framework,0,173025,333,1815,48,5,15,5,5,3,10,5,0
+datawhalechina/hello-agents,RAG,0,61270,423,1258,48,0,15,5,15,3,10,0,0
+ZhuLinsen/daily_stock_analysis,RAG,0,55924,171,647,48,0,10,5,15,3,10,5,0
+letta-ai/letta,Agentic AI,0,125426,703,1179,48,0,15,5,15,3,10,0,0
+jina-ai/serve,ML Framework,0,30785,187,1301,48,0,10,10,15,3,10,0,0
+1Panel-dev/MaxKB,RAG,0,66837,956,2129,48,0,10,5,10,3,10,10,0
+openai/openai-agents-python,Agentic AI,0,45930,168,925,48,0,10,5,15,3,10,5,0
+langchain-ai/deepagents,Agentic AI,0,47897,126,579,48,0,10,0,15,3,10,10,0
+ultralytics/ultralytics,Computer Vision,0,57944,207,928,47,0,5,5,10,6,6,5,10
+QuivrHQ/quivr,RAG,0,4872,41,258,47,0,10,0,15,6,6,5,5
+assafelovic/gpt-researcher,Agentic AI,0,13901,161,581,47,0,5,5,10,6,6,10,5
+ymcui/Chinese-LLaMA-Alpaca,LLM App,0,2573,14,124,47,0,0,0,15,6,6,10,10
+AntonOsika/gpt-engineer,Code Gen,0,4428,35,209,46,5,0,5,15,6,10,5,0
+TransformerOptimus/SuperAGI,RAG,0,19499,303,798,46,0,15,0,15,6,10,0,0
+LlamaChinese/Llama-Chinese,Agentic AI,0,2468,10,88,46,0,0,10,15,6,0,0,15
+Lightning-AI/litgpt,LLM Infra,0,17885,76,275,46,0,10,5,15,6,10,0,0
+Usagi-org/ai-goofish-monitor,Other/General AI,0,8744,77,322,46,0,10,0,15,6,10,5,0
+triton-inference-server/server,ML Framework,0,40631,240,1698,46,0,10,5,15,6,10,0,0
+SWE-agent/SWE-agent,Agentic AI,0,10251,66,435,45,0,10,0,15,10,10,0,0
+Alibaba-NLP/DeepResearch,Agentic AI,0,20822,156,373,45,0,10,5,10,0,10,0,10
+coqui-ai/TTS,Speech/Audio,0,58260,343,752,44,0,5,10,15,3,6,5,0
+deepspeedai/DeepSpeed,ML Framework,0,92783,694,1937,44,0,10,10,10,3,6,5,0
+babysor/MockingBird,Speech/Audio,0,17381,166,232,44,0,10,10,15,3,6,0,0
+agentscope-ai/agentscope,Agentic AI,0,34960,203,642,44,0,10,5,15,3,6,5,0
+oraios/serena,Agentic AI,0,37687,133,654,44,0,10,5,15,3,6,5,0
+huggingface/datasets,LLM App,0,38320,129,370,44,5,0,5,15,3,6,5,5
+neuml/txtai,RAG,0,22144,258,634,44,5,15,0,10,3,6,5,0
+autogluon/autogluon,Computer Vision,0,124170,654,1337,44,0,15,5,10,3,6,5,0
+666ghj/BettaFish,Agentic AI,0,42657,149,315,43,0,10,0,15,3,10,5,0
+usestrix/strix,Agentic AI,0,14610,88,247,43,0,5,5,10,3,10,0,10
+zai-org/ChatGLM2-6B,LLM App,0,1118,8,64,43,0,0,10,15,3,0,0,15
+AsyncFuncAI/deepwiki-open,Other/General AI,0,6769,18,151,42,0,10,0,15,6,6,5,0
+ValueCell-ai/valuecell,Agentic AI,0,35509,201,657,42,0,5,0,15,6,6,10,0
+microsoft/JARVIS,DL Framework,0,5470,19,148,41,0,10,10,0,10,6,5,0
+pyg-team/pytorch_geometric,DL Framework,0,92666,658,1562,41,0,15,10,10,3,3,0,0
+sinaptik-ai/pandas-ai,LLM App,0,6878,94,358,41,0,5,5,15,6,10,0,0
+SYSTRAN/faster-whisper,Speech/Audio,0,2796,10,67,41,5,0,10,15,3,3,5,0
+pytorch/vision,Computer Vision,0,67886,302,807,41,5,15,5,5,3,3,5,0
+dmlc/dgl,DL Framework,0,114182,453,2221,41,0,15,5,10,3,3,5,0
+coderamp-labs/gitingest,Other/General AI,0,4392,42,152,41,0,10,0,15,6,10,0,0
+OpenMOSS/MOSS,LLM App,0,2618,13,1198,41,5,0,10,10,10,6,0,0
+pipecat-ai/pipecat,Speech/Audio,0,86790,426,984,41,0,10,5,15,3,3,5,0
+d2l-ai/d2l-zh,Computer Vision,0,9134,13,861,39,5,0,10,5,3,6,10,0
+roboflow/supervision,Computer Vision,0,24381,76,349,39,0,10,5,10,3,6,5,0
+treeverse/dvc,ML Framework,0,34453,257,619,39,0,10,5,10,3,6,5,0
+albumentations-team/albumentations,Computer Vision,0,36577,64,169,39,0,0,10,15,3,6,5,0
+xszyou/Fay,Agentic AI,0,18765,65,390,39,0,10,0,15,3,6,5,0
+bytedance/trae-agent,Agentic AI,0,9439,62,135,39,0,10,0,15,3,6,0,5
+Netflix/metaflow,Agentic AI,0,104820,400,937,39,0,15,5,5,3,6,5,0
+ScrapeGraphAI/Scrapegraph-ai,RAG,0,11527,127,425,38,0,10,0,15,3,10,0,0
+D4Vinci/Scrapling,Other/General AI,0,8514,45,243,37,0,5,0,15,6,6,5,0
+serengil/deepface,Computer Vision,0,12915,76,275,36,0,10,10,10,3,3,0,0
+m-bain/whisperX,Speech/Audio,0,2578,16,61,36,0,0,10,15,3,3,5,0
+cft0808/edict,Agentic AI,0,8068,47,201,36,0,0,0,15,6,10,0,5
+donnemartin/awesome-aws,ML Framework,0,374,6,64,36,0,5,0,0,10,6,0,15
+huggingface/text-generation-inference,NLP,0,83556,267,905,36,0,0,5,15,3,3,5,5
+stas00/ml-engineering,LLM App,0,2116,23,220,35,0,0,10,0,0,10,0,15
+GreyDGL/PentestGPT,Agentic AI,0,0,0,206,35,0,5,0,15,0,10,5,0
+tonybeltramelli/pix2code,DL Framework,0,951,25,70,35,0,5,10,10,10,0,0,0
+microsoft/qlib,ML Framework,0,46177,236,645,34,0,10,5,10,3,6,0,0
+2noise/ChatTTS,Agentic AI,0,7637,51,123,34,5,5,0,15,3,6,0,0
+d2l-ai/d2l-en,Computer Vision,0,9361,8,1054,34,0,0,10,5,3,6,10,0
+vanna-ai/vanna,RAG,0,26026,261,403,34,0,5,5,15,3,6,0,0
+onnx/onnx,ML Framework,0,19176,272,8697,34,0,10,5,5,3,6,5,0
+p-e-w/heretic,LLM App,0,2603,8,47,34,0,0,5,15,6,3,0,5
+horovod/horovod,ML Framework,0,23618,153,540,34,0,0,5,5,3,6,0,15
+davidsandberg/facenet,Computer Vision,0,7664,60,124,34,0,10,10,0,3,6,0,5
+optuna/optuna,ML Framework,0,31175,226,499,34,0,5,5,15,3,6,0,0
+e2b-dev/E2B,Agentic AI,0,29127,217,750,34,0,15,0,10,3,6,0,0
+yichuan-w/LEANN,RAG,0,19933,75,279,34,0,10,5,10,3,6,0,0
+stanford-oval/storm,LLM App,0,9072,35,101,33,0,10,0,10,3,10,0,0
+VectifyAI/PageIndex,RAG,0,2183,7,77,33,0,5,10,0,3,10,0,5
+mlfoundations/open_clip,Computer Vision,0,9732,34,274,33,5,5,0,10,10,3,0,0
+simonw/llm,LLM App,0,8536,16,123,33,0,0,5,15,3,10,0,0
+harry0703/MoneyPrinterTurbo,Chatbot,0,5799,30,151,32,0,0,0,15,6,6,5,0
+Pythagora-io/gpt-pilot,Other/General AI,0,15059,103,545,32,0,5,0,15,6,6,0,0
+jina-ai/clip-as-service,Computer Vision,0,3886,31,243,32,0,0,0,15,6,6,5,0
+AIGC-Audio/AudioGPT,Speech/Audio,0,48008,259,417,32,0,10,5,5,6,6,0,0
+Fosowl/agenticSeek,Agentic AI,0,6100,41,170,31,0,0,0,10,6,10,5,0
+mlc-ai/mlc-llm,LLM Infra,0,52133,321,718,31,0,10,0,15,3,3,0,0
+recommenders-team/recommenders,ML Framework,0,24425,136,433,31,0,10,5,10,3,3,0,0
+deepseek-ai/Janus,LLM App,0,4819,23,75,31,0,0,10,15,3,3,0,0
+zai-org/CogVideo,LLM App,0,21833,107,231,31,0,10,5,10,3,3,0,0
+bentoml/OpenLLM,LLM App,0,1803,12,67,31,0,0,0,15,6,10,0,0
+tadata-org/fastapi_mcp,LLM App,0,1690,12,111,31,0,0,0,15,6,10,0,0
+YaoFANGUK/video-subtitle-remover,Other/General AI,0,18616,87,176,31,5,10,5,5,3,3,0,0
+AUTOMATIC1111/stable-diffusion-webui,Computer Vision,0,33771,205,343,29,0,0,5,15,3,6,0,0
+zhayujie/chatgpt-on-wechat,Agentic AI,0,37568,214,475,29,0,10,0,10,3,6,0,0
+labmlai/annotated_deep_learning_paper_implementations,RL,0,31400,225,2198,28,5,5,0,5,10,3,0,0
+ultralytics/yolov5,Computer Vision,0,14900,49,173,28,0,0,5,5,10,3,5,0
+sansan0/TrendRadar,LLM App,0,27911,63,173,28,0,0,0,10,3,10,5,0
+gunthercox/ChatterBot,Chatbot,0,8089,67,288,28,5,0,0,5,3,10,5,0
+jindongwang/transferlearning,ML Framework,0,28405,246,511,28,0,10,10,0,3,0,0,5
+google-research/bert,NLP,0,4532,10,48,26,0,0,10,0,0,6,0,10
+aleju/imgaug,Computer Vision,0,61976,110,321,26,0,10,5,0,3,3,5,0
+DLR-RM/stable-baselines3,RL,0,13386,65,210,26,0,10,5,5,3,3,0,0
+bigscience-workshop/petals,LLM Infra,0,7215,67,127,24,0,0,0,15,3,6,0,0
+CorentinJ/Real-Time-Voice-Cloning,Speech/Audio,0,5072,57,104,23,0,0,10,0,3,10,0,0
+junyanz/pytorch-CycleGAN-and-pix2pix,Computer Vision,0,2831,32,100,23,0,5,0,15,3,0,0,0
+ultralytics/yolov3,Computer Vision,0,14508,49,166,23,0,0,0,5,10,3,5,0
+hacksider/Deep-Live-Cam,Computer Vision,0,4779,30,89,21,5,0,5,0,6,0,5,0
+apachecn/ailearning,NLP,0,19003,106,1939,21,0,10,5,0,3,3,0,0
+svc-develop-team/so-vits-svc,Speech/Audio,0,19149,126,188,21,0,0,5,5,3,3,5,0
+Zeyi-Lin/HivisionIDPhotos,Computer Vision,0,3867,32,117,21,0,0,10,0,6,0,5,0
+nari-labs/dia,Speech/Audio,0,2418,9,54,21,0,0,0,15,3,3,0,0
+ddbourgin/numpy-ml,RL,0,21599,84,253,21,0,10,5,0,3,3,0,0
+sapientinc/HRM,LLM App,0,1550,13,53,21,0,0,0,15,6,0,0,0
+TheR1D/shell_gpt,LLM App,0,1245,20,70,21,0,0,0,15,6,0,0,0
+Farama-Foundation/Gymnasium,Agentic AI,0,26902,122,733,21,0,5,0,5,3,3,5,0
+qubvel-org/segmentation_models.pytorch,Computer Vision,0,13809,97,204,21,0,0,5,10,3,3,0,0
+cleanlab/cleanlab,ML Framework,0,20987,90,333,21,0,10,0,5,3,3,0,0
+lucidrains/DALLE2-pytorch,Computer Vision,0,6674,19,73,21,0,0,0,15,0,6,0,0
+ageitgey/face_recognition,Computer Vision,0,380,5,133,20,0,0,0,0,10,10,0,0
+deezer/spleeter,DL Framework,0,3175,22,103,20,5,0,5,0,10,0,0,0
+MorvanZhou/tutorials,ML Framework,0,3976,105,180,20,0,0,10,0,0,10,0,0
+hoya012/deep_learning_object_detection,Computer Vision,0,38,1,31,20,0,0,10,0,0,10,0,0
+facefusion/facefusion,Other/General AI,0,14179,175,262,19,0,0,0,0,3,6,10,0
+WZMIAOMIAO/deep-learning-for-image-processing,Computer Vision,0,47507,367,641,19,5,0,0,5,3,6,0,0
+TauricResearch/TradingAgents,Agentic AI,0,4761,58,110,18,0,5,0,0,3,10,0,0
+wkentaro/labelme,Computer Vision,0,6033,29,333,18,0,0,0,5,3,10,0,0
+GeeeekExplorer/nano-vllm,LLM App,0,1195,20,53,18,0,0,0,15,3,0,0,0
+thuml/Time-Series-Library,DL Framework,0,13189,84,395,18,0,10,0,5,3,0,0,0
+sfyc23/EverydayWechat,Chatbot,0,2818,44,103,18,5,0,0,0,3,10,0,0
+TencentARC/GFPGAN,DL Framework,0,3972,20,90,16,0,0,0,10,6,0,0,0
+bbfamily/abu,ML Framework,0,47091,244,410,16,0,10,0,0,0,6,0,0
+Megvii-BaseDetection/YOLOX,Computer Vision,0,7225,69,197,16,0,0,5,0,3,3,5,0
+donnemartin/data-science-ipython-notebooks,ML Framework,0,5253,46,297,13,0,0,0,0,3,10,0,0
+HumanSignal/labelImg,Computer Vision,0,3546,24,144,13,0,0,5,0,3,0,5,0
+iperov/DeepFaceLab,ML Framework,0,17253,133,238,13,0,0,10,0,3,0,0,0
+lukas-blecher/LaTeX-OCR,Computer Vision,0,12301,37,124,13,0,0,0,0,3,10,0,0
+The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge,LLM App,0,1467,7,234,13,0,5,0,0,3,0,0,5
+JaidedAI/EasyOCR,Computer Vision,0,11310,71,340,11,0,5,0,0,3,3,0,0
+lucidrains/vit-pytorch,Computer Vision,0,11963,72,139,11,0,5,0,0,3,3,0,0
+floodsung/Deep-Learning-Papers-Reading-Roadmap,DL Framework,0,115,1,30,10,0,0,0,0,0,10,0,0
+hindupuravinash/the-gan-zoo,ML Framework,0,63,1,36,10,0,0,0,0,10,0,0,0
+zalandoresearch/fashion-mnist,Computer Vision,0,235,8,78,10,0,0,0,0,10,0,0,0
+Yorko/mlcourse.ai,ML Framework,0,477,9,1093,10,0,0,0,0,10,0,0,0
+chiphuyen/stanford-tensorflow-tutorials,NLP,0,2776,23,174,10,0,0,0,0,0,10,0,0
+eriklindernoren/ML-From-Scratch,ML Framework,0,4174,46,116,8,0,5,0,0,3,0,0,0
+graphdeco-inria/gaussian-splatting,Computer Vision,0,3211,26,87,8,0,0,5,0,3,0,0,0
+ShangtongZhang/reinforcement-learning-an-introduction,RL,0,5453,24,107,8,0,0,0,5,3,0,0,0
+cheahjs/free-llm-api-resources,LLM Infra,0,1252,2,37,6,0,0,0,0,0,6,0,0
+BlinkDL/RWKV-LM,Chatbot,0,13070,67,207,6,0,0,0,0,3,3,0,0
+rushter/MLAlgorithms,ML Framework,0,3026,47,113,6,0,0,0,0,3,3,0,0
+yunjey/pytorch-tutorial,DL Framework,0,1659,21,72,5,0,0,0,0,0,0,5,0
+jacobgil/pytorch-grad-cam,Computer Vision,0,2191,38,148,3,0,0,0,0,3,0,0,0
+EmbraceAGI/awesome-chatgpt-zh,Chatbot,0,27,1,195,0,0,0,0,0,0,0,0,0
+Jack-Cherish/PythonPark,DL Framework,0,0,0,32,0,0,0,0,0,0,0,0,0
+milesial/Pytorch-UNet,Computer Vision,0,577,11,48,0,0,0,0,0,0,0,0,0
+lengstrom/fast-style-transfer,DL Framework,0,618,7,64,0,0,0,0,0,0,0,0,0
+lucidrains/denoising-diffusion-pytorch,DL Framework,0,6896,19,53,0,0,0,0,0,0,0,0,0
+Jack-Cherish/Machine-Learning,ML Framework,0,4207,22,3104,0,0,0,0,0,0,0,0,0
+ymcui/Chinese-BERT-wwm,NLP,0,0,0,53,0,0,0,0,0,0,0,0,0
