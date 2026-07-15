@@ -1,0 +1,20 @@
+{
+  "_description": "Author-scored D1-D8 Domain Knowledge Score components for the 13 paradigm-matched external systems used in the Section 3.4.1 / Supplement S5 DKS weight-sensitivity analysis.",
+  "_component_max": {"D1": 15, "D2": 15, "D3": 10, "D4": 15, "D5": 10, "D6": 10, "D7": 10, "D8": 15},
+  "_provenance": "See dks_d1_d8_component_scores_README.md in this directory.",
+  "systems": {
+    "MedRAG":      {"D1": 0,  "D2": 0,  "D3": 0, "D4": 0,  "D5": 5, "D6": 0, "D7": 0, "D8": 0, "dks_total": 5,  "stages": 4,  "source": "paper/Supplementary_External_System_Analysis.md S1.2"},
+    "PulseAI":     {"D1": 5,  "D2": 0,  "D3": 0, "D4": 5,  "D5": 4, "D6": 0, "D7": 0, "D8": 0, "dks_total": 14, "stages": 6,  "source": "paper/PeerJ_CS/supplementary.tex:663"},
+    "CrewAI":      {"D1": 2,  "D2": 1,  "D3": 0, "D4": 5,  "D5": 2, "D6": 3, "D7": 1, "D8": 1, "dks_total": 15, "stages": 7,  "source": "paper/Supplementary_External_System_Analysis.md S12.2"},
+    "LlamaIndex":  {"D1": 0,  "D2": 5,  "D3": 3, "D4": 3,  "D5": 2, "D6": 2, "D7": 0, "D8": 5, "dks_total": 20, "stages": 6,  "source": "paper/Supplementary_External_System_Analysis.md S5.2 (typical-deployment column)"},
+    "BIRD-SQL":    {"D1": 0,  "D2": 5,  "D3": 5, "D4": 10, "D5": 3, "D6": 3, "D7": 0, "D8": 0, "dks_total": 26, "stages": 7,  "source": "paper/Supplementary_External_System_Analysis.md S4.2"},
+    "Wheatley":    {"D1": 5,  "D2": 5,  "D3": 5, "D4": 5,  "D5": 6, "D6": 6, "D7": 0, "D8": 1, "dks_total": 33, "stages": 8,  "source": "paper/Supplementary_External_System_Analysis.md S3.2"},
+    "FinSQL":      {"D1": 10, "D2": 5,  "D3": 5, "D4": 10, "D5": 3, "D6": 0, "D7": 2, "D8": 0, "dks_total": 35, "stages": 7,  "source": "paper/Supplementary_External_System_Analysis.md S2.2"},
+    "MetaGPT":     {"D1": 10, "D2": 5,  "D3": 0, "D4": 10, "D5": 6, "D6": 6, "D7": 0, "D8": 0, "dks_total": 37, "stages": 6,  "source": "paper/PeerJ_CS/supplementary.tex:662"},
+    "SpeechBrain": {"D1": 5,  "D2": 5,  "D3": 5, "D4": 5,  "D5": 6, "D6": 6, "D7": 5, "D8": 0, "dks_total": 37, "stages": 8,  "source": "paper/Supplementary_External_System_Analysis.md S6.2"},
+    "AudioCraft":  {"D1": 11, "D2": 4,  "D3": 2, "D4": 9,  "D5": 7, "D6": 6, "D7": 1, "D8": 2, "dks_total": 42, "stages": 7,  "source": "paper/Supplementary_External_System_Analysis.md S8.2"},
+    "DeepTutor":   {"D1": 10, "D2": 5,  "D3": 0, "D4": 10, "D5": 6, "D6": 6, "D7": 5, "D8": 0, "dks_total": 42, "stages": 8,  "source": "paper/PeerJ_CS/supplementary.tex:664"},
+    "EmotiVoice":  {"D1": 10, "D2": 4,  "D3": 3, "D4": 8,  "D5": 7, "D6": 7, "D7": 7, "D8": 1, "dks_total": 47, "stages": 8,  "source": "paper/Supplementary_External_System_Analysis.md S9.2"},
+    "GraphRAG":    {"D1": 10, "D2": 15, "D3": 3, "D4": 12, "D5": 6, "D6": 7, "D7": 3, "D8": 1, "dks_total": 57, "stages": 10, "source": "paper/Supplementary_External_System_Analysis.md S7.2"}
+  }
+}
