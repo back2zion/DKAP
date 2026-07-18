@@ -97,7 +97,7 @@ The statistics and figures (steps 1–3) reproduce from the committed result fil
 - **Python** 3.11 for analysis, figures, and the OpenRouter experiments; **Python 3.10** for the non-LLM RL experiment.
 - **Packages** (`requirements.txt`): `numpy`, `scipy`, `pandas`, `scikit-learn`, `matplotlib`, `seaborn`, `tqdm` (core); `openai`, `requests` (OpenRouter clients). `sqlite3` is in the Python standard library. GPU-only serving deps (`vllm==0.18.0`, `transformers`, `torch>=2.3`) are commented in `requirements.txt` and installed separately on a CUDA 12.x host.
 - **API key (optional):** cross-model / cross-family runs call [OpenRouter](https://openrouter.ai) and need `OPENROUTER_API_KEY` (see `experiments/.env.example`).
-- **Hardware (optional):** the primary-model runs need a local vLLM-served `Qwen3-32B-AWQ` endpoint. Paper environment: Ubuntu 22.04 LTS, dual NVIDIA H100 NVL GPUs (96 GB each, tensor-parallel = 2), vLLM 0.18.0, CUDA 12.8. No GPU is required to reproduce the statistics and figures.
+- **Hardware (optional):** the primary-model runs need a local vLLM-served `Qwen3-32B-AWQ` endpoint. Paper environment: Ubuntu Linux (exact release not recorded), dual NVIDIA H100 NVL GPUs (96 GB each, tensor-parallel = 2), vLLM 0.18.0, CUDA 12.8. No GPU is required to reproduce the statistics and figures.
 
 ## 6. Methodology
 
