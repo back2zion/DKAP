@@ -42,7 +42,7 @@
                 justification=raggedright]{caption}
                 
 \RequirePackage{natbib}
-\bibliographystyle{apalike}
+\bibliographystyle{apalike-doi}
 
 %
 % writeLaTeX logo
